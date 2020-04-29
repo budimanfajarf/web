@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "budimanfajarf.com"
+title = "Budiman Fajar Firdaus | budimanfajarf"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -36,7 +36,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   images = ["apple-touch-icon.png"]
   themeColor = "#494f5c"
 
-  homeSubtitle = "Hello I'm Budi ☕, Backend Developer 💻 from Bandung, Indonesia"
+  homeSubtitle = "Hello I'm Budi ☕, Backend Developer💻 from Bandung, Indonesia"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/profile-photo.jpg"  # Homepage background-image URL
 
