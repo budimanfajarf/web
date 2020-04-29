@@ -1,0 +1,23 @@
+#home-photo  {
+  text-align: center;
+}
+
+#home-photo img {
+  width: 160px;
+  height: auto;
+  border-radius: 30%;
+}
+
+body {
+  font-family: Ubuntu, "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.site-branding img {
+  height: 34px;
+  border-radius: 35%;
+  margin-bottom: -9px;
+  opacity: 0.8;
+}
+.site-branding a:hover img {
+  opacity: 1;
+}

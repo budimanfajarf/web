@@ -1,3 +1,91 @@
-baseURL = "http://example.org/"
+baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+defaultContentLanguage = "en"
+title = "budimanfajarf.com"
+theme = "hermit"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+googleAnalytics = "UA-121802855-1"
+disqusShortname = "budimanfajarf"
+
+[author]
+  name = "budimanfajarf"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Budiman, Fajar, Firdaus, budimanfajarf"
+  images = ["apple-touch-icon.png"]
+  themeColor = "#494f5c"
+
+  homeSubtitle = "Hello I'm Budi ☕, Backend Developer 💻 from Bandung, Indonesia"
+  # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  bgImg = "images/profile-photo.jpg"  # Homepage background-image URL
+
+  # # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/budimanfajarf/blog/commit/"
+
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = true  # Set "text-align: justify" to `.content`.
+
+  relatedPosts = true  # Add a related content section to all single posts page
+
+  code_copy_button = true # Turn on/off the code-copy-button for code-fields
+  
+  # Add custom css
+  customCSS = ["css/custom.css"]
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "instagram"
+    url = "https://instagram.com/budimanfajarf"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/budimanfajarf"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/budimanfajarf"  
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:budimanfajarf@gmail.com"  
+
+  [[params.social]]
+    name = "upwork"
+    url = "https://www.upwork.com/freelancers/~01b8d55d6a5a8f1077"  
+
+[menu]
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/:year/:month/:title/"
