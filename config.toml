@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://budidev.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "budidev.com"
