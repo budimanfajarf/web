@@ -1,5 +1,6 @@
 +++
 title = "(Hu)go Template Primer"
+author = "another"
 tags = [
     "go",
     "golang",

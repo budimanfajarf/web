@@ -1,9 +1,9 @@
 baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Budiman Fajar Firdaus | budimanfajarf"
+title = "@budimanfajarf"
 theme = "hermit"
-# enableGitInfo = true
+enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 # hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
@@ -11,7 +11,7 @@ rssLimit = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 # googleAnalytics = "UA-121802855-1"
-# disqusShortname = "budimanfajarf"
+disqusShortname = "budimanfajarf"
 
 [author]
   name = "budimanfajarf"
@@ -23,6 +23,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
   # Categories are disabled by default.
 
 [params]
@@ -36,7 +37,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   images = ["apple-touch-icon.png"]
   themeColor = "#494f5c"
 
-  homeSubtitle = "Hello I'm Budi ☕, Backend Developer💻 from Bandung, Indonesia"
+  homeSubtitle = "Hello, I'm Budi ☕ Backend Developer💻 from Bandung, Indonesia"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/profile-photo.jpg"  # Homepage background-image URL
 
@@ -49,6 +50,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   relatedPosts = true  # Add a related content section to all single posts page
 
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
+
+  back_to_home_page = true # custom add back to homepage
   
   # Add custom css
   customCSS = ["css/custom.css"]
@@ -80,12 +83,23 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   [[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 10
+    weight = 40
+
+  [[menu.main]]
+    name = "Dev"
+    url = "/dev/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 40
+    
 
 [permalinks]
   posts = "/:year/:month/:title/"

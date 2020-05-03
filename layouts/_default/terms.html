@@ -1,0 +1,26 @@
+{{ define "header" }}
+{{ partialCached "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>{{ .Title }}</h1>
+		<div class="content">
+		{{- if .Content }}
+			{{ .Content }}
+		{{- end }}
+		</div>		
+		<div class="content">
+		{{ range .Data.Terms.Alphabetical }}
+			<a href="{{ .Page.Permalink }}">
+				{{ .Page.Title }} 
+				{{ .Count }}
+			</a>
+		{{ end }}			
+		</div>
+	</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
+{{ end }}
