@@ -3,7 +3,8 @@ date = 2014-04-09T00:00:00Z
 title = "About"
 
 +++
-[budidev.com](/) is personal blog organized by [me](/). It's created using [Hugo](https://themes.gohugo.io) with customized [Hermit](https://themes.gohugo.io/hermit) theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog).
+[](https://budodev.com) is personal blog organized by [me](/). It's created using [Hugo](https://themes.gohugo.io) with customized [Hermit](https://themes.gohugo.io/hermit) theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog). And host in [![Netlify Status](https://api.netlify.com/api/v1/badges/7171b328-2836-4050-8ff3-e143de197c89/deploy-status)](https://app.netlify.com/sites/budi/deploys)
+   
 
 ## Contact
 
