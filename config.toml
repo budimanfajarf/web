@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "@budimanfajarf"
+title = "budidev.com"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -14,7 +14,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 disqusShortname = "budimanfajarf"
 
 [author]
-  name = "budimanfajarf"
+  name = "Budiman Fajar Firdaus"
+  username = "budimanfajarf"
 
 [blackfriday]
   # hrefTargetBlank = true
@@ -39,7 +40,7 @@ disqusShortname = "budimanfajarf"
 
   homeSubtitle = "Hello, I'm Budi ☕ Backend Developer💻 from Bandung, Indonesia"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  bgImg = "images/profile-photo.jpg"  # Homepage background-image URL
+  bgImg = "images/profile-photo-background.png"  # Homepage background-image URL
 
   # # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = "https://github.com/budimanfajarf/blog/commit/"
@@ -100,6 +101,5 @@ disqusShortname = "budimanfajarf"
     url = "/about/"
     weight = 15
     
-
 [permalinks]
   posts = "/:year/:month/:title/"

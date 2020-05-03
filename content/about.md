@@ -1,7 +1,7 @@
 +++
 date = 2014-04-09T00:00:00Z
 title = "About"
-
+images = ["images/profile-photo-background.png"]
 +++
 [budidev.com](/) is personal blog organized by [me](/). It's created using [Hugo](https://themes.gohugo.io) with customized [Hermit](https://themes.gohugo.io/hermit) theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog).
 

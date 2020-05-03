@@ -20,7 +20,23 @@
 			<h1 id="home-title">Budiman Fajar Firdaus</h1>
 			{{- with .Site.Params.homeSubtitle }}
 				<p id="home-subtitle">
-					{{.}}
+					<!-- {{.}} -->
+					<a href="#" 
+						style="line-height: 1.2em"
+						class="typewrite" 
+						data-period="2500" 
+						data-type='[ "Hello, I`m Budi ☕"]' 
+						data-link='[ "#", "#", "/coding", "/design" ]' >
+							<span class="wrap"></span>
+					</a>
+
+					<!-- <a href="#" class="typewrite" 
+						data-period="2500" 
+						data-type="[ `Hello, I`m Budi ☕`, `Budi suka kopi ☕`, `Budi suka coding &lt;&shy;&sol;&shy;&gt;`, `Budi juga suka design 🎨` ]"
+						data-link="[ `#`, `#`, `/coding`, `/design` ]" >
+							<span class="wrap"></span>
+					</a>					 -->
+					
 				</p>
 			{{- end }}
 			{{- with .Site.Params.social }}
@@ -67,4 +83,7 @@
 		</div>
 	</div>
 
+	{{ $typeWriter := resources.Get "js/type-writer.js" | resources.ExecuteAsTemplate "js/type-writer.js" . | minify | fingerprint -}}
+	<script src="{{ $typeWriter.Permalink }}" {{ printf "integrity=%q" $typeWriter.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
+	
 	{{ end }}

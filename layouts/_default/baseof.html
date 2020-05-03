@@ -11,7 +11,7 @@
 	{{- end }}
 	{{- partial "structured-data.html" . }}
 	{{- partial "favicons.html" }}
-	<title>{{ if .IsHome }}{{ "Budiman Fajar Firdaus / @budimanfajarf" }}{{ else }}{{ .Title }} / {{ .Site.Title }}{{ end }}</title>
+	<title>{{ if .IsHome }}{{ .Site.Author.name }} / @{{ .Site.Author.username }}{{ else }}{{ .Title }} / @{{ .Site.Author.username }}{{ end }}</title>
 	{{ range .AlternativeOutputFormats -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Title | safeHTML }}
 	{{ end -}}
