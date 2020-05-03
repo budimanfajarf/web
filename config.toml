@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "@budimanfajarf"
 theme = "hermit"
-enableGitInfo = true
+# enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 # hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
@@ -23,7 +23,7 @@ disqusShortname = "budimanfajarf"
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
+  # category = "categories"
   # Categories are disabled by default.
 
 [params]
@@ -83,7 +83,7 @@ disqusShortname = "budimanfajarf"
   [[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 40
+    weight = 10
 
   [[menu.main]]
     name = "Dev"
@@ -98,7 +98,7 @@ disqusShortname = "budimanfajarf"
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 40
+    weight = 15
     
 
 [permalinks]

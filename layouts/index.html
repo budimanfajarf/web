@@ -29,17 +29,33 @@
 			<nav id="home-nav" class="site-nav">
 				{{ partialCached "menu.html" . }}
 			</nav>
-			<ul class="posts-list">
-				{{ range first 3 (where .Paginator.Pages "Section" "posts") }}
-					<li class="posts-list-item">
-						<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-						-
-						<span class="posts-list-item-description">
-							{{ .PublishDate.Format "Jan 2, 2006" }}	· {{ .ReadingTime }} min read
-						</span>
-					</li>
-				{{ end }}
-			</ul>			
+			
+			<div id="home-posts">
+
+				<div class="posts-group" style="margin-bottom: 0;">
+					<ul class="posts-list">
+						{{ range first 3 (where .Paginator.Pages "Section" "posts") }}
+						<li class="post-item">
+							<a href="{{ .Permalink }}">
+								<span class="post-title">{{ .Title }}</span>
+								<span class="post-day">
+									{{ .PublishDate.Format "Jan 2, 2006" }}	· {{ .ReadingTime }} min read
+								</span>
+							</a>
+						</li>
+						{{ end }}
+					</ul>
+				</div>				
+
+				<div class="post-nav" style="font-size: 0.9em; margin-top: 0.8em; margin-bottom: 2em;">
+					<a class="prev-post" href="{{ .Site.BaseURL }}/posts">
+						<span>See All Posts</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+					</a>
+				</div>					
+
+			</div>
+
 		</div>
 		<div id="home-footer">
 			<p>

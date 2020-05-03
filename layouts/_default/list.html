@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 	<main class="site-main section-inner thin animated fadeIn faster">
-		<h1>#{{ .Title }}</h1>
+		<h1>{{ .Title }}</h1>
 		{{- if .Content }}
 		<div class="content">
 			{{ .Content }}
@@ -19,7 +19,7 @@
 					<a href="{{.Permalink}}">
 						<span class="post-title">{{.Title}}</span>
 						<span class="post-day">
-							{{ .Date.Format .Site.Params.dateformShort }} · {{ .ReadingTime }} min read
+							{{ .PublishDate.Format "Jan 2, 2006" }}	· {{ .ReadingTime }} min read
 						</span>
 					</a>
 				</li>

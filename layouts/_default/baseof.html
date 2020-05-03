@@ -31,7 +31,6 @@
 <body id="page">
 	{{ block "header" . -}}{{ end -}}
 	{{ block "main" . -}}{{ end -}}
-	{{ partial "backhome.html" . }}
 	{{ block "footer" . -}}{{ end }}
 
 	{{ $main := resources.Get "js/main.js" -}}
