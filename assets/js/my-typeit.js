@@ -5,9 +5,13 @@ new TypeIt("#home-subtitle", {
   startDelay: 2000,  
   waitUntilVisible: true,  
 })
-  .type("Hello, I'm Budi ☕")
+  .type("Hello,")
+  .pause(500)
+  .type(" I'm Budi ☕")
   .pause(1800)
   .type(" Backend Developer💻")
   .pause(900)
-  .type(" from Bandung, Indonesia")
+  .type(" from Bandung,")
+  .pause(500)
+  .type(" Indonesia")
   .go();
