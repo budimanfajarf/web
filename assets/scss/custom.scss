@@ -77,6 +77,42 @@ body {
   padding-top: 1em;
 }
 
+.banner-404 .btn-404 a {
+  margin-bottom: 1em;
+  margin-right: 1em;  
+}
+
+.post-meta.archived {
+  opacity: 1
+}
+
+.post-meta.archived span {
+  opacity: .6;
+}
+
+.post-meta.archived .archived-label {
+  display: inline-block; 
+  opacity: 1; 
+  font-weight: 500; 
+  letter-spacing: 0.25px; 
+  color: #e8eef2; 
+  background: #c59219; 
+  border-radius: 3px; 
+  padding: 1px 4px; 
+  margin-bottom: 4px;
+}
+
+.post-meta.archived .archived-info {
+  font-size: 85%;
+  opacity: .6;  
+  display: block; 
+  margin-bottom: 1.5em; 
+}
+
+blockquote.twitter-tweet, blockquote.twitter-tweet a {
+  color: #e8eef2;
+}
+
 @media only screen and (max-width: 725px) {
   #home-center {
     padding-top: .5em;

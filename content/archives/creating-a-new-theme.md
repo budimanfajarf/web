@@ -1,9 +1,8 @@
 ---
 author: "Michael Henderson"
 date: 2014-09-28
-title: Creating a New Theme title title ver very loongg title
-#tags: ["themes"]
-draft: true
+title: Creating a New Theme
+draft: false
 ---
 
 ## Introduction

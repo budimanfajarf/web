@@ -1,16 +1,9 @@
 +++
 title = "(Hu)go Template Primer"
-author = "another"
-tags = [
-#    "go",
-#    "golang",
-#    "templates",
-#    "themes",
-#    "development",
-]
+# tags = [ "go", "golang", "templates", "themes", "development", ]
 date = "2014-04-02"
 toc = true
-draft = true
+draft = false
 +++
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for

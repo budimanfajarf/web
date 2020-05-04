@@ -19,9 +19,11 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta">
-					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·  
-					<span>{{ .ReadingTime }} min read</span>
+				<div class="post-meta archived">
+					<span class="archived-label">archived</span><br />
+					<span class="archived-info">This post maybe no longer in future</span>
+					<span>{{ .Date.Format .Site.Params.dateform }}</span> · 
+					<span>{{ .ReadingTime }} min read</span> 
 				</div>
 				<h1>{{ .Title }}</h1>
 			</header>
@@ -82,9 +84,9 @@
 			</a>
 			{{- end }}
 		</div>
-		<div id="comments" class="thin">
+		<!-- <div id="comments" class="thin">
 		{{- partial "comments.html" . -}}
-		</div>
+		</div> -->
 	</main>
 {{ end }}
 

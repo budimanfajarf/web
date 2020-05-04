@@ -1,7 +1,7 @@
 +++
 title = "About Hugo"
 date = "2014-04-09"
-draft = true
+draft = false
 +++
 
 Hugo is the **world’s fastest framework for building websites**. It is written in Go.

@@ -2,7 +2,7 @@
 date: 2014-03-10
 title: Migrate to Hugo from Jekyll
 toc: true
-draft: true
+draft: false
 ---
 
 ## Move static content to `static`

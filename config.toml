@@ -1,4 +1,4 @@
-baseURL = "https://budidev.com/"
+baseURL = "https://www.budidev.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "budidev.com"
@@ -42,8 +42,8 @@ disqusShortname = "budidev"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/profile-photo-background.png"  # Homepage background-image URL
 
-  # # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/budimanfajarf/blog/commit/"
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/budimanfajarf/blog/commit/"
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
@@ -102,4 +102,5 @@ disqusShortname = "budidev"
     weight = 15
     
 [permalinks]
-  posts = "/:year/:month/:title/"
+  archives = "/:year/:month/:slug/"
+  posts = "/:year/:month/:slug/"

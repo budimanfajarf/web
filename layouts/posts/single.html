@@ -19,7 +19,10 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>{{ .Date.Format .Site.Params.dateform }}</span> · {{ .ReadingTime }} min read</div>
+				<div class="post-meta">
+					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·  
+					<span>{{ .ReadingTime }} min read</span>
+				</div>
 				<h1>{{ .Title }}</h1>
 			</header>
 			<div class="content">
@@ -29,17 +32,9 @@
 			{{- partial "related-posts.html" . -}}
 			{{- end }}
 			<hr class="post-end">
-			<div class="content">
-				{{- with .Params.tags }}
-				<p>
-					{{- range . -}}
-					<span>
-						<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{.}}</a></span>&nbsp;
-					{{- end }}
-				</p>
-				{{- end }}				
-			</div>
-			<footer style="display: none;" class="post-info">
+
+			{{ if (or (isset .Params "author") (and .GitInfo .Site.Params.gitUrl)) }}
+			<footer class="post-info">
 				{{- with $.Param "author" }}
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>{{ . }}</p>
 				{{- end }}
@@ -55,6 +50,19 @@
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> @ {{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}</p>
 				{{- end }}
 			</footer>
+			{{ else }}
+			<footer class="content">
+				{{- with .Params.tags }}
+				<p>
+					{{- range . -}}
+					<span>
+						<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{.}}</a></span>&nbsp;
+					{{- end }}
+				</p>
+				{{- end }}				
+			</footer>
+			{{ end }}
+
 		</article>
 		{{- if .Params.toc }}
 		<aside id="toc">
