@@ -10,7 +10,7 @@ tags = [
 ]
 date = "2014-04-02"
 toc = true
-draft = true
+draft = false
 +++
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
