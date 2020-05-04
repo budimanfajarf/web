@@ -12,6 +12,8 @@
 
 #home-subtitle {
   font-style: normal;
+  line-height: 1.5em;
+  margin-bottom: 1.2em;
 }
 
 #home-nav {
@@ -69,6 +71,10 @@ body {
 
 .posts-group .post-day {
   font-size: 75%;
+}
+
+.posts-group .post-title {
+  line-height: 1.2em;
 }
 
 @media only screen and (max-width: 565px) {
