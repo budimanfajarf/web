@@ -52,10 +52,6 @@ body {
   line-height: 2;
 }
 
-#home-center {
-  margin-top: .8em;
-}
-
 #home-posts {
   font-size: .7em;  
   margin-top: .5em;  
@@ -75,6 +71,16 @@ body {
 
 .posts-group .post-title {
   line-height: 1.2em;
+}
+
+#home-center {
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 725px) {
+  #home-center {
+    padding-top: .5em;
+  }
 }
 
 @media only screen and (max-width: 565px) {

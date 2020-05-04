@@ -19,9 +19,7 @@
 			</div>
 			<h1 id="home-title">Budiman Fajar Firdaus</h1>
 			{{- with .Site.Params.homeSubtitle }}
-				<p id="home-subtitle">
-					{{.}}
-				</p>
+				<p id="home-subtitle"></p>
 			{{- end }}
 			{{- with .Site.Params.social }}
 			<div id="home-social">
@@ -67,7 +65,8 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+	{{ $typeit := resources.Get "js/typeit.js" | resources.ExecuteAsTemplate "js/typeit.js" . | minify | fingerprint -}}
+	<script src="{{ $typeit.Permalink }}" {{ printf "integrity=%q" $typeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 	{{ $myTypeit := resources.Get "js/my-typeit.js" | resources.ExecuteAsTemplate "js/my-typeit.js" . | minify | fingerprint -}}
 	<script src="{{ $myTypeit.Permalink }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 

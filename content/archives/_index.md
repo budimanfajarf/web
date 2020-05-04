@@ -1,0 +1,3 @@
+---
+title: "All Archived Posts"
+---
