@@ -54,7 +54,7 @@ body {
 
 #home-posts {
   font-size: .7em;  
-  margin-top: .5em;  
+  margin-top: .55em;  
 }
 
 #home-posts .posts-group {
@@ -74,7 +74,7 @@ body {
 }
 
 #home-center {
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .banner-404 .btn-404 a {
@@ -125,6 +125,10 @@ blockquote.twitter-tweet a:hover {
   #home-center {
     padding-top: .8em;
   }
+}
+
+.home-footer-menu {
+  margin-bottom: 0.5em;
 }
 
 @media only screen and (max-width: 565px) {
