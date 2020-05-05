@@ -103,14 +103,22 @@ body {
 }
 
 .post-meta.archived .archived-info {
-  font-size: 85%;
-  opacity: .6;  
+  font-size: .8rem;
   display: block; 
   margin-bottom: 1.5em; 
 }
 
 blockquote.twitter-tweet, blockquote.twitter-tweet a {
   color: #e8eef2;
+}
+
+blockquote.twitter-tweet a {
+  box-shadow: inset 0 -4px 0 #2b7bb9;
+}
+
+blockquote.twitter-tweet a:hover {
+  text-decoration: none;
+  box-shadow: inset 0 -1em 0 #2b7bb9;
 }
 
 @media only screen and (max-width: 725px) {

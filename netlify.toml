@@ -5,7 +5,7 @@ command = "hugo --gc --minify"
 [context.production.environment]
 HUGO_VERSION = "0.69.2"
 HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+# HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"

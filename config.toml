@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://budidev.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "budidev.com"
@@ -77,7 +77,7 @@ disqusShortname = "budidev"
 
   [[params.social]]
     name = "upwork"
-    url = "https://www.upwork.com/freelancers/~01b8d55d6a5a8f1077"  
+    url = "https://upwork.com/freelancers/~01b8d55d6a5a8f1077"  
 
 [menu]
 
