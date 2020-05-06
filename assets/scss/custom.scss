@@ -12,7 +12,7 @@
 
 #home-subtitle {
   font-style: normal;
-  line-height: 1.5em;
+  line-height: 1.75em;
   margin-bottom: 1.2em;
 }
 
@@ -152,8 +152,14 @@ blockquote.twitter-tweet a:hover {
   }
 }
 
-@media only screen and (max-width: 375px) {
-  #home-subtitle {
+@media only screen and (max-width: 372px) {
+  #home-subtitle, #home-footer {
+    font-size: .65em;
+  }  
+}
+
+@media only screen and (max-width: 350px) {
+  #home-subtitle, #home-footer {
     font-size: .6em;
   }  
 }
