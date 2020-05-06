@@ -61,7 +61,7 @@
 		<div id="home-footer">
 			<p class="home-footer-menu">
 				{{ range $i, $menu := .Site.Menus.main }}
-					{{ if $i }} · {{ end }}
+					{{ if $i }} &#183; {{ end }}
 					<a href="{{ $menu.URL | absLangURL }}">{{ $menu.Name }}</a>					
 				{{ end }}
 			</p>
