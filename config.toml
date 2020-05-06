@@ -1,7 +1,7 @@
 baseURL = "https://budidev.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "budidev.com"
+title = "BudiDev"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true

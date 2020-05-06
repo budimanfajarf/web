@@ -19,7 +19,10 @@
 			</div>
 			<h1 id="home-title">Budiman Fajar Firdaus</h1>
 			{{- with .Site.Params.homeSubtitle }}
-				<p id="home-subtitle"></p>
+				<p id="home-subtitle">
+					<span class="home-subtitle-default" style="display: none;">{{.}}</span>
+					<span class="home-subtitle-typeit"></span>
+				</p>
 			{{- end }}
 			{{- with .Site.Params.social }}
 			<div id="home-social">

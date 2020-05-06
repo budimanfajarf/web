@@ -1,4 +1,4 @@
-const myTypeit = new TypeIt("#home-subtitle", {
+const myTypeit = new TypeIt(".home-subtitle-typeit", {
   speed: 140,
   startDelay: 2000,  
   waitUntilVisible: true,

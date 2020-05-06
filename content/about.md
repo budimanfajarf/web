@@ -12,6 +12,6 @@ Main topics in this blog is about coding and web development especially in backe
 Feel free to contact me if you have any questions
 
 * Email : [budimanfajarf@gmail.com](mailto:budimanfajarf@gmail.com)
-* Telegram : [t.me/budimanfajarf](https://t.me/budimanfajarf)
+* Telegram : [@budimanfajarf](https://t.me/budimanfajarf)
 
 If you need a Backend Developer with experienced in [Node.js](https://nodejs.org), I would happy work with you, you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077).

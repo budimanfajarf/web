@@ -28,7 +28,7 @@
 	{{- end }}
 </head>
 
-<body id="page">
+<body id="page" class="{{if.IsHome}}home{{end}}">
 	{{ block "header" . -}}{{ end -}}
 	{{ block "main" . -}}{{ end -}}
 	{{ block "footer" . -}}{{ end }}

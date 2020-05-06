@@ -5,9 +5,13 @@
 }
 
 #home-photo img {
-  width: 160px;
+  width: 150px;
   height: auto;
   border-radius: 30%;
+}
+
+#home-title {
+  font-size: 1.8em;
 }
 
 #home-subtitle {
@@ -36,6 +40,14 @@
 body {
   font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
+
+.content, .posts-list, #home-subtitle {
+  font-family: "Trebuchet MS", "Ubuntu", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;  
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content.tags {
+  font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+} 
 
 .site-branding img {
   height: 34px;
@@ -105,7 +117,7 @@ body {
 .post-meta.archived .archived-info {
   font-size: .8rem;
   display: block; 
-  margin-bottom: 1.5em; 
+  margin-bottom: 2.5em; 
 }
 
 blockquote.twitter-tweet, blockquote.twitter-tweet a {
@@ -169,3 +181,27 @@ blockquote.twitter-tweet a:hover {
     font-size: .55em;
   }  
 }
+
+
+// it's get messy
+
+@media only screen and (min-width: 761px) { 
+  body {
+    font-size: 105%;   
+    line-height: 1.68;
+    letter-spacing: 0.063em; 
+  }
+
+  body.home{
+    font-size: 100%;   
+    line-height: 1.6;
+    letter-spacing: 0.06em; 
+  }
+
+  #home-subtitle {
+    font-size: .75em;
+    line-height: 1.775em;
+  }
+}
+
+ 
