@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{.Site.LanguageCode}}">
+<html lang="{{.Site.LanguageCode}}" translate="no">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,9 +16,9 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Title | safeHTML }}
 	{{ end -}}
 	{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{ $style.Permalink }}" {{ printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ $style.Permalink | relURL  }}" {{ printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 	{{ $custom := resources.Get "scss/custom.scss" | resources.ExecuteAsTemplate "css/custom.css" . | toCSS | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{ $custom.Permalink }}" {{ printf "integrity=%q" $custom.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ $custom.Permalink | absURL  }}" {{ printf "integrity=%q" $custom.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 	{{- block "head" . -}}{{- end }}
 	{{- range .Site.Params.customCSS }}
 	<link rel="stylesheet" href="{{ . | absURL }}">
