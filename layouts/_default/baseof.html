@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="{{ $custom.Permalink | relURL  }}" {{ printf "integrity=%q" $custom.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 	{{- block "head" . -}}{{- end }}
 	{{- range .Site.Params.customCSS }}
-	<link rel="stylesheet" href="{{ . | relURL }}">
+	<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
 	{{- if templates.Exists "partials/extra-head.html" -}}
 	{{ partial "extra-head.html" . }}
@@ -42,6 +42,8 @@
 		{{ $script := $main | minify | fingerprint -}}
 		<script src="{{ $script.Permalink | relURL }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 	{{ end }}
+	{{ $customJs := resources.Get "js/custom.js" | resources.ExecuteAsTemplate "js/custom.js" . | minify | fingerprint -}}
+		<script src="{{ $customJs.Permalink | relURL }}" {{ printf "integrity=%q" $customJs.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 
 	{{- partial "analytics.html" . }}
 	{{- if templates.Exists "partials/extra-foot.html" -}}
