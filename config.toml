@@ -1,7 +1,7 @@
-baseURL = "https://budidev.com"
+baseURL = "https://budidev.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "BudiDev"
+title = "Budi Dev"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -34,7 +34,7 @@ disqusShortname = "budidev"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Budiman, Fajar, Firdaus, budimanfajarf"
+  description = "Website / Blog Budiman Fajar Firdaus @budimanfajarf"
   images = ["apple-touch-icon.png"]
   themeColor = "#494f5c"
 
