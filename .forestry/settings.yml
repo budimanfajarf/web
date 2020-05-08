@@ -10,18 +10,18 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/tags
-  label: Tags
-  create: all
-  match: "**/*"
-- type: directory
   path: content/posts
   label: Posts
   create: all
   match: "**/*"
 - type: directory
-  path: content/categories
-  label: Categories
+  path: content/archives
+  label: Archives
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/tags
+  label: Tags
   create: all
   match: "**/*"
 upload_dir: static/uploads
