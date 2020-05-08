@@ -10,7 +10,7 @@ toc = false
 +++
 A few days ago I got errors when deploy my blog (hugo site) to netlify
 
-### Errors
+## Errors
 
 Here's the piece of errors :
 
@@ -27,31 +27,37 @@ Here's the piece of errors :
 
 So, as usual I open new tab in browser to find solutions on the internet, and then after a while I found article from Hugo official website, here's the link: [https://gohugo.io/templates/taxonomy-templates/](https://gohugo.io/templates/taxonomy-templates/ "https://gohugo.io/templates/taxonomy-templates/")
 
-### Reason Errors
+## Reason Errors
 
-After reading the article, I found reason why I getting errors when I deploy my site. 
+After reading the article, I found reason why I getting errors when I deploy my site.
 
 Code below the reason why I getting the errors:
 
-    	{{ range .Data.Terms.Alphabetical }}
-        	<li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-    	{{ end }}
+    {{ range .Data.Terms.Alphabetical }}
+    	<li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
 
-Order Taxonomies with the approach above is **only available in Hugo 0.55 and later** 
+Order Taxonomies with the approach above is **only available in Hugo 0.55 and later**
 
 Before the version 0.55 you would have to do something like:
 
-    <ul>
-        {{ $type := .Type }}
-        {{ range $key, $value := .Data.Terms.Alphabetical }}
-            {{ $name := .Name }}
-            {{ $count := .Count }}
-            {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
-                <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
-            {{ end }}
-        {{ end }}
-    </ul>
+    {{ $type := .Type }}
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+    	{{ $name := .Name }}
+    	{{ $count := .Count }}
+    	{{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+    		<li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
+    	{{ end }}
+    {{ end }}
 
 So my conclusion is that the **Hugo version on my netlify less than 0.55, while my local version is 0.62**, and the code above only available in Hugo 0.55 and later. That's why I got the errors.
 
-### Solutions
+## Solutions
+
+So, whats the solutions?  If you have the same errors or simillar like I got, you can try 2 options.
+
+First you can change the code like example above, so that can runs on Hugo version you running on Netlify.
+
+Or you can do like what I do
+
+Instead change the code I prefer to add new file to my site, the file is <code>netlify.toml</code>
