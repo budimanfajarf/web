@@ -43,7 +43,7 @@ body {
   font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
-.content p {
+.content p, .content ul, .content ol, .content table, .tags {
   font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;  
   letter-spacing: .04em;
   line-height: 1.8;
@@ -251,8 +251,12 @@ footer a:hover {
   box-shadow: none;
 }
 
-.light .banner-404 .btn-404 a:hover {
+.light .btn-404 a {
   border-color: $light-text;
+}
+
+.light .btn-404 a:hover {
+  border-color: $midnightblue;
 }
 
 .light #site-header, 
