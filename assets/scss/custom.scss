@@ -1,5 +1,6 @@
 @import "predefined.scss";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 #home-photo  {
   text-align: center;
@@ -42,13 +43,11 @@ body {
   font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
-.content, .posts-list, #home-subtitle {
-  font-family: "Trebuchet MS", "Ubuntu", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;  
+.content p {
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;  
+  letter-spacing: .04em;
+  line-height: 1.8;
 }
-
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content.tags {
-  font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-} 
 
 .site-branding img {
   height: 34px;
