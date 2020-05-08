@@ -20,3 +20,4 @@ fields:
 - type: text
   name: description
   label: description
+  hidden: true
