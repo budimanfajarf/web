@@ -60,4 +60,40 @@ First you can change the code like example above, so that can runs on Hugo versi
 
 Or you can do like what I do
 
-Instead change the code I prefer to add new file to my site, the file is <code>netlify.toml</code>
+Instead change the code I prefer to add new file to my site, the file is `netlify.toml` . 
+
+`netlify.toml` file can **set Hugo version** and other setting for your environments in your Netlify.
+
+Here's the code in my netlify.toml file
+
+    [build]
+    publish = "public"
+    command = "hugo --gc --minify"
+    
+    [context.production.environment]
+    HUGO_VERSION = "0.69.2"
+    HUGO_ENV = "production"
+    HUGO_ENABLEGITINFO = "true"
+    
+    [context.split1]
+    command = "hugo --gc --minify --enableGitInfo"
+    
+    [context.split1.environment]
+    HUGO_VERSION = "0.69.2"
+    HUGO_ENV = "production"
+    
+    [context.deploy-preview]
+    command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+    
+    [context.deploy-preview.environment]
+    HUGO_VERSION = "0.69.2"
+    
+    [context.branch-deploy]
+    command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+    
+    [context.branch-deploy.environment]
+    HUGO_VERSION = "0.69.2"
+    
+    [context.next.environment]
+    HUGO_ENABLEGITINFO = "true"
+    
