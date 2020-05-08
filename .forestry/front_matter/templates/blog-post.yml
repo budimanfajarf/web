@@ -1,9 +1,0 @@
----
-label: Blog Post
-hide_body: false
-fields:
-- name: blog
-  type: text
-  config:
-    required: false
-  label: blog
