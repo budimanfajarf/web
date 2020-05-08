@@ -1,0 +1,28 @@
+---
+label: All Keys Template
+hide_body: false
+fields:
+- type: text
+  name: author
+  label: author
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: images
+  label: images
+- type: boolean
+  name: toc
+  label: toc
+- type: boolean
+  name: comments
+  label: comments
+- type: text
+  name: description
+  label: description
