@@ -1,7 +1,7 @@
 const myTypeit = new TypeIt(".home-subtitle-typeit", {
-  speed: 135,
-  startDelay: 2000,  
+  speed: 125,
   waitUntilVisible: true,
+  startDelay: 2000,  
 })
 
 myTypeit.go();

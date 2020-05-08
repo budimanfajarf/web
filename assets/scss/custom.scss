@@ -126,12 +126,15 @@ blockquote.twitter-tweet, blockquote.twitter-tweet a {
 }
 
 blockquote.twitter-tweet a {
-  box-shadow: inset 0 -4px 0 #2b7bb9;
+  box-shadow: inset 0 -4px 0 #2b7bb9!important;
 }
 
 blockquote.twitter-tweet a:hover {
   text-decoration: none;
-  box-shadow: inset 0 -1em 0 #2b7bb9;
+  box-shadow: inset 0 -1em 0 #2b7bb9!important;
+}
+footer a:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 725px) {
@@ -166,13 +169,13 @@ blockquote.twitter-tweet a:hover {
 }
 
 @media only screen and (max-width: 372px) {
-  #home-subtitle, #home-footer {
+  #home-subtitle {
     font-size: .65em;
   }  
 }
 
 @media only screen and (max-width: 350px) {
-  #home-subtitle, #home-footer {
+  #home-subtitle {
     font-size: .6em;
   }  
 }
@@ -203,11 +206,15 @@ blockquote.twitter-tweet a:hover {
     font-size: .75em;
     line-height: 1.775em;
   }
+
+  .light {
+    box-shadow: inset 0 0 10em #eee;
+  }
 }
 
 .light {
   background-color: $light-light-grey;
-  box-shadow: inset 0 0 10em #eee;
+  box-shadow: inset 0 0 10em rgba(0,0,0,.025); 
   min-height: 100vh;    
 }
 
@@ -232,6 +239,7 @@ blockquote.twitter-tweet a:hover {
     text-shadow: 0 0 1px $midnightblue;   
   }
 }
+
 .light .content a {
   box-shadow: inset 0 -4px 0 $light-theme;
 }
@@ -242,6 +250,10 @@ blockquote.twitter-tweet a:hover {
 
 .light .content a.anchor {
   box-shadow: none;
+}
+
+.light .banner-404 .btn-404 a:hover {
+  border-color: $light-text;
 }
 
 .light #site-header, 
@@ -261,4 +273,8 @@ blockquote.twitter-tweet a:hover {
 .light .post-meta.archived .archived-label {
   background: #eea236;
   color: #faf9f5;  
+}
+
+.light blockquote.twitter-tweet, .light blockquote.twitter-tweet a {
+  color: $light-text;
 }

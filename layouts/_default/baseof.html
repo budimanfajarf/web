@@ -42,7 +42,7 @@
 		{{ $script := $main | minify | fingerprint -}}
 		<script src="{{ $script.Permalink | relURL }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 	{{ end }}
-	{{ $customJs := resources.Get "js/custom.js" | resources.ExecuteAsTemplate "js/custom.js" . | minify | fingerprint -}}
+	{{ $customJs := resources.Get "js/custom.js" | minify | fingerprint -}}
 		<script src="{{ $customJs.Permalink | relURL }}" {{ printf "integrity=%q" $customJs.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 
 	{{- partial "analytics.html" . }}
