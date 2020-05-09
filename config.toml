@@ -17,10 +17,17 @@ disqusShortname = "budidev"
   name = "Budiman Fajar Firdaus"
   username = "budimanfajarf"
 
-[blackfriday]
-  hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
+# [blackfriday]
+#   hrefTargetBlank = true
+#   noreferrerLinks = true
+#   nofollowLinks = true
+
+# configuration above changed to below as followed: https://gohugo.io/getting-started/configuration-markup#blackfriday
+
+[markup]
+  defaultMarkdownHandler = "blackFriday"
+  [markup.blackFriday]
+    hrefTargetBlank = true
 
 [taxonomies]
   tag = "tags"

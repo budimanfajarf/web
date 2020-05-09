@@ -25,7 +25,7 @@ Here's the pieces of errors :
     8:41:49 AM: failed during stage 'building site': Build script returned non-zero exit code: 255
     8:41:49 AM: Finished processing build request in 14.990296865s
 
-So, as usual, I open a new tab in the browser to find solutions on the internet, and then after a while, I found an article from the official Hugo website, here's the link: [taxonomy-templates](https://gohugo.io/templates/taxonomy-templates/ "Hugo taxonomy templates").
+So, as usual, I open a new tab in the browser to find solutions on the internet, and then after a while, I found an article from the official Hugo website, here's the link: [Hugo taxonomy templates](https://gohugo.io/templates/taxonomy-templates/ "Hugo taxonomy templates").
 
 # Reason Errors
 
@@ -33,22 +33,30 @@ After reading the article, I found the reason why I got errors when I deploy my 
 
 Code below the reason why I getting the errors :
 
+{{< highlight go-html-template >}}
+<ul>
     {{ range .Data.Terms.Alphabetical }}
-    	<li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
     {{ end }}
+</ul>
+{{< /highlight >}}
 
 Order Taxonomies with the approach above is **only available in Hugo 0.55 and later.**
 
 Before the version 0.55 you would have to do something like :
 
+{{< highlight go-html-template >}}
+<ul>
     {{ $type := .Type }}
     {{ range $key, $value := .Data.Terms.Alphabetical }}
-    	{{ $name := .Name }}
-    	{{ $count := .Count }}
-    	{{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
-    		<li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
-    	{{ end }}
+        {{ $name := .Name }}
+        {{ $count := .Count }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+            <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
+        {{ end }}
     {{ end }}
+</ul>
+{{< /highlight >}}    
 
 So, my conclusion is that the **Hugo version on Netlify less than 0.55, while my local version is 0.69.2**, and the first code approach above only available in Hugo 0.55 and later. That's why I got the errors.
 
@@ -67,41 +75,42 @@ When I deploy my Hugo site to Netlify on the first time I don't create `netlify.
 Because that errors, I decided to add `netlify.toml` to **ensure Hugo version** in Netlify has the same version with my local machine, so that can **reduce similar errors in the future** because different Hugo version.
 
 Here's code in my `netlify.toml` file :
+{{< highlight toml >}}
+[build]
+publish = "public"
+command = "hugo --gc --minify"
 
-    [build]
-    publish = "public"
-    command = "hugo --gc --minify"
-    
-    [context.production.environment]
-    HUGO_VERSION = "0.69.2"
-    HUGO_ENV = "production"
-    HUGO_ENABLEGITINFO = "true"
-    
-    [context.split1]
-    command = "hugo --gc --minify --enableGitInfo"
-    
-    [context.split1.environment]
-    HUGO_VERSION = "0.69.2"
-    HUGO_ENV = "production"
-    
-    [context.deploy-preview]
-    command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-    
-    [context.deploy-preview.environment]
-    HUGO_VERSION = "0.69.2"
-    
-    [context.branch-deploy]
-    command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-    
-    [context.branch-deploy.environment]
-    HUGO_VERSION = "0.69.2"
-    
-    [context.next.environment]
-    HUGO_ENABLEGITINFO = "true"
+[context.production.environment]
+HUGO_VERSION = "0.69.2"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.69.2"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.69.2"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.69.2"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+{{< /highlight >}} 
 
 Save `netlify.toml` file into your `root directory` Hugo site, and then push + re-deploy into Netlify, if everything works fine the errors should be gone and you can preview your site before publishing.
 
-You can see the newest example `netlify.toml`on official Hugo website: [configure-hugo-version-in-netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify "configure-hugo-version-in-netlify")
+You can see the newest example `netlify.toml`on official Hugo website: [Configure Hugo version in Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify "Configure Hugo version in Netlify")
 
 > That's all, hope this helps you :)
 
