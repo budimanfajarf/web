@@ -17,4 +17,6 @@ Feel free to contact me if you have any questions
 
 If you need a Backend Developer with experienced in [Node.js](https://nodejs.org), I would happy work with you, you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077).
 
-> See you — <cite>Budiman Fajar Firdaus :)</cite>
+> See you :)
+>
+> — <cite>Budiman Fajar Firdaus</cite>
