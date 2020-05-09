@@ -25,11 +25,11 @@ Here's the pieces of errors :
     8:41:49 AM: failed during stage 'building site': Build script returned non-zero exit code: 255
     8:41:49 AM: Finished processing build request in 14.990296865s
 
-So, as usual I open new tab in browser to find solutions on the internet, and then after a while I found article from official Hugo website, here's the link: [taxonomy-templates](https://gohugo.io/templates/taxonomy-templates/ "Hugo taxonomy templates").
+So, as usual, I open a new tab in the browser to find solutions on the internet, and then after a while, I found an article from the official Hugo website, here's the link: [taxonomy-templates](https://gohugo.io/templates/taxonomy-templates/ "Hugo taxonomy templates").
 
 # Reason Errors
 
-After reading the article, I found reason why I got errors when I deploy my site to Netlify.
+After reading the article, I found the reason why I got errors when I deploy my site to Netlify.
 
 Code below the reason why I getting the errors :
 
@@ -50,19 +50,19 @@ Before the version 0.55 you would have to do something like :
     	{{ end }}
     {{ end }}
 
-So, my conclusion is that the **Hugo version on Netlify less than 0.55, while my local version is 0.69.2**, and the first code approuch above only available in Hugo 0.55 and later. That's why I got the errors.
+So, my conclusion is that the **Hugo version on Netlify less than 0.55, while my local version is 0.69.2**, and the first code approach above only available in Hugo 0.55 and later. That's why I got the errors.
 
 # Solutions
 
-Then whats the solutions?  If you have the same errors or similar like I got, you can try 2 options.
+Then what's the solutions?  If you have the same errors or similar like I got, you can try 2 options.
 
 First you can change the code like second code approuch above, so that can runs on Hugo version you running on Netlify.
 
 Or you can do like what I do
 
-Instead change the code, I prefer to add new file to my site, the file is `netlify.toml`. This file can **set Hugo version** and other setting for your environments in Netlify.
+Instead change the code, I prefer to add a new file to my site, the file is `netlify.toml`. This file can **set Hugo version** and other settings for your environments in Netlify.
 
-When I deploy my Hugo site to Netlify on the first time I don't create `netlify.toml`, but everything works fine until I customize layouts theme site to add list of terms taxonomies tags and then got the errors.
+When I deploy my Hugo site to Netlify on the first time I don't create `netlify.toml`, but everything works fine until I customize the layouts theme site to add a list of terms taxonomies tags and then got the errors.
 
 Because that errors, I decided to add `netlify.toml` to **ensure Hugo version** in Netlify has the same version with my local machine, so that can **reduce similar errors in the future** because different Hugo version.
 
@@ -99,11 +99,11 @@ Here's code in my `netlify.toml` file :
     [context.next.environment]
     HUGO_ENABLEGITINFO = "true"
 
-Save `netlify.toml`file into your `root directory` Hugo site, and then push + re-deploy into Netlify, if everything works fine the errors should be gone and you can preview your site before publishing.
+Save `netlify.toml` file into your `root directory` Hugo site, and then push + re-deploy into Netlify, if everything works fine the errors should be gone and you can preview your site before publishing.
 
 You can see the newest example `netlify.toml`on official Hugo website: [configure-hugo-version-in-netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify "configure-hugo-version-in-netlify")
 
-> That's all, hope this help you :)
+> That's all, hope this helps you :)
 
 ## Attachment
 
