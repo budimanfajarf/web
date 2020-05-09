@@ -4,7 +4,7 @@ images = ["images/profile-photo-background.png"]
 title = "About"
 
 +++
-[budidev.com](https://budidev.com) is personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
+[budidev.com](https://budidev.com) is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
 
 It's created using [Hugo](https://themes.gohugo.io) with customized [Hermit](https://themes.gohugo.io/hermit) theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog).
 
