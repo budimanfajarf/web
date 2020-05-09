@@ -90,10 +90,10 @@
 		
 	</div>
 
-	{{ $typeit := resources.Get "js/typeit.js" | resources.ExecuteAsTemplate "js/typeit.js" . | minify | fingerprint -}}
-	<script src="{{ $typeit.Permalink }}" {{ printf "integrity=%q" $typeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
-	{{ $myTypeit := resources.Get "js/my-typeit.js" | resources.ExecuteAsTemplate "js/my-typeit.js" . | minify | fingerprint -}}
-	<script src="{{ $myTypeit.Permalink }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
+	{{ $typeit := resources.Get "js/typeit.js" | minify | fingerprint -}}
+		<script src="{{ $typeit.Permalink | relURL }}" {{ printf "integrity=%q" $typeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
+	{{ $myTypeit := resources.Get "js/my-typeit.js" | minify | fingerprint -}}
+		<script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 
 
-	{{ end }}
+{{ end }}
