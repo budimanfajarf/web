@@ -18,7 +18,7 @@ disqusShortname = "budidev"
   username = "budimanfajarf"
 
 [blackfriday]
-  # hrefTargetBlank = true
+  hrefTargetBlank = true
   # noreferrerLinks = true
   # nofollowLinks = true
 
@@ -34,11 +34,11 @@ disqusShortname = "budidev"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Personal blog about coding and web development especially in backend development by Budiman Fajar Firdaus"
+  description = "Personal blog about coding and web development especially in backend development by Budiman Fajar Firdaus @budimanfajarf, a Backend Developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
   images = ["apple-touch-icon.png"]
   themeColor = "#494f5c"
 
-  homeSubtitle = "Hello, I'm Budi ☕ Backend Developer💻 from Bandung, Indonesia"
+  homeSubtitle = "Hello, I'm Budi ☕ Backend Developer 💻 from Bandung, Indonesia"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/profile-photo-background.png"  # Homepage background-image URL
 
