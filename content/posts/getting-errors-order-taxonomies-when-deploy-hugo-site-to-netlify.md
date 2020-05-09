@@ -1,7 +1,6 @@
 +++
 date = 2020-04-11T19:28:12Z
 description = ""
-draft = true
 images = []
 tags = ["hugo", "netlify", "errors", "deploy"]
 title = "Getting Errors Order Taxonomies when Deploy Hugo Site to Netlify"
@@ -32,15 +31,15 @@ So, as usual I open new tab in browser to find solutions on the internet, and th
 
 After reading the article, I found reason why I got errors when I deploy my site to Netlify.
 
-Code below the reason why I getting the errors:
+Code below the reason why I getting the errors :
 
     {{ range .Data.Terms.Alphabetical }}
     	<li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
     {{ end }}
 
-Order Taxonomies with the approach above is **only available in Hugo 0.55 and later**
+Order Taxonomies with the approach above is **only available in Hugo 0.55 and later.**
 
-Before the version 0.55 you would have to do something like:
+Before the version 0.55 you would have to do something like :
 
     {{ $type := .Type }}
     {{ range $key, $value := .Data.Terms.Alphabetical }}
@@ -55,7 +54,7 @@ So, my conclusion is that the **Hugo version on Netlify less than 0.55, while my
 
 # Solutions
 
-Then whats the solutions?  If you have the same errors or simillar like I got, you can try 2 options.
+Then whats the solutions?  If you have the same errors or similar like I got, you can try 2 options.
 
 First you can change the code like second code approuch above, so that can runs on Hugo version you running on Netlify.
 
