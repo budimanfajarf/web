@@ -56,7 +56,7 @@ So, my conclusion is that the **Hugo version on Netlify less than 0.55, while my
 
 Then what's the solutions?  If you have the same errors or similar like I got, you can try 2 options.
 
-First you can change the code like second code approuch above, so that can runs on Hugo version you running on Netlify.
+First you can change the code like second code approach above, so that can runs on Hugo version you running on Netlify.
 
 Or you can do like what I do
 
