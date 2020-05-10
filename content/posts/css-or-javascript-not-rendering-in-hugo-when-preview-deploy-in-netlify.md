@@ -1,6 +1,7 @@
 +++
 date = 2020-04-12T23:16:15Z
 description = ""
+draft = true
 images = []
 tags = ["hugo", "netlify", "deploy"]
 title = "CSS or JavaScript not rendering in Hugo when preview deploy in Netlify"
