@@ -1,7 +1,7 @@
 ---
 title: "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"
 date: 2020-05-05T05:37:09+07:00
-draft: false
+draft: true
 toc: false
 images:
 tags: 

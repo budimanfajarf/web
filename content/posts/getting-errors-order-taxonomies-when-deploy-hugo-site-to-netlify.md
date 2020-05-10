@@ -7,11 +7,11 @@ title = "Getting Errors Order Taxonomies when Deploy Hugo Site to Netlify"
 toc = true
 
 +++
-A few days ago I got errors when deploy my blog (Hugo site) to Netlify
+A few days ago I got errors when deploy my blog (Hugo site) to Netlify.
 
 # Errors
 
-Here's the pieces of errors :
+Here's the pieces of errors:
 
     ...
     ...
@@ -29,9 +29,7 @@ So, as usual, I open a new tab in the browser to find solutions on the internet,
 
 # Reason Errors
 
-After reading the article, I found the reason why I got errors when I deploy my site to Netlify.
-
-Code below the reason why I getting the errors :
+After reading the article, I found the reason why I got errors when I deploy my site to Netlify, code below the reason why I getting the errors:
 
 {{< highlight go-html-template >}}
 <ul>
@@ -43,7 +41,7 @@ Code below the reason why I getting the errors :
 
 Order Taxonomies with the approach above is **only available in Hugo 0.55 and later.**
 
-Before the version 0.55 you would have to do something like :
+Before the version 0.55 you would have to do something like:
 
 {{< highlight go-html-template >}}
 <ul>
@@ -74,7 +72,7 @@ When I deploy my Hugo site to Netlify on the first time I don't create `netlify.
 
 Because that errors, I decided to add `netlify.toml` to **ensure Hugo version** in Netlify has the same version with my local machine, so that can **reduce similar errors in the future** because different Hugo version.
 
-Here's code in my `netlify.toml` file :
+Here's code in my `netlify.toml` file:
 {{< highlight toml >}}
 [build]
 publish = "public"
@@ -110,7 +108,9 @@ HUGO_ENABLEGITINFO = "true"
 
 Save `netlify.toml` file into your `root directory` Hugo site, and then push + re-deploy into Netlify, if everything works fine the errors should be gone and you can preview your site before publishing.
 
-You can see the newest example `netlify.toml`on official Hugo website: [Configure Hugo version in Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify "Configure Hugo version in Netlify")
+You can see the newest example `netlify.toml`on official Hugo website: [Configure Hugo version in Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify "Configure Hugo version in Netlify").
+
+---
 
 > That's all, hope this helps you :)
 

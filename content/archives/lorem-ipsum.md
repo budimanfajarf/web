@@ -1,7 +1,7 @@
 ---
 title: "Lorem Ipsum"
 date: 2020-05-05T05:36:22+07:00
-draft: false
+draft: true
 toc: false
 images:
 tags: 

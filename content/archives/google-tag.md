@@ -1,7 +1,7 @@
 ---
 title: "My Google Tag"
 date: 2019-11-12T08:41:31+07:00
-draft: false
+draft: true
 toc: false
 images:
 # tags: ["analytics"]

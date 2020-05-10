@@ -62,7 +62,7 @@ disqusShortname = "budidev"
   back_to_home_page = true # custom add back to homepage
   
   # Add custom css
-  customCSS = ["css/custom.css"]
+  # customCSS = ["css/custom.css"]
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.

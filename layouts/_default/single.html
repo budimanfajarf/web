@@ -26,6 +26,12 @@
 			{{ partial "comments.html" . }}
 		</div>
 		{{- end }}
+		{{- if .Params.toc }}
+		<aside id="toc">
+			<div class="toc-title">{{ i18n "tableOfContents" }}</div>
+			{{ .TableOfContents }}
+		</aside>
+		{{- end }}		
 	</main>
 {{ end }}
 

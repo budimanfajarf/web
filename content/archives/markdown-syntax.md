@@ -6,7 +6,7 @@ description = "Sample article showcasing basic Markdown syntax and formatting fo
 #tags = [ "markdown", "css", "html", "themes", ]
 # categories = ["themes","syntax",]
 # aliases = ["migrate-from-jekyl"]
-draft = false
+draft = true
 +++
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

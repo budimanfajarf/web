@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="{{ $custom.Permalink | relURL  }}" {{ printf "integrity=%q" $custom.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 	{{- block "head" . -}}{{- end }}
 	{{- range .Site.Params.customCSS }}
-	<link rel="stylesheet" href="{{ . | absURL }}">
+	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{- end }}
 	{{- if templates.Exists "partials/extra-head.html" -}}
 	{{ partial "extra-head.html" . }}
