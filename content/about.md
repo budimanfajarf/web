@@ -1,5 +1,5 @@
 +++
-date = 2014-04-09T00:00:00Z
+date = 2020-05-03T05:55:40+07:00
 images = ["images/profile-photo-background.png"]
 title = "About"
 toc = true
@@ -10,7 +10,7 @@ Hi! My name is Budiman Fajar Firdaus, I'm a Backend Developer from Bandung, Indo
 
 I have been 5 years in IT stuff and have been focused on web development for 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
 
-Here my experience in some languages and frameworks, both in backend and frontend: [PHP](https://www.php.net/ "PHP"), [Laravel](https://laravel.com/ "Laravel"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [Vue.js](https://vuejs.org/ "Vue.js"), [React.js](https://reactjs.org/ "React.js"), [Hugo](https://gohugo.io "Hugo").
+Here my experience in some languages and frameworks, both in backend and frontend: [PHP](https://www.php.net/ "PHP"), [Laravel](https://laravel.com/ "Laravel"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [Vue.js](https://vuejs.org/ "Vue.js"), [Hugo](https://gohugo.io "Hugo").
 
 ## - Blog
 
