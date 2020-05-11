@@ -42,7 +42,7 @@ disqusShortname = "budidev"
 
   # Metadata mostly used in document's head
   description = "Personal blog about coding and web development especially in backend development by Budiman Fajar Firdaus @budimanfajarf, a Backend Developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
-  images = ["apple-touch-icon.png"]
+  images = ["images/profile-photo-2-re-medium.png", "images/profile-photo-background.png", "images/profile-avatar.jpg", "images/profile-logo.jpg"]
   themeColor = "#494f5c"
 
   homeSubtitle = "Hello, I'm Budi ☕ Backend Developer 💻 from Bandung, Indonesia"
@@ -90,22 +90,22 @@ disqusShortname = "budidev"
 
   [[menu.main]]
     name = "Blog"
-    url = "/posts/"
+    url = "posts/"
     weight = 10
 
   [[menu.main]]
     name = "Dev"
-    url = "/dev/"
+    url = "dev/"
     weight = 20
 
   [[menu.main]]
     name = "Tags"
-    url = "/tags/"
+    url = "tags/"
     weight = 30
 
   [[menu.main]]
     name = "About"
-    url = "/about/"
+    url = "about/"
     weight = 15
     
 [permalinks]
