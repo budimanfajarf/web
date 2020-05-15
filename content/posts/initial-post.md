@@ -6,6 +6,6 @@ toc: false
 images:
 # tags: ["git"]
 # author: "budimanfajarf"
-comments: false
+comments: true
 ---
 This is the initial post on my blog 😁
