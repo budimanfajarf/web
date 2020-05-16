@@ -13,7 +13,7 @@ You can use this script to check if a user has scrolled to the bottom of page, f
 
 {{< highlight javascript >}}
 window.addEventListener('scroll', function (event) {
-  if (document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight)  {
+  if (document.documentElement.scrollHeight <= window.pageYOffset + window.innerHeight)  {
     alert('You are at the bottom of page!');
   }
 });
