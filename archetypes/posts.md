@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+slug:
 draft: true
 date: {{ .Date }}
 tags: []
