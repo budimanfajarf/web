@@ -7,8 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>
 		{{ if .IsHome }}
-			{{ .Site.Author.name }} / @{{ .Site.Author.username }} - BudiDev 
-		{{ else if and (.IsPage) (.IsPage) }}
+			{{ .Site.Author.name }} / @{{ .Site.Author.username }} - BudiDev
+		{{ else if .Params.customTitle }}
+			{{ .Params.customTitle }} - BudiDev
+		{{ else if .IsPage }}
 			{{ .Title }} - @{{ .Site.Author.username }} - BudiDev
 		{{ else }}
 			{{ .Title }} - BudiDev			

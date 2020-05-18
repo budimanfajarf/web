@@ -4,9 +4,12 @@ slug: "{{ .Name }}"
 draft: true
 date: {{ .Date }}
 tags: []
-images: []
+images:
 toc: false
 # description: string, if empty (substring main content)
 description:
+link: 
+repo: 
+hiddenInXml: true
 ---
 
