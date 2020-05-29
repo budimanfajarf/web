@@ -39,9 +39,21 @@
 							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" target="_blank">Repo</a>
 							{{ end }}							
 							{{ if .Content }}
-							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}">detail</a>
-							{{ end }}												
-						</span>
+							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}">See Detail</a>
+							{{ end }}								
+							{{ if .Params.sub }}
+								<ul class="ubuntu" style="margin-top: 0.25em;">
+									{{ range .Params.sub }}
+										{{ if .showInDev | default true }}
+											<li>{{ .title }}</li>
+										{{ end }}
+									{{ end }}
+								</ul>																	
+							{{ end }}
+							<!-- {{ if .Content }}
+								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
+							{{ end }}															 -->
+						</span>	
 						<span class="post-day">
 							{{ .PublishDate.Format "Jan 2, 2006" }}
 						</span>

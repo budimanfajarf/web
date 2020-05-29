@@ -1,0 +1,22 @@
+{{- $sub := (.Get 0) -}}
+{{- with $sub -}}
+{{- with ($.Page.Param .) }}
+  <ul>
+    {{ range . }}
+      <li>
+        {{ .title }}
+        {{ if .link }}
+        · <a style="display: inline; padding: 0;" href="{{ .link }}" target="_blank">Link</a>
+        {{ end }}			
+        {{ if .repo }}
+        · <a style="display: inline; padding: 0;" href="{{ .repo }}" target="_blank">Repo</a>
+        {{ end }}										
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  {{ errorf "Param %q not found: %s" $sub $.Position }}
+{{ end -}}
+{{- else }}
+  {{ errorf "Missing param key: %s" $.Position }}
+{{ end -}}
