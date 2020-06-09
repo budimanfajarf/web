@@ -68,8 +68,8 @@ title = "Git Force"
 date = "2018-08-06T00:00:00+07:00"
 
 [[pictures]]
-link = "/pictures/2019-08-21 Budi.jpg"
-# link = "/images/profile-photo-2-re-medium.png"
+# link = "/pictures/2019-08-21 Budi.jpg"
+link = "/images/profile-photo-2-re-medium.png"
 title = "Budi"
 date = "2020-04-27T00:00:00+07:00"
 # class = "circle"
