@@ -23,3 +23,22 @@ function setLightMode(isLight) {
     lightBtn ? lightBtn.style.display = "inline-block" : '';
   }
 }
+
+/*
+window.addEventListener('scroll', function (event) {
+  console.log('document.body.scrollHeight', document.body.scrollHeight);
+  console.log('document.documentElement.scrollHeight', document.documentElement.scrollHeight)
+
+  console.log('window.pageYOffset', window.pageYOffset);
+  console.log('window.innerHeight', window.innerHeight);
+  console.log('window.pageYOffset + window.innerHeight', window.pageYOffset + window.innerHeight); 
+
+  if (document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight)
+    alert('in the bottom of page!');
+
+  if (document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight) {
+    header.classList.toggle('slideInUp'); 
+    header.classList.toggle('slideOutDown');    
+  }
+});
+*/

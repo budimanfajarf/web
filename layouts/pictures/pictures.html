@@ -1,15 +1,9 @@
 {{ define "head" }}
-	{{ if .Params.featuredImg -}}
-	<style>.bg-img {background-image: url('{{.Params.featuredImg}}');}</style>
-	{{- else if .Params.images -}}
-		{{- range first 1 .Params.images -}}
-		<style>.bg-img {background-image: url('{{. | absURL}}');}</style>
-		{{- end -}}
-  {{- end -}}
-
   {{ $flexboxGallery := resources.Get "scss/flexbox-gallery.scss" | resources.ExecuteAsTemplate "css/flexbox-gallery.css" . | toCSS | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $flexboxGallery.Permalink | relURL  }}" {{ printf "integrity=%q" $flexboxGallery.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">  
 
+  {{ partial "background-image.html" . }}
+    
   <style>
     @media (min-width: 800px) {
       .site-main {
@@ -80,7 +74,7 @@
         {{ range sort . ".date" "desc" }}
           <a href="{{ .link | relURL }}" class="{{ .aClass }}" >
             <figure>
-              <img src="{{ .link | relURL }}" alt="{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}" class="{{ .class }}"/> 
+              <img src="{{ .compressed | relURL }}" alt="{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}" class="{{ .class }}"/> 
               <figcaption style="display: none;">
                 {{ .title }} ~ {{ dateFormat "2006/01/02" .date }}
               </figcaption>
