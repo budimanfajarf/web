@@ -2,7 +2,7 @@
 date = 2020-04-14T23:16:15Z
 description = ""
 images = []
-tags = ["hugo", "netlify", "deploy", "css", "javascript"]
+tags = ["hugo", "netlify", "css", "javascript"]
 title = "CSS or JavaScript in Hugo not Rendering when Preview Deploy on Netlify"
 toc = false
 

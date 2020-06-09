@@ -2,7 +2,7 @@
 date = 2020-04-11T19:28:12Z
 description = ""
 images = []
-tags = ["hugo", "netlify", "errors", "deploy"]
+tags = ["hugo", "netlify"]
 title = "Getting Errors Order Taxonomies when Deploy Hugo Site to Netlify"
 toc = true
 

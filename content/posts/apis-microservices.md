@@ -3,7 +3,7 @@ title: "Completed APIs and Microservices Certification"
 slug: "apis-microservices"
 draft: false
 date: 2020-05-29T10:56:08+07:00
-tags: ["apis", "microservices", "node.js"]
+tags: ["api", "microservices", "nodejs"]
 images: []
 toc: false
 # description: string, if empty (substring main content)

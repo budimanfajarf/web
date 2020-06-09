@@ -1,2 +1,6 @@
 # Redirect default Netlify subdomain to primary domain
 https://budi.netlify.app/* https://budidev.com/:splat 301!
+
+# Redirects internal link
+/tags/apis      /tags/api
+/tags/node.js   /tags/nodejs
