@@ -2,5 +2,5 @@
 https://budi.netlify.app/* https://budidev.com/:splat 301!
 
 # Redirects internal link
-/tags/apis      /tags/api       301
-/tags/node.js   /tags/nodejs    301
+/tags/apis/      /tags/api/       301
+/tags/node.js/   /tags/nodejs/    301
