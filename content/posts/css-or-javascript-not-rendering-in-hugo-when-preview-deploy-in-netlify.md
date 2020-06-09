@@ -45,7 +45,7 @@ Here's the code after changed:
 
 Then if everything going well, the preview site should looks good now.
 
-![/uploads/Screenshot from 2020-05-10 07-48-23.png](https://app.forestry.io/sites/f6db1ngltadquw/body-media//uploads/Screenshot from 2020-05-10 07-48-23.png)
+![Screenshoot Hugo Blog](/uploads/Screenshot from 2020-05-10 07-48-23.png)
 
 ---
 
