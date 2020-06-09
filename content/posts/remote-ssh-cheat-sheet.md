@@ -3,7 +3,7 @@ title: "Remote SSH Cheat Sheet - Using Key"
 slug: "remote-ssh-cheat-sheet"
 draft: false
 date: 2020-06-08T11:48:50+07:00
-tags: []
+tags: ["ssh", "server"]
 images: []
 toc: true
 # description: string, if empty (substring main content)

@@ -1,20 +1,31 @@
 ---
-title: "Install Linux, Nginx, MySQL, PHP (LEMP Stack) on Ubuntu 18.04 AWS EC2"
-slug: "install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04-aws-ec2"
-draft: true
-date: 2020-06-08T15:47:16+07:00
-tags: ["linux", "ubuntu", "nginx", "mysql", "php", "lemp", "aws", "server"]
-images: ["/uploads/aws-lemp-stack.png"]
+title: "How to Install LEMP Stack (Linux, Nginx, MySQL, PHP) on Ubuntu 18.04 AWS EC2"
+slug: "install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2"
+draft: false
+date: 2020-06-09T06:30:16+07:00
+tags: ["lemp", "linux", "nginx", "mysql", "php", "ubuntu", "aws", "server"]
+images: ["/uploads/aws-lemp-stack.jpg"]
 toc: true
 # description: string, if empty (substring main content)
 description:
 ---
-![AWS LEMP Stack](/uploads/aws-lemp-stack.png)
+{{< figure src="/uploads/aws-lemp-stack.jpg" alt="AWS LEMP Stack" caption="AWS LEMP Stack" class="normal" >}}
+
+In this post I will show you how to install LEMP Stack on AWS EC2 Instance
+
+* L = Linux (Ubuntu 18.04)
+
+* E = Engine X / Nginx (1.14)
+
+* M = MySQL (5.7)
+
+* P = PHP (7.2)
+
 # Creating AWS EC2 Instance
 
-First of all you must have an AWS account, you can register [here](https://portal.aws.amazon.com/billing/signup "AWS SignUp") and get 12 months of Free Tier access from Amazon Web Service (AWS).
+First of all, you must have an AWS account, you can register [here](https://portal.aws.amazon.com/billing/signup "AWS SignUp") and get 12 months of Free Tier access from Amazon Web Service (AWS).
 
-After registered an AWS account, sign in to [AWS Console](https://aws.amazon.com/console/ "AWS Console") then choose EC2 Service, Launch Instance then follow the steps with this options: 
+After registering an AWS account, sign in to [AWS Console](https://aws.amazon.com/console/ "AWS Console") then choose EC2 Service, Launch new Instance then follow the steps with this options: 
 
 * **Amazon Machine Image (AMI):** Ubuntu Server 18.04 LTS
 
@@ -24,7 +35,7 @@ After registered an AWS account, sign in to [AWS Console](https://aws.amazon.com
 
 * **Storage:** Leave to default settings or you can adjust the size (Max of Free Tier is 30GB)
 
-* **Tags:** Add your tags or you can skip this
+* **Tags:** Add your tags or you can skip this step
 
 * **Security Group:** Create a new security group with the rules below
 
@@ -35,85 +46,99 @@ After registered an AWS account, sign in to [AWS Console](https://aws.amazon.com
 
 * **Review Instance Launch:** Verify the settings then click Launch
 
-* * A window pops up will asking you to select an existing key pair or create a new key pair. If you haven't create a key pair before then create a new one, save it to your computer. The key pair is using to connect the Instance via SSH Client.
+* * A window pops up will asking you to select an existing key-pair or create a new key-pair. If you haven't created a key pair before then create a new one, then <code>**download**</code> it to your local computer. The <code>**key-pair**</code> is using to [connect the Instance via SSH Client](/2020/06/remote-ssh-cheat-sheet "Connecting to Remote SSH").
 
 # Connecting to AWS EC2 Instance
 
-To see how to connect your Instance, go to EC2 Dashboard, click Running Instances, select the Instance of Ubuntu 18.04 that launched before, then click Connect.
+To see how to connect to your Instance, go to [AWS EC2 Dashboard](https://console.aws.amazon.com/ec2/v2 "AWS EC2 Dashboard"), navigate to <code>**Running Instances**</code>, select the Instance of Ubuntu 18.04 that launched before, then click <code>**Connect**</code> button. You will see a few info about how to connect to AWS EC2 Instance.
 
-In this example I use terminal on Ubuntu desktop to connect AWS EC2 Instance 
+In this example, I use terminal on Ubuntu desktop as SSH Client to connect to AWS EC2 Instance.
 
-* Move the key you download before to ~/.ssh
+* Move the <code>**key-pair**</code> file you download before to <code>**~/.ssh**</code> directory
 
-* Open a terminal then apply chmod 400 to the key
+* Open a terminal then apply <code>**chmod 400**</code> to the file
 
-```
-$ cd ~/.ssh
-$ chmod 400 your-key.pem
-```
-* In a terminal, connect to your instance using Public DNS, Example:
-```
-$ ssh -i "~/.ssh/your-key.pem" ubuntu@ec2-13-229-132-71.ap-southeast-1.compute.amazonaws.com
-```
+{{< highlight Terminfo >}}
+chmod 400 ~/.ssh/your-key.pem
+{{< /highlight >}} 
+
+* In a terminal, connect to your instance using Public DNS with the key-pair as identify file, Example:
+
+{{< highlight Terminfo >}}
+ssh -i "~/.ssh/your-key.pem" ubuntu@ec2-13-229-132-71.ap-southeast-1.compute.amazonaws.com
+{{< /highlight >}} 
+
+To see your <code>**Public DNS**</code>  or <code>**Public IP Address**</code>, go to [AWS EC2 Dashboard](https://console.aws.amazon.com/ec2/v2 "AWS EC2 Dashboard"), select your instance then see in <code>**Description Section**</code>.
 
 # Installing Nginx Server
 
-After you successfully connecting to your instance, now you can managing the instance as you want. To Setup the LEMP Stack, first update your instance packages:
+After you successfully connect to your instance, now you can managing the instance as you want. To Setup the LEMP Stack, first update your instance packages
 
-```
-$ sudo apt update
-```
-Then install the Nginx Server:
-```
-$ sudo apt install nginx
-```
+{{< highlight Terminfo >}}
+sudo apt update
+{{< /highlight >}}
 
-Open a browser then go to your Public IP Address or Public DNS of your instance to check that Nginx successfully installed.
+Then install the Nginx Server
+
+{{< highlight Terminfo >}}
+sudo apt install nginx
+{{< /highlight >}}
+
+Open a browser then go to your Public DNS or Public IP Address of your instance to check that Nginx successfully installed.
+
+<code>**htpps://your-public-DNS-or-IP-address**</code>
+
+{{< figure src="/uploads/nginx-welcome-page.png" alt="Nginx Welcome Page" caption="Nginx Welcome Page" class="normal" >}}
 
 # Installing MySQL
 
-After succesfully installed Nginx Server the next thing to do is installing MySQL
+The next thing to do is installing MySQL, use this command to install it
 
-```
-$ sudo apt install mysql-server
-```
+{{< highlight Terminfo >}}
+sudo apt install mysql-server
+{{< /highlight >}}
 
 Configure MySQL with this command
 
-```
-$ sudo mysql_secure_installation
-```
+{{< highlight Terminfo >}}
+sudo mysql_secure_installation
+{{< /highlight >}}
 
 # Installing PHP
-Install php-fpm, a stands for “fastCGI process manager” to tell Nginx to pass PHP requests to this software for processing
 
-```
-$ sudo apt install php-fpm
-```
+Install <code>**php-fpm**</code>, a stands for “fastCGI process manager” to tell Nginx to pass PHP requests to this software for processing
 
-Install php-mysql to allow PHP communicate with database backend
+{{< highlight Terminfo >}}
+sudo apt install php-fpm
+{{< /highlight >}}
 
-```
-$ sudo apt install php-mysql
-```
+Install <code>**php-mysql**</code> to allow PHP communicate with database backend
+
+{{< highlight Terminfo >}}
+sudo apt install php-mysql
+{{< /highlight >}}
 
 # Configuring Nginx to Use PHP
-Now the LEMP Stack are installed, but we have to configuring Nginx to use PHP processor for dynamic content.
 
-In this example I will editing the default configuration server block of Nginx
+Now the LEMP Stack are installed, but we have to configure Nginx to use PHP processor for dynamic content.
 
-Backup default configuration
-```
+In this example, I will edit the <code>**default**</code> configuration server block of Nginx
+
+First, backup the default configuration file
+
+{{< highlight Terminfo >}}
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
-```
+{{< /highlight >}}
 
-Open default configuration using nano
-```
+Open default configuration file using nano
+
+{{< highlight Terminfo >}}
 sudo nano /etc/nginx/sites-available/default
-```
+{{< /highlight >}}
 
-Edit the configuration file with the content bellow
-```
+Fill with the content bellow
+
+{{< highlight Nginx configuration file >}}
 server {
         listen 80;
         root /var/www/html;
@@ -124,7 +149,7 @@ server {
                 try_files $uri $uri/ =404;
         }
 
-        location ~ \.php$ {
+        location ~ \.php{
                 include snippets/fastcgi-php.conf;
                 fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
         }
@@ -133,27 +158,37 @@ server {
                 deny all;
         }
 }
-```
+{{< /highlight >}}
 
-Create file to test PHP
-```
+Create <code>**info.php**</code> file to test PHP
+
+{{< highlight Terminfo >}}
 sudo nano /var/www/html/info.php
-```
+{{< /highlight >}}
 
 Fill with the content bellow
-```
+
+{{< highlight php >}}
 <?php
 phpinfo();
-```
+{{< /highlight >}}
 
 Restart Nginx
-```
-$ sudo service nginx restart
-```
 
-Open a browser then go to <code>http://‎your-ip-or-domain/info.php</code>
+{{< highlight Terminfo >}}
+sudo service nginx restart
+{{< /highlight >}}
 
-If everything works fine you should see info PHP page like this
+Open a browser then go to <code>**htpps://your-public-DNS-or-IP-address/info.php**</code>
+
+If everything works fine you should see PHP info page like this
+
+{{< figure src="/uploads/php-info-page.png" alt="PHP Info Page" caption="PHP Info Page" class="normal" >}}
+
+---
+
+> That's all, thanks for reading :)
+
 
 
 
