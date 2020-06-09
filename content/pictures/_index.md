@@ -213,6 +213,6 @@ date = "2019-11-14T00:00:00+07:00"
 aClass = "big"
 
 +++
-Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop or android apps like VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
+Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop, VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
 
 I'm doing this as a hobby, here's my collections
