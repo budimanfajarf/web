@@ -1,0 +1,103 @@
+{{ define "head" }}
+	{{ if .Params.featuredImg -}}
+	<style>.bg-img {background-image: url('{{.Params.featuredImg}}');}</style>
+	{{- else if .Params.images -}}
+		{{- range first 1 .Params.images -}}
+		<style>.bg-img {background-image: url('{{. | absURL}}');}</style>
+		{{- end -}}
+  {{- end -}}
+
+  {{ $flexboxGallery := resources.Get "scss/flexbox-gallery.scss" | resources.ExecuteAsTemplate "css/flexbox-gallery.css" . | toCSS | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $flexboxGallery.Permalink | relURL  }}" {{ printf "integrity=%q" $flexboxGallery.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">  
+
+  <style>
+    @media (min-width: 800px) {
+      .site-main {
+        margin-top: 1.5em;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .site-main {
+        margin-top: 3em;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      .site-main {
+        margin-top: 4em;
+        width: 85%;        
+      }
+
+      #site-footer {
+        width: 85%;
+      }
+    }
+    
+    @media (min-width: 1800px) {
+      .site-main {
+        margin-top: 5em;
+      }
+    }    
+
+    figure {
+      margin:0;
+    }
+
+    figcaption {
+      text-align: center;
+      margin-top: -.25em;
+      margin-bottom: .5em;      
+    }
+
+    .circle {
+      border-radius: 50%!important;
+    }
+  </style>
+{{ end }}
+
+{{ define "header" }}
+{{ partialCached "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+  {{- if (or .Params.images .Params.featuredImg) }}
+  <div class="bg-img"></div>
+  {{- end }}
+  
+	<main class="site-main section-inner animated fadeIn faster">
+    <div style="margin: .5vw;">
+      <h1>{{ .Title }}</h1>
+      {{- if .Content }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+      {{- end }}  
+    </div>    
+    <div class="flexbox-gallery" id="lightgallery"> 
+      {{ with .Params.pictures }}      
+        {{ range sort . ".date" "desc" }}
+          <a href="{{ .link }}" class="{{ .aClass }}" >
+            <figure>
+              <img src="{{ .link }}" alt='{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}' class="{{ .class }}"> 
+              <figcaption style="display: none;">
+                {{ .title }} ~ {{ dateFormat "2006/01/02" .date }}
+              </figcaption>
+            </figure>   
+          </a>                                        
+        {{ end }}
+      {{ end }}
+    </div>    
+	</main>
+{{ end }}
+
+{{ define "footer" }}
+<footer style="margin-top: 0;" id="site-footer" class="section-inner animated fadeIn faster">
+  <div class="post-nav margin: .5vw;">
+    <a class="next-post" href="{{ .Site.BaseURL }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg><span>&nbsp;Back to Home Page</span>
+    </a>
+  </div>		
+</footer>
+{{ end }}

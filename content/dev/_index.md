@@ -1,6 +1,6 @@
 ---
-title: "Dev / Project"
-customTitle: "Dev / Project - @budimanfajarf"
+title: "Dev / Project 💻"
+customTitle: "Dev / Project 💻 - @budimanfajarf"
 featuredImg: "/images/profile-photo-background.png"
 ---
 This is combination of ☕ + ❤️

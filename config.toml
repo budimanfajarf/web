@@ -106,7 +106,13 @@ disqusShortname = "budidev"
   [[menu.main]]
     name = "About"
     url = "about/"
-    weight = 15
+    weight = 35
+
+  [[menu.main]]
+    name = "Pictures"
+    url = "pictures/"
+    weight = 25
+    
     
 [permalinks]
   archives = "/:year/:month/:slug/"
