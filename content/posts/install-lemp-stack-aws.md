@@ -4,7 +4,7 @@ slug: "install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2"
 draft: false
 date: 2020-06-09T06:30:16+07:00
 tags: ["lemp", "linux", "nginx", "mysql", "php", "ubuntu", "aws", "server"]
-images: ["/uploads/aws-lemp-stack.jpg"]
+images: ["uploads/aws-lemp-stack.jpg"]
 toc: true
 # description: string, if empty (substring main content)
 description:

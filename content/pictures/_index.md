@@ -22,7 +22,7 @@ date = "2018-11-20T00:00:00+07:00"
 class = "circle"
 
 [[pictures]]
-link = "/pictures/2017-04-08 Avatar Budi.png"
+link = "/pictures/2017-04-08-avatar-budi.png"
 title = "Avatar Budi"
 date = "2017-04-08T00:00:00+07:00"
 class = "circle"
@@ -148,7 +148,7 @@ date = "2019-09-06T00:00:00+07:00"
 # date = "2019-07-16T00:00:00+07:00"
 
 [[pictures]]
-link = "/pictures/2015-07-30 Smudge.jpg"
+link = "/pictures/2015-07-30-smudge.jpg"
 title = "Smudge"
 date = "2015-07-30T00:00:00+07:00"
 

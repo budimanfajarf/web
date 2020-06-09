@@ -78,9 +78,9 @@
     <div class="flexbox-gallery" id="lightgallery"> 
       {{ with .Params.pictures }}      
         {{ range sort . ".date" "desc" }}
-          <a href="{{ .link }}" class="{{ .aClass }}" >
+          <a href="{{ .link | absURL }}" class="{{ .aClass }}" >
             <figure>
-              <img src="{{ .link }}" alt='{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}' class="{{ .class }}"> 
+              <img src="{{ .link | absURL }}" alt='{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}' class="{{ .class }}"> 
               <figcaption style="display: none;">
                 {{ .title }} ~ {{ dateFormat "2006/01/02" .date }}
               </figcaption>
