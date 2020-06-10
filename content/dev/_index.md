@@ -2,6 +2,7 @@
 title: "Dev / Project 💻"
 customTitle: "Dev / Project 💻 - @budimanfajarf"
 featuredImg: "/images/profile-photo-background.png"
+images: ["/pictures/2018-11-05-octocat.jpg"]
 ---
 This is combination of ☕ + ❤️
 

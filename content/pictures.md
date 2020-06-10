@@ -3,6 +3,8 @@ title = "Pictures / Photos 🖼️"
 customTitle = "Pictures / Photos 🖼️ - @budimanfajarf"
 featuredImg = "/images/profile-photo-background.png"
 date = 2020-06-10T05:00:40+07:00
+layout = "pictures"
+images = ["/pictures/compressed/2020-06-02-budi-bw.jpg/"]
 
 [[pictures]]
 title = "Hiruma Yoichi"
