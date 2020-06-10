@@ -1,6 +1,7 @@
 +++
 date = 2020-05-03T05:55:40+07:00
-images = ["images/profile-photo-background.png"]
+featuredImg = "/images/profile-photo-background.png"
+images = ["/pictures/compressed/2016-05-09-budi-bw.png"]
 title = "About"
 toc = true
 +++
