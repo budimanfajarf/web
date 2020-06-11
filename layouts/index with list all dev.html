@@ -59,7 +59,28 @@
 						<span>See All Posts</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
 					</a>
 				</div>					
-								
+				
+				<div class="posts-group">
+					<ul class="posts-list">
+					{{ range first 3 (where (where .Site.Pages "Section" "dev") ".Params.home" true ) }}
+						<li class="post-item">
+							<a href="{{ .Permalink }}">
+								<span class="post-title">{{ .Title }}</span>
+								<span class="post-day">
+									{{ .PublishDate.Format "Jan 2, 2006" }}
+								</span>
+							</a>
+						</li>					
+					{{ end }}					
+					</ul>
+				</div>
+				
+				<div class="post-nav">
+					<a class="prev-post" href='{{ "posts" | absLangURL }}'>
+						<span>See All Work</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+					</a>
+				</div>					
+
 			</div>
 
 		</div>

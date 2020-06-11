@@ -2,12 +2,13 @@
 title: "Git Reset to Previous Commit"
 slug: "git-reset-previous-commit"
 draft: false
-date: 2020-06-10T16:23:55+07:00
+date: 2020-06-11T07:23:55+07:00
 tags: ["git"]
 images: []
 toc: false
 # description: string, if empty (substring main content)
 description:
+home: true
 ---
 ## Find The Commit
 

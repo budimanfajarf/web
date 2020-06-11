@@ -8,6 +8,7 @@ images: ["uploads/aws-lemp-stack.jpg"]
 toc: true
 # description: string, if empty (substring main content)
 description:
+home: true
 ---
 {{< figure src="/uploads/aws-lemp-stack.jpg" alt="AWS LEMP Stack" caption="AWS LEMP Stack" class="normal" >}}
 
