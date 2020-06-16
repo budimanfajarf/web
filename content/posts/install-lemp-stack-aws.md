@@ -186,11 +186,6 @@ If everything works fine you should see PHP info page like this
 
 {{< figure src="/uploads/php-info-page.png" alt="PHP Info Page" caption="PHP Info Page" class="normal" >}}
 
----
-
-> That's all, thanks for reading :)
-
-
 
 
 

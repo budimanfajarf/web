@@ -1,4 +1,5 @@
 ---
+author: "Budiman Fajar Firdaus"
 title: "Git Reset to Previous Commit"
 slug: "git-reset-previous-commit"
 draft: false

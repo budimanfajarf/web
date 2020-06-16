@@ -64,7 +64,3 @@ You can try the same thing when failed to generate some JavaScript file, for exa
 {{ $myTypeit := resources.Get "js/my-typeit.js" | minify | fingerprint -}}
 <script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 {{< /highlight >}}
-
----
-
-> That's all, thanks for reading :)

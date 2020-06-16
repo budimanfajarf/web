@@ -65,5 +65,3 @@ Host aws-ubuntu
     IdentityFile ~/.ssh/budi.pem
 {{< /highlight >}}
 
-<br />
-

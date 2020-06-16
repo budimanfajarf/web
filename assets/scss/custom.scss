@@ -147,7 +147,8 @@ footer a:hover {
 }
 
 .related-posts{
-  margin-top: 3em;
+  // margin-top: 3em;
+  margin-bottom: 2em;
 }
 
 // hufft
@@ -306,4 +307,8 @@ footer a:hover {
 
 .light .related-posts {
   border: 3px dashed rgba(000,000,000,.2);
+}
+
+.post-nav {
+  font-size: 1.1em;
 }
