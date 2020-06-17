@@ -1,7 +1,7 @@
 +++
 date = 2020-05-03T05:55:40+07:00
-featuredImg = "/images/profile-photo-background.png"
-images = ["/pictures/compressed/2016-05-09-budi-bw.png"]
+featuredImg = "/images/compressed/profile-photo-1-re.png"
+images = ["/images/compressed/profile-photo-1-re-medium.png"]
 title = "About"
 toc = true
 +++
@@ -18,6 +18,9 @@ Here my experience in some languages and frameworks, both in backend and fronten
 [budidev.com](/ "Base URL") is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
 
 It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
+
+Want to get interesting notif? 
+[Subscribe here](https://subs.budidev.com/newsletter "Subscribe BudiDev Newsletter") :)
 
 ---
 
