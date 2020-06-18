@@ -27,13 +27,13 @@
 						<span class="post-title">
 							{{.Title}}
 							{{ if .Params.link }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" target="_blank">Link</a>
+							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank">Link</a>
 							{{ end }}			
 							{{ if .Params.repo }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" target="_blank">Repo</a>
+							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" title="Repo {{ .Params.title }}" target="_blank">Repo</a>
 							{{ end }}							
 							{{ if .Content }}
-							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}">See Detail</a>
+							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}" title="Detail {{ .Params.title }}">See Detail</a>
 							{{ end }}								
 							{{ if .Params.sub }}
 								<ul class="ubuntu" style="margin-top: 0.25em;">
