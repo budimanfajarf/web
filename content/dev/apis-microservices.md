@@ -11,7 +11,6 @@ description=""
 link=""
 repo=""
 hiddenInXml=false
-home=true
 
 [[sub]]
 title = "Timestamp Microservice"

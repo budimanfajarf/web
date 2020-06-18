@@ -11,6 +11,5 @@ description:
 link: "/"
 repo: "https://github.com/budimanfajarf/blog/"
 hiddenInXml: true
-home: true
 ---
 

@@ -11,6 +11,5 @@ description:
 link: 
 repo: "https://github.com/budimanfajarf/bklaravel"
 hiddenInXml: true
-home: true
 ---
 

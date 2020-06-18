@@ -312,3 +312,50 @@ footer a:hover {
 .post-nav {
   font-size: 1.1em;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  width: 190px;
+  background-color: #7d828a;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0px;
+  position: absolute;
+  z-index: 1;
+  bottom: 175%;
+  left: 50%;
+  margin-left: -95px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  transition: opacity .7s;  
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #7d828a transparent transparent transparent;
+}
+
+// .tooltip:hover .tooltiptext {
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;  
+}

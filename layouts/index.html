@@ -23,7 +23,7 @@
 					<!-- {{.}} -->
 					<span class="home-subtitle-typeit">
 						Hello‎,‎‎‎‎‎‎ I'm Budi ☕‎‎‎‎‎‎‎‎ Backend Developer 💻‎‎‎‎‎‎‎‎<br />
-						‎‎📌‎‎‎‎‎‎‎‎ Bandung‎, ‎‎‎Indonesia
+						‎📌‎‎‎‎‎‎‎ Bandung‎, ‎‎‎Indonesia
 					</span>
 				</p>
 			{{- end }}
@@ -64,14 +64,21 @@
 
 		</div>
 
-		<footer id="home-footer">
+		<footer id="home-footer" style="opacity: 1">
 			<nav class="home-footer-menu">
 				{{ range $i, $menu := .Site.Menus.main }}
 					{{ if $i }} &#183; {{ end }}
-					<a href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">{{ $menu.Name }}</a>					
+					{{ if eq $menu.Name "Dev" }}
+						<a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">
+							<span style="opacity: .6;">{{ $menu.Name }}</span>
+							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my projects here :)</span>
+						</a>					
+					{{ else }}
+						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">{{ $menu.Name }}</a>					
+					{{ end }}
 				{{ end }}
 			</nav>
-			<p>
+			<p style="opacity: .6;">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
 				</svg>&nbsp;<span>{{ now.Format "2006" }}</span>
 				<a href="{{ .Site.BaseURL }}">
@@ -96,5 +103,16 @@
 	{{ $myTypeit := resources.Get "js/my-typeit.js" | minify | fingerprint -}}
 		<script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
 
+	<script>
+		setTimeout(function(){ 
+			var tooltip = document.getElementById("tooltipdev");
+			tooltip.classList.remove("hide");
+			tooltip.classList.add("show");			
 
+			setTimeout(function() {
+				tooltip.classList.remove("show");
+				tooltip.classList.add("hide");				
+			}, 5000);
+		}, 15500);		
+	</script>
 {{ end }}
