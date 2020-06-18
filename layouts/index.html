@@ -55,7 +55,7 @@
 				</div>
 
 				<div class="post-nav">
-					<a class="prev-post" href='{{ "posts/" | absLangURL }}' title="Click to see all posts">
+					<a class="prev-post" href='{{ "posts/" | absLangURL }}' title="See all published posts">
 						<span>See All Posts</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
 					</a>
 				</div>					
@@ -67,12 +67,14 @@
 		<footer id="home-footer" style="opacity: 1">
 			<nav class="home-footer-menu">
 				{{ range $i, $menu := .Site.Menus.main }}
-					{{ if $i }} &#183; {{ end }}
+					{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
 					{{ if eq $menu.Name "Dev" }}
-						<a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project">
+						<a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
 							<span style="opacity: .6;">{{ $menu.Name }}</span>
 							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
-						</a>					
+						</a>		
+					{{ else if eq $menu.Name "Pictures" }}									
+						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Photos 🖼️">{{ $menu.Name }}</a>										
 					{{ else }}
 						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">{{ $menu.Name }}</a>					
 					{{ end }}
@@ -113,6 +115,6 @@
 				tooltip.classList.remove("show");
 				tooltip.classList.add("hide");				
 			}, 5000);
-		}, 15500);		
+		}, 14000);		
 	</script>
 {{ end }}
