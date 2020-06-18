@@ -67,7 +67,7 @@
 		<footer id="home-footer" style="opacity: 1">
 			<nav class="home-footer-menu">
 				{{ range $i, $menu := .Site.Menus.main }}
-					{{ if $i }} &#183; {{ end }}
+					{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
 					{{ if eq $menu.Name "Dev" }}
 						<a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">
 							<span style="opacity: .6;">{{ $menu.Name }}</span>
@@ -113,6 +113,6 @@
 				tooltip.classList.remove("show");
 				tooltip.classList.add("hide");				
 			}, 5000);
-		}, 15500);		
+		}, 14000);		
 	</script>
 {{ end }}
