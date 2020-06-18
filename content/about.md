@@ -15,7 +15,7 @@ Here my experience in some languages and frameworks, both in backend and fronten
 
 ## - Blog
 
-[budidev.com](/ "Base URL") is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
+[budidev.com](/ "BudiDev") is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
 
 It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
 

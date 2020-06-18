@@ -80,7 +80,7 @@ disqusShortname = "budidev"
 
   [[params.social]]
     name = "email"
-    url = "mailto:budimanfajarf@gmail.com"  
+    url = "mailto:hello@budidev.com?cc=budimanfajarf@gmail.com"  
 
   [[params.social]]
     name = "upwork"

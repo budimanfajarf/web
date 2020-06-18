@@ -28,7 +28,7 @@
 				<p>
 					{{- range . -}}
 					<span>
-						<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{.}}</a>
+						<a href="{{ "tags/" | absLangURL }}{{ . }}/">#{{.}}</a>
 					</span>&nbsp;
 					{{- end }}
 				</p>
@@ -43,9 +43,9 @@
 
 			<footer class="content" style="display: flex; align-items: center;">
 				<figure>
-					<img src="/images/compressed/profile-photo-1-re-small.png" alt="Budiman Fajar Firdaus" style="width: 80px; max-width: 80px; margin-right: 1.2em; border-radius: 50%;"> 
+					<img src="/images/compressed/profile-photo-1-re-small.png" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}" style="width: 80px; max-width: 80px; margin-right: 1.2em; border-radius: 50%;"> 
 					<figcaption style="display: none;">
-						<p>Budiman Fajar Firdaus</p>
+						<p>{{ .Site.Author.name }}</p>
 					</figcaption>
 				</figure>
 
@@ -55,8 +55,8 @@
 					</span>
 					<br /> 
 					<span style="font-size: 90%; display: inline-block;">
-						See all published posts <a href="/posts/">here</a>,
-						contact/info in <a href="/about/">about page</a>,
+						See all published posts <a href="/posts/" title="See all post">here</a>,
+						contact/info in <a href="/about/" title="About page">about page</a>,
 						want to get interesting notif? <a href="https://subs.budidev.com/newsletter" title="Subscribe BudiDev Newsletter" target="_blank">subscribe here</a>	
 					</span>
 				</p>

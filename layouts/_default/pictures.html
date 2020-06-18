@@ -76,7 +76,7 @@
         {{ range sort . ".date" "desc" }}
           <a href="{{ .link | relURL }}" class="{{ .aClass }}" >
             <figure>
-              <img src="{{ .compressed | relURL }}" alt="{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}" class="{{ .class }}"/> 
+              <img src="{{ .compressed | relURL }}" title="{{ .title }} ~ {{ dateFormat "2006/01/02" .date }}" class="{{ .class }}"/> 
               <figcaption style="display: none;">
                 {{ .title }} ~ {{ dateFormat "2006/01/02" .date }}
               </figcaption>
@@ -91,7 +91,7 @@
 {{ define "footer" }}
 <footer style="margin-top: 0;" id="site-footer" class="section-inner animated fadeIn faster">
   <div style="font-size: 1.2em" class="post-nav margin: .5vw;">
-    <a class="next-post" href="{{ .Site.BaseURL }}">
+    <a title="Home Page" class="next-post" href="{{ .Site.BaseURL }}">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg><span>&nbsp;Back to Home Page</span>
     </a>
   </div>		
