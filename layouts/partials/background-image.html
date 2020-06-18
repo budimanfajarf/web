@@ -1,7 +1,3 @@
-{{ if .Params.featuredImg -}}
-<style>.bg-img {background-image: url('{{ .Params.featuredImg | relURL }}');}</style>
-{{- else if .Params.images -}}
-  {{- range first 1 .Params.images -}}
-    <style>.bg-img {background-image: url('{{ . | relURL }}');}</style>
-  {{- end -}}
+{{ with .Params.featuredImg -}}
+<style>.bg-img {background-image: url('{{ . | relURL }}');}</style>
 {{- end -}}

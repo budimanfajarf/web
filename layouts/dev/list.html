@@ -7,9 +7,7 @@
 {{ end }}
 
 {{ define "main" }}
-	{{- if (or .Params.images .Params.featuredImg) }}
-		<div class="bg-img"></div>
-	{{- end }}
+	<div class="bg-img"></div>
 	<main class="site-main section-inner thin animated fadeIn faster">
 		<h1>{{ .Title }}</h1>
 		{{- if .Content }}
@@ -49,7 +47,7 @@
 							{{ end }}															 -->
 						</span>	
 						<span class="post-day">
-							{{ .PublishDate.Format "Jan 2, 2006" }}
+							{{ .PublishDate.Format "Jan 2" }}
 						</span>
 					</div>
 				</li>

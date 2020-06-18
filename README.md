@@ -9,5 +9,5 @@ Host in [![Netlify Status](https://api.netlify.com/api/v1/badges/7171b328-2836-4
 
 Feel free to contact me if you have any questions
 
-* Email : [budimanfajarf@gmail.com](mailto:budimanfajarf@gmail.com)
+* Email : [hello@budidev.com](mailto:hello@budidev.com?cc=budimanfajarf@gmail.com)
 * Telegram : [t.me/budimanfajarf](https://t.me/budimanfajarf)

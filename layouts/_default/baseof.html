@@ -17,7 +17,13 @@
 		{{ end }}
 	</title>
 	{{ if .IsPage }}<meta name="author" content="{{ .Site.Author.name }}">{{ end }}
-	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">	
+	{{ if .Description }}
+	<meta name="description" content="{{ . }}">	
+	{{ else if .IsHome }}
+	<meta name="description" content="{{ .Site.Params.description }}">		
+	{{ else if .IsPage }}
+	<meta name="description" content="{{ .Summary }}">
+	{{ end }}
 	{{- with .Site.Params.themeColor }}
 	<meta name="theme-color" content="{{.}}">
 	<meta name="msapplication-TileColor" content="{{.}}">

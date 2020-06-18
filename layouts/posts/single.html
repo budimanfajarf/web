@@ -7,9 +7,7 @@
 {{ end }}
 
 {{ define "main" }}
-	{{- if (or .Params.images .Params.featuredImg) }}
 	<div class="bg-img"></div>
-	{{- end }}
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
@@ -55,9 +53,9 @@
 					</span>
 					<br /> 
 					<span style="font-size: 90%; display: inline-block;">
-						See all published posts <a href="/posts/" title="See all post">here</a>,
-						contact/info in <a href="/about/" title="About page">about page</a>,
-						want to get interesting notif? <a href="https://subs.budidev.com/newsletter" title="Subscribe BudiDev Newsletter" target="_blank">subscribe here</a>	
+						See all published posts <a href="/posts/" title="See all published posts">here</a>,
+						contact/info in <a href="/about/" title="Contact / Info">about page</a>,
+						want to get interesting notif? <a href="https://subs.budidev.com/newsletter" title="Subscribe Newsletter" target="_blank">subscribe here</a>	
 					</span>
 				</p>
 			</footer>
