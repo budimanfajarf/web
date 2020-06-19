@@ -12,7 +12,7 @@
     </div>		
     <div class="content line-height-2 tags">
       {{ range .Data.Terms.Alphabetical }}
-        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}<!-- <sup>({{ .Count }})</sup> --></a>&nbsp;&nbsp;
+        <a href="{{ .Page.Permalink }}" title="{{ upper .Page.Title }}">#{{ .Page.Title }}<!-- <sup>({{ .Count }})</sup> --></a>&nbsp;&nbsp;
       {{ end }}      
     </div>    
 	</main>

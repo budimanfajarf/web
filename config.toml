@@ -28,6 +28,7 @@ disqusShortname = "budidev"
   defaultMarkdownHandler = "blackFriday"
   [markup.blackFriday]
     hrefTargetBlank = true
+    noreferrerLinks = true
 
 [taxonomies]
   tag = "tags"

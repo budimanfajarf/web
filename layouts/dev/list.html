@@ -51,10 +51,10 @@
 								{{ .PublishDate.Format "Jan 2" }}
 							</span>	
 							{{ if .Params.link }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank">Link</a>
+							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
 							{{ end }}			
 							{{ if .Params.repo }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" title="Repo {{ .Params.title }}" target="_blank">Repo</a>
+							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" title="Repo {{ .Params.title }}" target="_blank" rel="noopener">Repo</a>
 							{{ end }}							
 							{{ if .Content }}
 							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}" title="Detail {{ .Params.title }}">See Detail</a>
@@ -92,7 +92,7 @@
 		{{- end }}
 		<div class="content" style="text-align: right;">
 			<p>
-				See all in <a href="https://github.com/budimanfajarf/" target="_blank" title="GitHub budimanfajarf">GitHub Repository</a> :)
+				See all in <a href="https://github.com/budimanfajarf/" target="_blank" rel="noopener" title="GitHub budimanfajarf">GitHub Repository</a> :)
 			</p>
 		</div>
 	</main>
