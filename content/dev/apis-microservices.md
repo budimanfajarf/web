@@ -4,7 +4,7 @@ slug = "apis-microservices"
 draft = false
 date= 2020-05-29T07:42:29+07:00
 tags= []
-images=["/uploads/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png"]
+images=["/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png"]
 toc= false
 # description: string, if empty (substring main content)
 description=""
@@ -47,7 +47,7 @@ The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp
 
 ## Certificate
 
-![Certificate](/uploads/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png)
+![Certificate](/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png)
 
 * Credential: https://lnkd.in/g47V3dd 
 * freeCodeCamp Profile: [@budimanfajarf](https://www.freecodecamp.org/budimanfajarf)

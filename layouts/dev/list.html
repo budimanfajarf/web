@@ -1,9 +1,22 @@
 {{ define "head" }}
 	{{ partial "background-image.html" . }}
+	<style>
+		.mobile {
+			display: none;
+		}
+		@media only screen and (max-width: 565px) {
+			.mobile {
+				display: inline-block!important;
+			}
+			.desktop {
+				display: none!important;
+			}
+		}
+	</style>
 {{ end }}
 
 {{ define "header" }}
-{{ partialCached "header.html" . }}
+{{ partial "header.html" . }}
 {{ end }}
 
 {{ define "main" }}
@@ -20,10 +33,23 @@
 			<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
 			<ul class="posts-list">
 				{{- range .Pages }}
-				<li class="post-item">
+				<li class="post-item" style="margin-bottom: 0.8em;">
 					<div class="content">
 						<span class="post-title">
-							{{.Title}}
+							<span style="
+								background-color: #7d828a;
+								display: inline-block;
+								padding: 2.5px 6px;
+						    margin-right: 3px;
+								border-radius: 3px;
+								font-weight: 500;								
+							">
+								{{.Title}}
+							</span>
+							<br class="mobile" />
+							<span class="post-day mobile">
+								{{ .PublishDate.Format "Jan 2" }}
+							</span>	
 							{{ if .Params.link }}
 							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank">Link</a>
 							{{ end }}			
@@ -46,21 +72,29 @@
 								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
 							{{ end }}															 -->
 						</span>	
-						<span class="post-day">
+						<span class="post-day desktop">
 							{{ .PublishDate.Format "Jan 2" }}
 						</span>
 					</div>
+					{{ if .Params.images }}
+							{{ $title := .Title }}
+							{{ range first 3 .Params.images }}
+								<img src="{{ . | relURL }}" 
+									alt="{{ $title }}"								
+									title="{{ $title }}"								 
+									style="width: 100%; margin-bottom: 0.3em;" />
+							{{ end }}
+					{{ end }}					
 				</li>
 				{{- end }}
 			</ul>
 		</div>
 		{{- end }}
-		<div class="content">
+		<div class="content" style="text-align: right;">
 			<p>
 				See all in <a href="https://github.com/budimanfajarf/" target="_blank" title="GitHub budimanfajarf">GitHub Repository</a> :)
 			</p>
 		</div>
-		<br>
 	</main>
 {{ end }}
 

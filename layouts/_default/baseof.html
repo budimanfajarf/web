@@ -17,12 +17,14 @@
 		{{ end }}
 	</title>
 	{{ if .IsPage }}<meta name="author" content="{{ .Site.Author.name }}">{{ end }}
-	{{ if .Description }}
+	{{ with .Description }}
 	<meta name="description" content="{{ . }}">	
-	{{ else if .IsHome }}
-	<meta name="description" content="{{ .Site.Params.description }}">		
-	{{ else if .IsPage }}
-	<meta name="description" content="{{ .Summary }}">
+	{{ else }}
+		{{ if .IsHome }}
+		<meta name="description" content="{{ .Site.Params.description }}">		
+		{{ else if .IsPage }}
+		<meta name="description" content="{{ .Summary }}">
+		{{ end }}
 	{{ end }}
 	{{- with .Site.Params.themeColor }}
 	<meta name="theme-color" content="{{.}}">
@@ -47,7 +49,7 @@
 </head>
 
 <body id="page" class="{{if.IsHome}}home{{end}}">
-	{{ block "header" . -}}{{ end -}}
+	{{ block "header" . }}{{ end }}
 	{{ block "main" . -}}{{ end -}}
 	{{ block "footer" . -}}{{ end }}
 

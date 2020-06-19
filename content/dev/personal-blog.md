@@ -4,7 +4,7 @@ slug: "personal-blog"
 draft: false
 date: 2019-11-04T23:32:12+07:00
 tags: []
-images: []
+images: ["/uploads/compressed/budidev-com.png"]
 toc: false
 # description: string, if empty (substring main content)
 description:

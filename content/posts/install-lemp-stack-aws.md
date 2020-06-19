@@ -4,13 +4,13 @@ slug: "install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2"
 draft: false
 date: 2020-06-09T06:30:16+07:00
 tags: ["lemp", "linux", "nginx", "mysql", "php", "ubuntu", "aws", "server"]
-images: ["uploads/aws-lemp-stack.jpg"]
+images: ["uploads/compressed/aws-lemp-stack.jpg"]
 toc: true
 # description: string, if empty (substring main content)
 description:
 home: true
 ---
-{{< figure src="/uploads/aws-lemp-stack.jpg" alt="AWS LEMP Stack" caption="AWS LEMP Stack" class="normal" >}}
+{{< figure src="/uploads/compressed/aws-lemp-stack.jpg" alt="AWS LEMP Stack" caption="AWS LEMP Stack" class="normal" >}}
 
 In this post I will show you how to install LEMP Stack on AWS EC2 Instance
 
@@ -89,7 +89,7 @@ Open a browser then go to your Public DNS or Public IP Address of your instance 
 
 <code>**htpps://your-public-DNS-or-IP-address**</code>
 
-{{< figure src="/uploads/nginx-welcome-page.png" alt="Nginx Welcome Page" caption="Nginx Welcome Page" class="normal" >}}
+{{< figure src="/uploads/compressed/nginx-welcome-page.png" alt="Nginx Welcome Page" caption="Nginx Welcome Page" class="normal" >}}
 
 # Installing MySQL
 
@@ -184,7 +184,7 @@ Open a browser then go to <code>**htpps://your-public-DNS-or-IP-address/info.php
 
 If everything works fine you should see PHP info page like this
 
-{{< figure src="/uploads/php-info-page.png" alt="PHP Info Page" caption="PHP Info Page" class="normal" >}}
+{{< figure src="/uploads/compressed/php-info-page.png" alt="PHP Info Page" caption="PHP Info Page" class="normal" >}}
 
 
 
