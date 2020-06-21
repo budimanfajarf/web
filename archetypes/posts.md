@@ -9,5 +9,6 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
+home: false
 ---
 
