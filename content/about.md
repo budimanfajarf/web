@@ -1,7 +1,14 @@
 +++
 date = 2020-05-03T05:55:40+07:00
 featuredImg = "/images/compressed/profile-photo-1-re.png"
-images = ["/images/compressed/profile-photo-1-re-medium.png"]
+images = [
+  "/images/compressed/profile-photo-1-re-medium.png",
+  "/images/compressed/profile-photo-2-re-medium.png",
+  "/pictures/compressed/2020-06-02-budi-bw.jpg",
+  "/pictures/compressed/2018-11-20-logo-budi.jpg",
+  "/pictures/compressed/2017-04-08-avatar-budi.png",
+  "/pictures/compressed/2018-11-05-octocat.jpg"
+]
 title = "About"
 toc = true
 +++

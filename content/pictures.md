@@ -3,7 +3,14 @@ date = 2020-06-10T05:00:40+07:00
 title = "Pictures / Photos 🖼️"
 customTitle = "Pictures / Photos 🖼️ @budimanfajarf"
 featuredImg = "/images/compressed/profile-photo-1-re.png"
-images = ["/pictures/compressed/2020-06-02-budi-bw.jpg"]
+images = [
+  "/pictures/compressed/2020-06-02-budi-bw.jpg",
+  "/pictures/compressed/2020-05-31-budi-rizka.jpg",
+  "/pictures/compressed/2019-09-27-turangga.jpeg",
+  "/pictures/compressed/2019-09-03-introvert.jpg",
+  "/pictures/compressed/2019-08-08-good-evening.jpeg",
+  "/pictures/compressed/2018-11-20-logo-budi.jpg"
+]
 layout = "pictures"
 
 [[pictures]]
