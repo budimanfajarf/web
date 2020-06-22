@@ -3,7 +3,7 @@ title: "How to Install LEMP Stack (Linux, Nginx, MySQL, PHP) on Ubuntu 18.04 AWS
 slug: "install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2"
 draft: false
 date: 2020-06-09T06:30:16+07:00
-tags: ["lemp", "linux", "nginx", "mysql", "php", "ubuntu", "aws", "server"]
+tags: ["lemp", "linux", "nginx", "mysql", "php", "ubuntu", "aws", "server", "cloud"]
 images: [
   "/uploads/compressed/aws-lemp-stack.jpg",
   "/uploads/compressed/nginx-welcome-page.png",

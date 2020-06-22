@@ -2,7 +2,7 @@
 title: How to Create an AWS Account to Get Free Tier Offers
 slug: how-create-aws-account-free-tier-offers
 date: 2020-06-21T16:20:31.000+07:00
-tags: []
+tags: ["aws"]
 images: [
   "/uploads/compressed/2020-06-14-aws-account-01-signup-form.png", 
   "/uploads/compressed/2020-06-14-aws-account-02-contact-info.png",
@@ -18,7 +18,7 @@ home: true
 draft: false
 
 ---
-Earlier before I've posted an article about [How to Install LEMP Stack On Ubuntu AWS EC2](2020/06/install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2/ "How to Install LEMP Stack On Ubuntu AWS EC2"). To launch an AWS EC2 Instance, first you have to own an AWS account, so in this post, I will show you how to create an AWS account then you will have access to [Free Tier Offers by AWS](https://aws.amazon.com/free/ "Free Tier Offers by AWS").
+Earlier before I've posted an article about [How to Install LEMP Stack On Ubuntu AWS EC2](/2020/06/install-lemp-stack-linux-nginx-mysql-php-ubuntu-18-04-aws-ec2/ "How to Install LEMP Stack On Ubuntu AWS EC2"). To launch an AWS EC2 Instance, first you have to own an AWS account, so in this post, I will show you how to create an AWS account then you will have access to [Free Tier Offers by AWS](https://aws.amazon.com/free/ "Free Tier Offers by AWS").
 
 First, go to [AWS Sign Up Portal](https://portal.aws.amazon.com/billing/signup "AWS Sign Up Portal"), fill the required fields, then click <code>**Continue**</code>
 
@@ -50,7 +50,7 @@ class="normal" >}}
 
 Next, before you can use your AWS account, you must add a phone number and verify it using verification code that will send via SMS.
 
-Fill the phone number and the captcha, then click <code>**Send SMS**</code>
+Fill the phone number and the security check, then click <code>**Send SMS**</code>
 
 {{< figure
 src="/uploads/compressed/2020-06-14-aws-account-04-confirm-account.png"
