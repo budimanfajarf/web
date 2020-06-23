@@ -2,7 +2,7 @@
 title: "Access Amazon Elastic Compute Cloud (EC2) Remotely via SSH"
 slug: "connect-aws-ec2-remote-ssh"
 draft: false
-date: 2020-06-22T23:09:43+07:00
+date: 2020-06-22T13:09:43+07:00
 tags: ["aws", "cloud", "ssh"]
 images: [
   "/uploads/2020-06-16-connect-instance-04-terminal-ubuntu.jpg",

@@ -2,7 +2,7 @@
 title: "Configure Security Group in AWS EC2 Instance"
 slug: "configure-security-group-aws-ec2-instance"
 draft: false
-date: 2020-06-23T08:35:22+07:00
+date: 2020-06-22T23:35:22+07:00
 tags: ["aws", "network", "server"]
 images: [
   "/uploads/2020-06-16-security-group-02-security-group-id.jpg"

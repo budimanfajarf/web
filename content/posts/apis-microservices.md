@@ -11,7 +11,7 @@ images: ["/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-
 featuredImg: "/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png"
 home: true
 ---
-I have completed APIs and Microservices Certification from [freeCodeCamp.org](https://www.freecodecamp.org "freeCodeCamp") :)
+I've completed APIs and Microservices Certification from [freeCodeCamp.org](https://www.freecodecamp.org "freeCodeCamp") :)
 
 > Detail Project: [/dev/apis-microservices/](/dev/apis-microservices/)
 

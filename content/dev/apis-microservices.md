@@ -39,7 +39,7 @@ repo = "https://github.com/budimanfajarf/file-metadata-microservice"
 link = "https://budi-file-metadata-microservice.glitch.me/"
 
 +++
-The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp") to applying skills, principles, and concepts I have learned including [NPM Packages](https://github.com/budimanfajarf/packages-npm "Repo Managing Packages with NPM"), [Node and Express](https://github.com/budimanfajarf/node-express "Repo Basic Node and Express"), [MongoDB and Mongoose](https://github.com/budimanfajarf/mongo-mongoose "Repo MongoDB and Mongoose"), etc :)
+The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp") to applying skills, principles, and concepts I've learned including [NPM Packages](https://github.com/budimanfajarf/packages-npm "Repo Managing Packages with NPM"), [Node and Express](https://github.com/budimanfajarf/node-express "Repo Basic Node and Express"), [MongoDB and Mongoose](https://github.com/budimanfajarf/mongo-mongoose "Repo MongoDB and Mongoose"), etc :)
 
 ## List Project
 

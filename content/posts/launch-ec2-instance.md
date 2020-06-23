@@ -2,7 +2,7 @@
 title: "Let's Try to Launch Amazon EC2 Instance (Ubuntu Server 18.04)"
 slug: "launch-amazon-ec2-instance-ubuntu-server-18-04"
 draft: false
-date: 2020-06-22T11:59:20+07:00
+date: 2020-06-21T22:59:20+07:00
 tags: ["aws", "cloud", "ubuntu", "server"]
 images: [
   "/uploads/2020-06-15-amazon-ec2-03-launch-instance.jpg",
