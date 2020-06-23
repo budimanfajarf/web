@@ -5,6 +5,7 @@ draft: false
 date: 2020-06-22T23:09:43+07:00
 tags: ["aws", "cloud", "ssh"]
 images: [
+  "/uploads/2020-06-16-connect-instance-04-terminal-ubuntu.jpg",
   "/uploads/2020-06-16-connect-instance-05-success-connect.webp",
   "/uploads/2020-06-16-connect-instance-03-connect-info.webp"
 ]

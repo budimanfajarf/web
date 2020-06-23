@@ -5,6 +5,7 @@ draft: false
 date: 2020-06-22T11:59:20+07:00
 tags: ["aws", "cloud", "ubuntu", "server"]
 images: [
+  "/uploads/2020-06-15-amazon-ec2-03-launch-instance.jpg",
   "/uploads/2020-06-15-amazon-ec2-07-instance.webp",
   "/uploads/2020-06-15-amazon-ec2-04-step1-ami.webp",
   "/uploads/2020-06-15-amazon-ec2-03-ec2-dashboard.webp",    
@@ -117,7 +118,9 @@ alt="Step 6: Security Group"
 caption="Step 6: Security Group"
 class="normal" >}}
 
-Leave to default settings then click <code>**Review and Launch**</code>. *I'll tell about security group in another post*.
+Leave to default settings then click <code>**Review and Launch**</code>
+
+*I've created a post about [configure security group in EC2](/2020/06/configure-security-group-aws-ec2-instance/ "AWS EC2 Security Group")*.
 
 ## Step 7: Review Instance Launch
 
