@@ -2,9 +2,12 @@
 title: "How to Install Node.js on AWS EC2 and Make Node.js App Keep Running"
 slug: "install-nodejs-aws-ec2-keep-running-pm2"
 draft: false
-date: 2020-06-24T09:22:57+07:00
+date: 2020-06-25T00:22:57+07:00
 tags: ["nodejs", "aws"]
-images: []
+images: [
+  "/uploads/2020-06-19-nodejs-aws-07-pm2-start.jpg",
+  "/uploads/2020-06-19-nodejs-aws-06-hello-world.webp"
+]
 featuredImg:
 toc: true
 # description: string, if empty (substring main content)
@@ -33,7 +36,7 @@ The command above will downloads a script and runs it. The script clones the nvm
 
 {{< figure src="/uploads/2020-06-19-nodejs-aws-01-install-nvm.webp" alt="Install nvm" caption="Install nvm" class="normal" >}}
 
-You can find the [updated version of nvm here](https://github.com/nvm-sh/nvm "github nvm")
+You can find the [updated version of nvm here](https://github.com/nvm-sh/nvm#install--update-script "github nvm")
 
 Run the command below to check that nvm was successfully installed
 
@@ -53,7 +56,7 @@ Just close the currently opened terminal and launch a new terminal and run <code
 
 To install node.js using nvm, you can use <code>**nvm install**</code> node to install the latest version of node, or use <code>**nvm install 6.14.4**</code> to install a specific version of node, or use <code>**nvm install --lts**</code> to install the latest LTS version of node. 
 
-NVM will install Node.js include with NPM (Node Package Manager), see the [complete guide to use nvm here](https://github.com/nvm-sh/nvm, "github nvm").
+NVM will install Node.js include with NPM (Node Package Manager), see the [complete guide to use nvm here](https://github.com/nvm-sh/nvm "github nvm").
 
 Install the latest LTS version of Node.js
 
@@ -126,14 +129,16 @@ Open a browser and navigate to <code>**localhost:3000**</code> if you're using a
 
 # Make Node.js App Keep Running
 
-The app will run as long as you have the terminal open, but when you close the terminal or press <code>**Ctrl-C**</code>, the app will stop. There’s an easier way to make node.js app keep running by using a process manager called PM2, find for more information [about PM2 here](https://www.npmjs.com/package/pm2 "NPM PM2").
+## Install PM2
 
-Stop the <code>**app.js**</code> running before by press <code>**Ctrl-C**</code>
+The app will run as long as you open the terminal, but when you close the terminal or press <code>**Ctrl-C**</code>, the app will stop running. To make node.js app keep running, we can use a process manager called PM2, find for more information [about PM2 here](https://www.npmjs.com/package/pm2 "NPM PM2").
+
+First, stop the <code>**app.js**</code> running before by press <code>**Ctrl-C**</code>
 
 Install PM2 globally using npm
 
 {{< highlight Terminfo >}}
-npm install -g pm2
+npm install pm2 -g
 {{< /highlight >}}
 
 Start Node.js app using PM2
@@ -142,6 +147,74 @@ Start Node.js app using PM2
 pm2 start ~/node-hello-world/app.js
 {{< /highlight >}}
 
-Now even if you close the terminal, the app will keep running and can access using a browser on url like <code>**localhost:3000**</code> or <code>**public-dns-or-ip-address:3000**</code>
+{{< figure src="/uploads/2020-06-19-nodejs-aws-07-pm2-start.webp" alt="pm2 start app.js" caption="pm2 start app.js" class="normal" >}}
 
-> This post is not completed yet, I'll update later :)
+Now even if you close the terminal, the app will keep running and can access using a browser on a url like <code>**localhost:3000**</code> if you use local computer, or <code>**public-dns-or-ip-address:3000**</code> if you you use an AWS EC2 instance.
+
+## Configure Startup 
+
+When you reboot your server, the app won't automatically running, we can setting up startup configuration by generate startup script using pm2.
+
+To generate the startup script, use the following command:
+
+{{< highlight Terminfo >}}
+pm2 startup
+{{< /highlight >}}
+
+Copy the generated script and hit enter to run it
+
+{{< figure src="/uploads/2020-06-19-nodejs-aws-08-pm2-startup-script.webp" alt="pm2 startup script" caption="pm2 startup script" class="normal" >}}
+
+Save the configuration
+
+{{< highlight Terminfo >}}
+pm2 save
+{{< /highlight >}}
+
+{{< figure src="/uploads/2020-06-19-nodejs-aws-09-pm2-save.webp" alt="pm2 save" caption="pm2 save" class="normal" >}}
+
+Now when you reboot your server, the pm2 will automatically running and start node.js app! :)
+
+If you want to remove the startup configuration, the steps are similar, generate unstartup script with the command below
+
+{{< highlight Terminfo >}}
+pm2 unstartup
+{{< /highlight >}}
+
+**Copy** and **run** the generated script, then save the configuration with <code>**pm2 save**</code>.
+
+## Usefull PM2 Commands
+
+List all running apps:
+
+{{< highlight Terminfo >}}
+pm2 list
+{{< /highlight >}}
+
+Managing apps:
+
+{{< highlight Terminfo >}}
+pm2 stop <app_name|namespace|id|'all'|json_conf>
+{{< /highlight >}}
+
+{{< highlight Terminfo >}}
+pm2 restart <app_name|namespace|id|'all'|json_conf>
+{{< /highlight >}}
+
+{{< highlight Terminfo >}}
+pm2 delete <app_name|namespace|id|'all'|json_conf>
+{{< /highlight >}}
+
+Details on a specific app:
+
+{{< highlight Terminfo >}}
+pm2 describe <id|app_name>
+{{< /highlight >}}
+
+Monitor logs, custom metrics, apps information:
+
+{{< highlight Terminfo >}}
+pm2 monit
+{{< /highlight >}}
+
+Find more info about PM2 on [npmjs](https://www.npmjs.com/package/pm2 "NPM PM2") or [keymetrics](https://pm2.keymetrics.io/ "Keymetrics PM2")
