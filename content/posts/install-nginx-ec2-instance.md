@@ -1,5 +1,5 @@
 ---
-title: "How to Install Nginx and Setting Up Server Block to Domain on AWS EC2 Instance"
+title: "How to Install Nginx and Setting Up Server Block to Domain on AWS EC2"
 slug: "install-nginx-server-block-domain-aws-ec2-instance"
 draft: false
 date: 2020-06-23T14:29:57+07:00

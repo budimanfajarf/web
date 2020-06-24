@@ -1,5 +1,5 @@
 ---
-title: "How to Secure HTTPS Connection Nginx Server with Let's Encrypt Using Certbot"
+title: "How to Secure HTTPS Connection Nginx Server with Let's Encrypt"
 slug: "secure-https-connection-nginx-server-block-lets-encrypt-certbot"
 draft: false
 date: 2020-06-24T00:01:44+07:00
@@ -21,7 +21,7 @@ home: true
 
 <code>**Let’s Encrypt**</code> is a Certificate Authority (CA) that provides an easy way to obtain and install free TLS/SSL certificates, thereby enabling encrypted HTTPS on web servers. It simplifies the process by providing a software client, <code>**Certbot**</code>, that attempts to automate most (if not all) of the required steps [[ref]](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04).
 
-If you following preview post about [How to Install Nginx and Setting Up Server Block](/2020/06/install-nginx-server-block-domain-ec2-instance/ "How to Install Nginx and Setting Up Server Block"), you'll have a nginx configuration file called like <code>**example.com**</code>, for me is <code>**api.budidev.com**</code>. The file should be saved in directory <code>**/etc/nginx/sites-available**</code> and linking to <code>**/etc/nginx/sites-enabled**</code>.
+If you following preview post about [How to Install Nginx and Setting Up Server Block](/2020/06/install-nginx-server-block-domain-aws-ec2-instance/ "How to Install Nginx and Setting Up Server Block"), you'll have a nginx configuration file called like <code>**example.com**</code>, for me is <code>**api.budidev.com**</code>. The file should be saved in directory <code>**/etc/nginx/sites-available**</code> and linking to <code>**/etc/nginx/sites-enabled**</code>.
 
 In this post, I'll show you how to enable HTTPS (SSL/TLS) connection for domain or subdomain in nginx server block configuration file. The configuration will automatically generated using Certbot by Let's Encrypt.
 
