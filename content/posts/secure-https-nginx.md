@@ -1,5 +1,5 @@
 ---
-title: "How to Secure HTTPS Connection Nginx Server with Let's Encrypt"
+title: "How to Secure HTTPS Connection on Nginx Server with Let's Encrypt"
 slug: "secure-https-connection-nginx-server-block-lets-encrypt-certbot"
 draft: false
 date: 2020-06-24T00:01:44+07:00
