@@ -13,12 +13,12 @@ featuredImg:
 toc: true
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 
-Before begin this guide, first you must have an EC2 Instance, you can follow this post to [launch an EC2 instance](/2020/06/launch-amazon-ec2-instance-ubuntu-server-18-04/ "Launch EC2 Instance").
+Before beginning this guide, first you must have an EC2 Instance, you can follow this post to [launch an EC2 instance](/2020/06/launch-amazon-ec2-instance-ubuntu-server-18-04/ "Launch EC2 Instance").
 
-In this post I use EC2 Instance of Ubuntu Server 18.04, and access the instance using SSH connection in terminal of my Ubuntu Desktop, follow this post to [connect to EC2 instance](/2020/06/connect-aws-ec2-remote-ssh/ "Connect to EC2 Instance").
+In this post, I use EC2 Instance of Ubuntu Server 18.04, and access the instance using SSH connection in a terminal of my Ubuntu Desktop, follow this post to [connect to EC2 instance](/2020/06/connect-aws-ec2-remote-ssh/ "Connect to EC2 Instance").
 
 Configure security group of your instance to add HTTP & HTTPS connection in inbound traffic, you can follow this post to [configure security group](/2020/06/configure-security-group-aws-ec2-instance/ "Configure Security Group EC2 Instance").
 
@@ -153,6 +153,6 @@ If there aren’t any problems, restart Nginx to enable changes
 sudo service nginx restart
 {{< /highlight >}}
 
-Nginx should now serving your domain or subdomain. You can test this using browser by navigating to <code>**http:‎//your-domain-subdomain.com**</code>, for me is <code>**http://‎api.budidev.com**</code>
+Nginx should now serve your domain or subdomain. You can test this using browser by navigating to <code>**http:‎//your-domain-subdomain.com**</code>, for me is <code>**http://‎api.budidev.com**</code>
 
 {{< figure src="/uploads/2020-06-17-nginx-ec2-02-success-server-block.webp" alt="Success Nginx Server Block" caption="Success Nginx Server Block" class="normal" >}}

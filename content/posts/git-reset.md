@@ -9,7 +9,7 @@ images: []
 toc: false
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 ## Find The Commit
 

@@ -11,7 +11,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 A security group acts as a virtual firewall for your instance to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance [[ref]](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html "EC2 Security Group").
 

@@ -2,7 +2,7 @@
 title: "How to Install Node.js on AWS EC2 and Make Node.js App Keep Running"
 slug: "install-nodejs-aws-ec2-keep-running-pm2"
 draft: false
-date: 2020-06-25T00:22:57+07:00
+date: 2020-06-25T07:22:57+07:00
 tags: ["nodejs", "aws"]
 images: [
   "/uploads/2020-06-19-nodejs-aws-07-pm2-start.jpg",
@@ -14,9 +14,9 @@ toc: true
 description:
 home: true
 ---
-In this post, I will show you how to install Node.js and use PM2 as proccess manager to make node.js app keep running, I use my AWS EC2 instance of Ubuntu 18.04 for the installation, you can follow this post to [launch an EC2 instance](/2020/06/launch-amazon-ec2-instance-ubuntu-server-18-04/ "Launch EC2 Instance") or you can use your local computer for the installation.
+In this post, I will show you how to install Node.js and use PM2 as process manager to make node.js app keep running, I use my AWS EC2 instance of Ubuntu 18.04 for the installation, you can follow this post to [launch an EC2 instance](/2020/06/launch-amazon-ec2-instance-ubuntu-server-18-04/ "Launch EC2 Instance") or you can use your local computer for the installation.
 
-If you use an AWS EC2 instance to follow this post, you have to [connect to instance](/2020/06/connect-aws-ec2-remote-ssh/ "Connect to EC2 Instance") first, and add Custom TCP at port 3000 in inbound rules, this port is use for test to run node.js app.
+If you use an AWS EC2 instance to follow this post, you have to [connect to instance](/2020/06/connect-aws-ec2-remote-ssh/ "Connect to EC2 Instance") first and add Custom TCP at port 3000 in inbound rules, this port is used for test to run node.js app.
 
 # Install Node.js using NVM
 
@@ -24,7 +24,7 @@ If you use an AWS EC2 instance to follow this post, you have to [connect to inst
 
 If you've connected to your instance or use your local computer, now time to install node.js. In this post I'll install node.js using nvm, nvm is a version manager for node.js.
 
-The reasons I install node.js using nvm are that I can easilly switch node.js version that currently running to another version, and I can install global packages <code>**npm i -g**</code> without doing sudo.
+The reasons I install node.js using nvm are that I can easily switch node.js version that currently running to another version, and I can install global packages <code>**npm i -g**</code> without doing sudo.
 
 Run the following commands in a terminal to **install** or **update** nvm
 
@@ -32,7 +32,7 @@ Run the following commands in a terminal to **install** or **update** nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 {{< /highlight >}}
 
-The command above will downloads a script and runs it. The script clones the nvm repository to <code>~/.nvm</code>, and attempts to add the source lines to the correct profile file (<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>).
+The command above will download a script and runs it. The script clones the nvm repository to <code>~/.nvm</code>, and attempts to add the source lines to the correct profile file (<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>).
 
 {{< figure src="/uploads/2020-06-19-nodejs-aws-01-install-nvm.webp" alt="Install nvm" caption="Install nvm" class="normal" >}}
 
@@ -86,7 +86,7 @@ npm --version
 
 Node.js has successfully installed in your system, now time to run some node.js application. I'll run an application that cloning from [my github repository](https://github.com/budimanfajarf/node-hello-world "budimanfajarf hello-world"), the app is quite simple, it just a 'Hello World' app, it use just for test that node.js running correctly.
 
-The main code <code>**app.js**</code> of this repository is look like this:
+The main code <code>**app.js**</code> of this repository looks like this:
 
 {{< highlight javascript >}}
 const express = require('express')
@@ -131,7 +131,7 @@ Open a browser and navigate to <code>**localhost:3000**</code> if you're using a
 
 ## Install PM2
 
-The app will run as long as you open the terminal, but when you close the terminal or press <code>**Ctrl-C**</code>, the app will stop running. To make node.js app keep running, we can use a process manager called PM2, find for more information [about PM2 here](https://www.npmjs.com/package/pm2 "NPM PM2").
+The app will run as long as you open the terminal, but when you close the terminal or press <code>**Ctrl-C**</code>, the app will stop running. To make node.js app keep running, we can use a process manager called PM2, find more information [about PM2 here](https://www.npmjs.com/package/pm2 "NPM PM2").
 
 First, stop the <code>**app.js**</code> running before by press <code>**Ctrl-C**</code>
 
@@ -149,11 +149,11 @@ pm2 start ~/node-hello-world/app.js
 
 {{< figure src="/uploads/2020-06-19-nodejs-aws-07-pm2-start.webp" alt="pm2 start app.js" caption="pm2 start app.js" class="normal" >}}
 
-Now even if you close the terminal, the app will keep running and can access using a browser on a url like <code>**localhost:3000**</code> if you use local computer, or <code>**public-dns-or-ip-address:3000**</code> if you you use an AWS EC2 instance.
+Now even if you close the terminal, the app will keep running and can access using a browser on a url like <code>**localhost:3000**</code> if you use a local computer, or <code>**public-dns-or-ip-address:3000**</code> if you use an AWS EC2 instance.
 
 ## Configure Startup 
 
-When you reboot your server, the app won't automatically running, we can setting up startup configuration by generate startup script using pm2.
+When you reboot your server, the app won't automatically be running, we can set up startup configuration by generating startup script using pm2.
 
 To generate the startup script, use the following command:
 
@@ -183,7 +183,7 @@ pm2 unstartup
 
 **Copy** and **run** the generated script, then save the configuration with <code>**pm2 save**</code>.
 
-## Usefull PM2 Commands
+## Useful PM2 Commands
 
 List all running apps:
 

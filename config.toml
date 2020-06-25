@@ -72,6 +72,10 @@ disqusShortname = "budidev"
     url = "https://instagram.com/budimanfajarf"
 
   [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/budimanfajarf"
+
+  [[params.social]]
     name = "github"
     url = "https://github.com/budimanfajarf"
 
@@ -79,9 +83,9 @@ disqusShortname = "budidev"
     name = "linkedin"
     url = "https://linkedin.com/in/budimanfajarf"  
 
-  [[params.social]]
-    name = "email"
-    url = "mailto:hello@budidev.com?cc=budimanfajarf@gmail.com"  
+  # [[params.social]]
+  #   name = "email"
+  #   url = "mailto:hello@budidev.com?cc=budimanfajarf@gmail.com"  
 
   [[params.social]]
     name = "upwork"

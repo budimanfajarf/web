@@ -14,7 +14,7 @@ images: [
 featuredImg: 
 toc: false
 description: 
-home: true
+home: false
 draft: false
 
 ---

@@ -13,7 +13,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 Go to [EC2 Dashboard](https://console.aws.amazon.com/ec2/v2 "AWS EC2 Dashboard") then navigate to <code>**Intances**</code>
 
