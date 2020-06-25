@@ -13,11 +13,11 @@ toc: true
 description:
 home: true
 ---
-# Prequisite
+# Prerequisite
 
-Earlier before, if you're following a post about [install nginx on AWS EC2](/2020/06/install-nginx-server-block-domain-aws-ec2-instance "Install Nginx on AWS EC2") , you'll have a server configuration file called like <code>**example.com**</code>, for me is <code>**api.budidev.com**</code>, it's configure to listen default port 80, which is default port for HTTP connection. 
+Earlier before, if you're following a post about [install nginx on AWS EC2](/2020/06/install-nginx-server-block-domain-aws-ec2-instance "Install Nginx on AWS EC2"), you'll have a server configuration file called like <code>**example.com**</code>, for me is <code>**api.budidev.com**</code>, it's configured to listen default port 80, which is default port for HTTP connection. 
 
-And then if you're following another post about [secure HTTPS connection on nginx](/2020/06/secure-https-connection-nginx-server-block-lets-encrypt-certbot "secure HTTPS connection on nginx]"), the configuration fill will be edited automatically by Certbot to configure HTTPS connection that listen on port 443, and it's configure to redirect all traffic HTTP to secure HTTPS.
+And then if you're following another post about [secure HTTPS connection on nginx](/2020/06/secure-https-connection-nginx-server-block-lets-encrypt-certbot "secure HTTPS connection on nginx]"), the configuration file will be edited automatically by Certbot to configure HTTPS connection that listen on port 443, and it's configured to redirect all HTTP traffic to secure HTTPS.
 
 The end result of configuration file <code>**api.budidev.com**</code> look like this:
 
@@ -55,11 +55,11 @@ server {
 
 ---
 
-One more for prequisite, if you're following previous post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2 "install node.js and make node.js app keep running"), you'll have a node.js app that running on some port, for me is port <code>**3000**</code>.
+One more for prerequisite, if you're following previous post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2 "install node.js and make node.js app keep running"), you'll have a node.js app that running on some port, for me is port <code>**3000**</code>.
 
 # Update api.budidev.com
 
-Before we begin to talk about run multiple node.js app, I'll update the configuration file to route HTTP and HTTPS connection to the Node.js app that running on port <code>**3000**</code>, so I can access Node.js app by navigate to <code>**https‎://api.budidev.com**</code>, and no needed to spesicific the port again, like <code>**https‎://api.budidev.com:3000**</code>.
+Before we begin to talk about run multiple node.js app, I'll update the configuration file to route HTTP and HTTPS connection to the Node.js app that running on port <code>**3000**</code>, so I can access Node.js app by navigating to <code>**https‎://api.budidev.com**</code>, and no needed to specify the port again, like <code>**https‎://api.budidev.com:3000**</code>.
 
 [Connect to your instance](/2020/06/connect-aws-ec2-remote-ssh/ "Connect to EC2 Instance") first, then open the configuration file:
 {{< highlight TermInfo >}}
@@ -122,19 +122,19 @@ If there aren’t any problems, restart nginx to enable changes
 sudo service nginx restart
 {{< /highlight >}}
 
-Now if you're going to your domain or subdomain name, for me is <code>**https://‎api.budidev.com**</code> **without** add spesific port like 3000, you should see node.js app show up:
+Now if you're going to your domain or subdomain name, for me is <code>**https://‎api.budidev.com**</code> **without** adding specific port like 3000, you should see node.js app show up:
 
 {{< figure src="/uploads/2020-06-20-nginx-nodejs-01-api-budidev-com.webp" alt="api.budidev.com" caption="api.budidev.com" class="normal" >}}
 
 # Run Multiple Node.js App
 
-I found 2 approach to run multiple node.js app in one server, you can choose which one you're preffered.
+I found 2 approach to run multiple node.js app in one server, you can choose which one you're preferred.
 
 ## First Approuch
 
-The fist approach is, you can update and add new <code>**location**</code> on your configuration file before, for example I'll edit my configuration file <code>**api.budidev.com**</code> 
+The first approach is, you can update and add a new <code>**location**</code> on your configuration file before, for example, I'll edit my configuration file <code>**api.budidev.com**</code> 
 
-1. Create and run a new node.js app on some port, for example port <code>**3001**</code>, *look at post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2/ "install node.js and make node.js app keep running") for detail*
+1. Create and run a new node.js app on some port, for example port <code>**3001**</code>, *look at a post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2/ "install node.js and make node.js app keep running") for detail*
 
 2. Update <code>**api.budidev.com**</code>
 
@@ -193,6 +193,6 @@ In this approuch, the second node.js app will run on route <code>**/app2**</code
 The second approach is, you can run another your node.js app on new domain or subdomain, for example: 
 
 1. Create domain or subdomain called <code>**sub.example.com**</code> using A Record and pointing this to IP Address of your AWS EC2 instance
-2. Create and run a new node.js app on some port, for example port <code>**3001**</code>, *look at post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2/ "install node.js and make node.js app keep running") for detail*
+2. Create and run a new node.js app on some port, for example port <code>**3001**</code>, *look at a post about [install node.js and make node.js app keep running](/2020/06/install-nodejs-aws-ec2-keep-running-pm2/ "install node.js and make node.js app keep running") for detail*
 3. Create new nginx server block configuration file called <code>**sub.example.com**</code>, and use <code>**proxy_pass**</code> to route to your node.js app on port <code>**3001**</code>, [like the example above](#update-api-budidev-com "example above")
-4. Secure your domain or subdomain using Let's Encrypt, *look at post about [secure https connection in nginx](/2020/06/secure-https-connection-nginx-server-block-lets-encrypt-certbot/ "secure https connection in nginx") for detail*
+4. Secure your domain or subdomain using Let's Encrypt, *look at a post about [secure https connection in nginx](/2020/06/secure-https-connection-nginx-server-block-lets-encrypt-certbot/ "secure https connection in nginx") for detail*

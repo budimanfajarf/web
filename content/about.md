@@ -12,7 +12,7 @@ images = [
 title = "About"
 toc = true
 +++
-## - Me
+## 👨‍💻 Me
 
 Hi! My name is Budiman Fajar Firdaus, I'm a Backend Developer from Bandung, Indonesia :)
 
@@ -20,20 +20,20 @@ I've been 5 years in IT stuff and have been focused on web development for 3 yea
 
 Here my experience in some languages and frameworks, both in backend and frontend: [PHP](https://www.php.net/ "PHP"), [Laravel](https://laravel.com/ "Laravel"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [Vue.js](https://vuejs.org/ "Vue.js"), [Hugo](https://gohugo.io "Hugo").
 
-## - Blog
+## ✍️ Blog
 
 [budidev.com](/ "BudiDev") is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
 
-It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme. You can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
+It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme, you can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
 
 Want to get interesting notif? 
 [Subscribe here](https://subs.budidev.com/newsletter "Subscribe Newsletter") :)
 
 ---
 
-## Contact
+# Contact
 
-Feel free to contact me if you have any questions
+Feel free to contact me if you have any questions :)
 
 * Email: [hello@budidev.com](mailto:hello@budidev.com?cc=budimanfajarf@gmail.com "Email Budiman Fajar Firdaus")
 * Telegram: [@budimanfajarf](https://t.me/budimanfajarf/ "Telegram Budiman Fajar Firdaus")

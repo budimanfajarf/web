@@ -224,4 +224,4 @@ aClass = "big"
 +++
 Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop, VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
 
-I'm doing this as a hobby, here's my collections
+I'm doing this as a hobby, here's my collections :)
