@@ -100,7 +100,7 @@ date = "2020-04-27T00:00:00+07:00"
 link = "/pictures/2020-05-31-budi-rizka.jpg"
 compressed = "/pictures/compressed/2020-05-31-budi-rizka.jpg"
 title = "Budi & Rizka"
-date = "2020-05-31T00:00:00+07:00"
+date = "2020-06-02T00:00:00+08:00"
 
 [[pictures]]
 link = "/pictures/2020-06-02-budi-bw.jpg"
@@ -220,6 +220,36 @@ compressed = "/pictures/compressed/2019-11-14-dark-mode.jpg"
 title = "Dark Mode"
 date = "2019-11-14T00:00:00+07:00"
 aClass = "big"
+
+[[pictures]]
+link = "/pictures/2019-06-12-keyboard-pen.jpg"
+compressed = "/pictures/compressed/2019-06-12-keyboard-pen.jpg"
+title = "Yellow Keyboard with Pen"
+date = "2019-06-12T00:00:00+07:00"
+
+[[pictures]]
+link = "/pictures/2020-06-18-budi-hat.jpg"
+compressed = "/pictures/compressed/2020-06-18-budi-hat.jpg"
+title = "Budi with Hat"
+date = "2020-06-18T00:00:00+07:00"
+
+[[pictures]]
+link = "/pictures/2020-06-26-budidev-com.jpg"
+compressed = "/pictures/compressed/2020-06-26-budidev-com.jpg"
+title = "budidev.com clipart"
+date = "2020-06-26T00:00:00+07:00"
+
+# [[pictures]]
+# link = "/pictures/2020-07-05-budi-bw.jpg"
+# compressed = "/pictures/compressed/2020-07-05-budi-bw.jpg"
+# title = "Budi - B&W"
+# date = "2020-07-05T00:00:00+07:00"
+
+[[pictures]]
+link = "/pictures/2020-07-05-minami.png"
+compressed = "/pictures/compressed/2020-07-05-minami.png"
+title = "Minami / 美波"
+date = "2017-12-06T00:00:00+08:00"
 
 +++
 Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop, VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
