@@ -1,5 +1,5 @@
 ---
-title: "Simple Covid19-API"
+title: "Simple COVID19-API"
 slug: "covid19-api"
 draft: false
 date: 2020-06-30T23:36:45+07:00
