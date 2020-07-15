@@ -29,3 +29,5 @@ fields:
 - type: boolean
   name: home
   label: home
+pages:
+- content/posts/coronavirus-covid-19-web-app-and-restful-api.md
