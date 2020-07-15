@@ -1,28 +1,31 @@
 ---
-label: Blog Post
+label: Blog Post V2
 hide_body: false
 fields:
 - type: text
   name: title
   label: title
-  config:
-    required: true
+- type: text
+  name: slug
+  label: slug
 - type: datetime
   name: date
   label: date
-  default: now
-  config:
-    required: true
-    date_format: ''
 - type: list
   name: tags
   label: tags
-- type: list
+- type: image_gallery
   name: images
   label: images
+- type: text
+  name: featuredImg
+  label: featuredImg
 - type: boolean
   name: toc
   label: toc
 - type: text
   name: description
   label: description
+- type: boolean
+  name: home
+  label: home
