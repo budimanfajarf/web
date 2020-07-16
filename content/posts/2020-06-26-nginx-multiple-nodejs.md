@@ -11,7 +11,7 @@ featuredImg:
 toc: true
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 # Prerequisite
 

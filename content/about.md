@@ -14,7 +14,7 @@ toc = true
 +++
 ## 👨‍💻 Me
 
-Hi! My name is Budiman Fajar Firdaus, I'm a Backend Developer from Bandung, Indonesia :)
+Hi! My name is Budiman Fajar Firdaus, I'm a web developer from Bandung, Indonesia :)
 
 I've been 5 years in IT stuff and have been focused on web development for 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
 
@@ -22,7 +22,7 @@ Here my experience in some languages and frameworks, both in backend and fronten
 
 ## ✍️ Blog
 
-[budidev.com](/ "BudiDev") is my personal blog about coding and web development especially in backend development, but sometimes I write outside those topics.
+[budidev.com](/ "BudiDev") is my personal blog about coding and web development, but sometimes I write outside those topics.
 
 It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme, you can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
 
@@ -38,7 +38,7 @@ Feel free to contact me if you have any questions :)
 * Email: [hello@budidev.com](mailto:hello@budidev.com?cc=budimanfajarf@gmail.com "Email Budiman Fajar Firdaus")
 * Telegram: [@budimanfajarf](https://t.me/budimanfajarf/ "Telegram Budiman Fajar Firdaus")
 
-If you need a Backend Developer with experience in [Node.js](https://nodejs.org/ "Node.js"), I would happy work with you, you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077/ "Upwork Budiman Fajar Firdaus").
+If you need a web developer to build your dream web app, I would happy work with you :)&nbsp; you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077/ "Upwork Budiman Fajar Firdaus").
 
 ‎
  

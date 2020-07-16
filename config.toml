@@ -42,7 +42,7 @@ disqusShortname = "budidev"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Personal blog about coding and web development especially in backend development by Budiman Fajar Firdaus @budimanfajarf, a Backend Developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
+  description = "Personal blog about coding and web development by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
   images = ["images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
   themeColor = "#494f5c"
 

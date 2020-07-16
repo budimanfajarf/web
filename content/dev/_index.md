@@ -10,7 +10,7 @@ images: [
   "/uploads/compressed/AIS-UNJANI-IQF.png",
   "/uploads/compressed/counseling-teacher-web-app.png",
 ]
-description: "List all Dev / Project / Work in Web Development, include Backend and Frontend by Budiman Fajar Firdaus @budimanfajarf, a Backend Developer from Bandung, Indonesia"
+description: "List all Dev / Project / Work in Web Development, include Backend and Frontend by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia"
 ---
 This is combination of ☕ + ❤️
 
