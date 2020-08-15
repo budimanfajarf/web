@@ -11,5 +11,6 @@ description:
 link: 
 repo: "https://github.com/budimanfajarf/kutipan"
 hiddenInXml: true
+stacks: ["Laravel", "Bootstrap", "JavaScript"]
 ---
 

@@ -11,6 +11,7 @@ description=""
 link=""
 repo=""
 hiddenInXml=false
+stacks= ["NodeJS", "ExpressJS"]
 
 [[sub]]
 title = "Timestamp Microservice"

@@ -12,5 +12,6 @@ description:
 link: "https://documenter.getpostman.com/view/11864120/T17DgUSe"
 repo: "https://github.com/budimanfajarf/covid19-api"
 hiddenInXml: true
+stacks: ["NodeJS", "ExpressJS"]
 ---
 

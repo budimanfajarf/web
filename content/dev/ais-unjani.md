@@ -11,5 +11,6 @@ description:
 link: 
 repo: "https://budimanfajarf@bitbucket.org/pubgmobile/siakad.git"
 hiddenInXml: true
+stacks: ["Laravel", "JQuery", "Bootstrap"]
 ---
 

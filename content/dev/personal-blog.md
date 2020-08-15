@@ -11,5 +11,6 @@ description:
 link: "/"
 repo: "https://github.com/budimanfajarf/blog/"
 hiddenInXml: true
+stacks: ["Hugo", "JavaScript"]
 ---
 
