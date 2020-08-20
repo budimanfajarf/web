@@ -11,6 +11,6 @@ description:
 link: "https://donasi.muslimapp.id/"
 repo: 
 hiddenInXml: true
-stacks: ["Laravel", "VueJS", "Bootstrap"]
+stacks: ["Laravel", "JQuery", "Bootstrap"]
 ---
 
