@@ -1,17 +1,16 @@
 +++
 date = 2020-08-19T17:00:00Z
 description = ""
-draft = true
 featuredImg = ""
 home = true
 images = []
 slug = "start-100-days-of-code-challenge"
 tags = ["php", "laravel"]
-title = "Started #100DaysOfCode Challenge"
+title = "Started #100DaysOfCode Challenge :)"
 toc = true
 
 +++
-4 days ago I decided to join a challenge called #100DaysOfCode :). The challenge is quite interesting for me so I decided to join in, the main rules of this challenge are **Code minimum an hour every day and tweet the progress on Twitter with #100DaysOfCode hashtag for the next 100 days.**
+4 days ago I decided to join a challenge called #100DaysOfCode. The challenge is quite interesting for me so I decided to join in, the main rules of this challenge are **Code minimum an hour every day and tweet the progress on Twitter with #100DaysOfCode hashtag for the next 100 days.**
 
 You can see detail information of the challenge on the [official website](https://100daysofcode.com "Official Website #100DaysOfCode Challenge")
 
