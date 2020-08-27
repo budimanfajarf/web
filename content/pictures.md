@@ -100,7 +100,7 @@ date = "2020-04-27T00:00:00+07:00"
 link = "/pictures/2020-05-31-budi-rizka.jpg"
 compressed = "/pictures/compressed/2020-05-31-budi-rizka.jpg"
 title = "Budi & Rizka"
-date = "2020-06-02T00:00:00+08:00"
+date = "2020-06-02T00:00:00+07:00"
 
 [[pictures]]
 link = "/pictures/2020-06-02-budi-bw.jpg"
@@ -249,7 +249,13 @@ date = "2020-06-26T00:00:00+07:00"
 link = "/pictures/2020-07-05-minami.png"
 compressed = "/pictures/compressed/2020-07-05-minami.png"
 title = "Minami / 美波"
-date = "2017-12-06T00:00:00+08:00"
+date = "2017-12-06T00:00:00+07:00"
+
+[[pictures]]
+link = "/pictures/2020-07-20-budi-long-hair.jpg"
+compressed = "/pictures/compressed/2020-07-20-budi-long-hair.jpg"
+title = "Budi's Long Hair"
+date = "2020-07-20T00:00:00+07:00"
 
 +++
 Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop, VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
