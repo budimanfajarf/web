@@ -16,9 +16,11 @@ toc = true
 
 Hi! My name is Budiman Fajar Firdaus, I'm a web developer from Bandung, Indonesia :)
 
-I've been 5 years in IT stuff and have been focused on web development for 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
+I've been 5 years in IT stuff and have been focused on the web development for the last 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
 
-Here my experience in some languages and frameworks, both in backend and frontend: [PHP](https://www.php.net/ "PHP"), [Laravel](https://laravel.com/ "Laravel"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [Vue.js](https://vuejs.org/ "Vue.js"), [Hugo](https://gohugo.io "Hugo").
+Here my experience in some languages and frameworks, both on the backend and frontend: [Laravel](https://laravel.com/ "Laravel"), [PHP](https://www.php.net/ "PHP"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Vue.js](https://vuejs.org/ "Vue.js"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [Hugo](https://gohugo.io "Hugo").
+
+Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Resume](https://drive.google.com/file/d/1WRaVoQDYyalb_EQYg--ddVMND3uhL3M8/view?usp=sharing "Budiman's Resume") :)
 
 ## ✍️ Blog
 
@@ -26,7 +28,7 @@ Here my experience in some languages and frameworks, both in backend and fronten
 
 It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme, you can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
 
-Want to get interesting notif? 
+Want to get interesting notif?
 [Subscribe here](https://subs.budidev.com/newsletter "Subscribe Newsletter") :)
 
 ---
@@ -41,7 +43,7 @@ Feel free to contact me if you have any questions :)
 If you need a web developer to build your dream web app, I would happy work with you :)&nbsp; you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077/ "Upwork Budiman Fajar Firdaus").
 
 ‎
- 
+
 > a cliché phrase but still I'm using is "Nice to meet you :)"
 >
 > — Budiman Fajar Firdaus
