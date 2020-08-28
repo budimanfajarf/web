@@ -1,5 +1,5 @@
 ---
-title: "Simple COVID19-API"
+title: "Simple COVID-19 Restful API"
 slug: "covid19-api"
 draft: false
 date: 2020-06-30T23:36:45+07:00
@@ -14,4 +14,3 @@ repo: "https://github.com/budimanfajarf/covid19-api"
 hiddenInXml: true
 stacks: ["NodeJS", "ExpressJS"]
 ---
-

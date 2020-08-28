@@ -2,7 +2,7 @@
 title: "Personal Blog (this web)"
 slug: "personal-blog"
 draft: false
-date: 2019-11-04T23:32:12+07:00
+date: 2020-04-28T23:32:12+07:00
 tags: []
 images: ["/uploads/compressed/budidev-com.png"]
 toc: false
@@ -13,4 +13,3 @@ repo: "https://github.com/budimanfajarf/blog/"
 hiddenInXml: true
 stacks: ["Hugo", "JavaScript"]
 ---
-

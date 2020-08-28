@@ -43,31 +43,31 @@
 								padding: 2.5px 6px;
 						    	margin-right: 3px;
 								border-radius: 3px;
-								font-weight: 500;	
-								font-size: 105%;							
+								font-weight: 500;
+								font-size: 105%;
 							">
 								{{.Title}}
 							</span>
 
 							<br class="mobile" />
-							
+
 							<span class="post-day mobile">
 								{{ .PublishDate.Format "Jan 2" }}
-							</span>	
+							</span>
 
 							{{ if .Params.link }}
 							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
-							{{ end }}			
+							{{ end }}
 							{{ if .Params.repo }}
 							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" title="Repo {{ .Params.title }}" target="_blank" rel="noopener">Repo</a>
-							{{ end }}							
+							{{ end }}
 							{{ if .Content }}
 							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}" title="Detail {{ .Params.title }}">See Detail</a>
-							{{ end }}								
+							{{ end }}
 							<!-- {{ if .Content }}
 								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
 							{{ end }}															 -->
-						</span>	
+						</span>
 
 						<span class="post-day desktop">
 							{{ .PublishDate.Format "Jan 2" }}
@@ -75,7 +75,7 @@
 
 					</div>
 
-					<div class="content" style="display: block; padding-top: 0px; padding-bottom: 6px">	
+					<div class="content" style="display: block; padding-top: 0px; padding-bottom: 6px">
 						{{ if .Params.youtube }}
 							<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 								<iframe src="https://www.youtube.com/embed/{{.Params.youtube}}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -84,12 +84,12 @@
 						{{ else if .Params.images }}
 								{{ $title := .Title }}
 								{{ range first 3 .Params.images }}
-									<img src="{{ . | relURL }}" 
-										alt="{{ $title }}"								
-										title="{{ $title }}"								 
+									<img src="{{ . | relURL }}"
+										alt="{{ $title }}"
+										title="{{ $title }}"
 										style="width: 100%;" />
 								{{ end }}
-						{{ end }}						
+						{{ end }}
 
 						{{ if .Params.sub }}
 							<ul class="ubuntu" style="margin-top: 0.5em">
@@ -98,7 +98,7 @@
 										<li>{{ .title }}</li>
 									{{ end }}
 								{{ end }}
-							</ul>																	
+							</ul>
 						{{ end }}
 
 						{{ if .Params.stacks }}
@@ -112,42 +112,44 @@
 										color: #fff;
 										margin-right: 3px;
 										border-radius: 3px;
-										padding: 1.5px 5px;											
+										padding: 1.5px 5px;
 										{{ if eq . "VueJS" }}
 											background-color: #16a085;
 										{{ else if eq . "Bootstrap" }}
 											background-color: #9b59b6;
 										{{ else if eq . "NodeJS" }}
-											background-color: #27ae60;											
+											background-color: #27ae60;
 										{{ else if eq . "ExpressJS" }}
-											background-color: #16a085;											
+											background-color: #16a085;
 										{{ else if eq . "ReactJS" }}
-											background-color: #3498db;											
+											background-color: #3498db;
 										{{ else if eq . "Hugo" }}
-											background-color: #2c3e50;											
+											background-color: #2c3e50;
 										{{ else if eq . "JavaScript" }}
-											background-color: #f1c40f;	
-											color: #3B3E48;										
+											background-color: #f1c40f;
+											color: #3B3E48;
 										{{ else if eq . "Laravel" }}
-											background-color: #e74c3c;											
+											background-color: #e74c3c;
 										{{ else if eq . "HTML" }}
+											background-color: #d35400;
+										{{ else if eq . "CodeIgniter" }}
 											background-color: #d35400;
 										{{ else if eq . "CSS" }}
 											background-color: #2980b9;
 										{{ else if eq . "PHP" }}
-											background-color: #3b5999;																																	
+											background-color: #3b5999;
 										{{ else if eq . "JQuery" }}
-											background-color: #e67e22;	
+											background-color: #e67e22;
 										{{ else if eq . "Tailwind" }}
-											background-color: #38b2ac;																						
-										{{ end }}																											
-									'>{{.}}</span>								
+											background-color: #38b2ac;
+										{{ end }}
+									'>{{.}}</span>
 
-								{{ end }}	
+								{{ end }}
 							</p>
 						{{ end }}
 					</div>
-					
+
 				</li>
 				{{- end }}
 			</ul>
