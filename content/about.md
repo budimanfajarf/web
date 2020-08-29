@@ -16,7 +16,7 @@ toc = true
 
 Hi! My name is Budiman Fajar Firdaus, I'm a web developer from Bandung, Indonesia :)
 
-I've been 5 years in IT stuff and have been focused on the web development for the last 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
+I've been 5 years in IT stuff and have been focused on web development for the last 3 years. I love to code, and more prefer to code in the backend, but I can do frontend too.
 
 Here my experience in some languages and frameworks, both on the backend and frontend: [Laravel](https://laravel.com/ "Laravel"), [PHP](https://www.php.net/ "PHP"), [Node.js](https://nodejs.org/ "Node.js"), [Express.js](http://expressjs.com/ "Express.js"), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript"), [Vue.js](https://vuejs.org/ "Vue.js"), [CodeIgniter](https://codeigniter.com/ "CodeIgniter"), [Hugo](https://gohugo.io "Hugo").
 
