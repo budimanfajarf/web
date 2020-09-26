@@ -296,6 +296,18 @@ footer a:hover {
   // border: 1px solid #000000;
 }
 
+.home-dev .post-day  {
+  opacity: 1;
+}
+
+.home-dev .post-day .type {
+  opacity: .9;
+}
+
+.home-dev .post-day .date {
+  opacity: .6;
+}
+
 @media only screen and (max-width: 725px) {
   #home-center {
     padding-top: .8em;

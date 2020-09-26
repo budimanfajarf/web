@@ -79,9 +79,9 @@
 									<span class="post-title">
 										{{ .Title }}
 										{{ if .Params.status }}
-											<small>
+											<span style="font-size: 90%;">
 												({{.Params.status}})
-											</small>
+											</span>
 										{{ end }}
 										<!-- {{.Params.type }} -->
 									</span>
@@ -90,7 +90,7 @@
 											{{ .PublishDate.Format "Jan 2, 2006" }}
 											·
 										</span>
-										<span style='
+										<span class="type" style='
 											background-color: #7d828a;
 											color: #fff;
 											margin-right: 3px;
