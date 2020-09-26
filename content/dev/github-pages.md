@@ -12,5 +12,5 @@ link: "https://budimanfajarf.github.io"
 repo: "https://github.com/budimanfajarf/budimanfajarf.github.io/"
 hiddenInXml: true
 stacks: ["HTML", "CSS", "JavaScript"]
+type: "Personal"
 ---
-

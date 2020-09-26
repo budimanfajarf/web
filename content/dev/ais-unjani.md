@@ -8,9 +8,9 @@ images: ["/uploads/compressed/AIS-UNJANI-IQF.png"]
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 
+link:
 repo: "https://budimanfajarf@bitbucket.org/pubgmobile/siakad.git"
 hiddenInXml: true
 stacks: ["Laravel", "JQuery", "Bootstrap"]
+type: "Volunteer"
 ---
-

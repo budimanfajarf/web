@@ -36,7 +36,7 @@
 				<li class="post-item" style="margin-bottom: 1em;">
 					<div class="content">
 						<span class="post-title">
-							<span style="
+							<!-- <span style="
 								color: #e8eef2;
 								background-color: #7d828a;
 								display: inline-block;
@@ -47,13 +47,43 @@
 								font-size: 105%;
 							">
 								{{.Title}}
+							</span> -->
+							<span style="
+								color: #e8eef2;
+								font-weight: 500;
+								font-size: 110%;
+							">
+								{{.Title}}
 							</span>
+							{{ if .Params.status }}
+								<span>
+									({{.Params.status}})
+								</span>
+							{{ end }}
 
 							<br class="mobile" />
 
 							<span class="post-day mobile">
 								{{ .PublishDate.Format "Jan 2" }}
 							</span>
+
+							<span class="mobile"> · </span>
+
+							<span style='
+								background-color: #7d828a;
+								color: #fff;
+								margin-right: 3px;
+								border-radius: 3px;
+								padding: 1.5px 5px;
+								{{ if eq .Params.type "Paid" }}
+									background-color: #38a169;
+								{{ else if eq .Params.type "Personal" }}
+									background-color: #3182ce;
+								{{ else if eq .Params.type "Volunteer" }}
+									background-color: #805ad5;
+								{{ end }}
+							'
+							>{{.Params.type}}</span>
 
 							{{ if .Params.link }}
 							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
@@ -142,6 +172,8 @@
 											background-color: #e67e22;
 										{{ else if eq . "Tailwind" }}
 											background-color: #38b2ac;
+										{{ else if eq . "WordPress" }}
+											background-color: #20759B;
 										{{ end }}
 									'>{{.}}</span>
 

@@ -1,5 +1,5 @@
 ---
-title: "Project Ideas (in-progress)"
+title: "Project Ideas"
 slug: "project-ideas"
 draft: false
 date: 2020-08-21T16:58:40+07:00
@@ -13,4 +13,6 @@ link:
 repo: "https://github.com/budimanfajarf/project-ideas"
 hiddenInXml: true
 stacks: ["Laravel", "VueJS", "Tailwind"]
+type: "Personal"
+status: "in-progress"
 ---

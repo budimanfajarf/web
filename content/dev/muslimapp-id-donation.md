@@ -1,5 +1,5 @@
 ---
-title: "Donation Web (muslimapp.id)"
+title: "Donation Web"
 slug: "donation-web"
 draft: false
 date: 2019-11-11T00:53:58+07:00
@@ -12,4 +12,6 @@ description:
 repo:
 hiddenInXml: true
 stacks: ["Laravel", "JQuery", "Bootstrap"]
+type: "Paid"
+status: "muslimapp.id"
 ---

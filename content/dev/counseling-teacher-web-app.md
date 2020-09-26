@@ -8,9 +8,9 @@ images: ["/uploads/compressed/counseling-teacher-web-app.png"]
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 
+link:
 repo: "https://github.com/budimanfajarf/bk"
 hiddenInXml: true
 stacks: ["PHP", "JQuery", "Bootstrap"]
+type: "Volunteer"
 ---
-

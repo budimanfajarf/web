@@ -12,5 +12,5 @@ link: "https://bff-tictactoe.herokuapp.com/"
 repo: "https://github.com/budimanfajarf/react-tictactoe"
 hiddenInXml: true
 stacks: ["ReactJS"]
+type: "Personal"
 ---
-

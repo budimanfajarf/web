@@ -12,6 +12,7 @@ link=""
 repo=""
 hiddenInXml=false
 stacks= ["NodeJS", "ExpressJS"]
+type= "Personal"
 
 [[sub]]
 title = "Timestamp Microservice"
@@ -50,5 +51,5 @@ The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp
 
 ![Certificate](/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png)
 
-* Credential: https://lnkd.in/g47V3dd 
+* Credential: https://lnkd.in/g47V3dd
 * freeCodeCamp Profile: [@budimanfajarf](https://www.freecodecamp.org/budimanfajarf)
