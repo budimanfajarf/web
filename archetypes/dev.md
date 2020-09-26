@@ -9,9 +9,10 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 
-repo: 
+link:
+repo:
 hiddenInXml: true
 stacks: []
+type:
+status:
 ---
-

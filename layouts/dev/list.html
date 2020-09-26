@@ -34,7 +34,7 @@
 			<ul class="posts-list">
 				{{- range .Pages }}
 				<li class="post-item" style="margin-bottom: 1em;">
-					<div class="content">
+					<div class="content" id="{{ .Params.slug }}">
 						<span class="post-title">
 							<!-- <span style="
 								color: #e8eef2;
@@ -52,6 +52,8 @@
 								color: #e8eef2;
 								font-weight: 500;
 								font-size: 110%;
+								display: inline-block;
+    							margin-bottom: 3px;
 							">
 								{{.Title}}
 							</span>
@@ -74,7 +76,8 @@
 								color: #fff;
 								margin-right: 3px;
 								border-radius: 3px;
-								padding: 1.5px 5px;
+								padding: 1.75px 5px 1.5px 5px;
+								font-size: 95%;
 								{{ if eq .Params.type "Paid" }}
 									background-color: #38a169;
 								{{ else if eq .Params.type "Personal" }}

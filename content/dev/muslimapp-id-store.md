@@ -15,4 +15,5 @@ hiddenInXml: true
 stacks: ["Laravel", "VueJS", "Bootstrap"]
 type: "Paid"
 status: "muslimapp.id"
+home: true
 ---

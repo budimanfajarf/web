@@ -29,7 +29,7 @@
 #home-nav a {
   display: inline-block;
   margin: 0 .2em;
-  margin-top: .5em;  
+  margin-top: .5em;
 
   /* box-shadow: inset 0 -.2em 0 #018574;
   line-height: 1.15;   */
@@ -44,7 +44,7 @@ body {
 }
 
 .content p, .content ul, .content ol, .content table, .tags {
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;  
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: .04em;
   line-height: 1.8;
 }
@@ -52,7 +52,7 @@ body {
 .content .ubuntu {
   font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   line-height: 1.6;
-  letter-spacing: .06em;  
+  letter-spacing: .06em;
 }
 
 .site-branding img {
@@ -70,16 +70,16 @@ body {
   line-height: 2;
 }
 
-#home-posts {
-  font-size: .7em;  
-  margin-top: .55em;  
+.home-main {
+  font-size: .7em;
+  margin-top: .55em;
 }
 
-#home-posts .posts-group {
+.home-main .posts-group {
   margin-bottom: 0;
 }
 
-#home-posts .post-nav {
+.home-main .post-nav {
   font-size: .9em; margin-top: .8em; margin-bottom: 2em;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .banner-404 .btn-404 a {
   margin-bottom: 1em;
-  margin-right: 1em;  
+  margin-right: 1em;
 }
 
 .post-meta.archived {
@@ -109,21 +109,21 @@ body {
 }
 
 .post-meta.archived .archived-label {
-  display: inline-block; 
-  opacity: 1; 
-  font-weight: 500; 
-  letter-spacing: 0.25px; 
-  color: #e8eef2; 
-  background: #c59219; 
-  border-radius: 3px; 
-  padding: 1px 4px; 
+  display: inline-block;
+  opacity: 1;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: #e8eef2;
+  background: #c59219;
+  border-radius: 3px;
+  padding: 1px 4px;
   margin-bottom: 4px;
 }
 
 .post-meta.archived .archived-info {
   font-size: .8rem;
-  display: block; 
-  margin-bottom: 2.5em; 
+  display: block;
+  margin-bottom: 2.5em;
 }
 
 blockquote.twitter-tweet, blockquote.twitter-tweet a {
@@ -153,93 +153,20 @@ footer a:hover {
 
 // hufft
 .post-item .content {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: baseline; 
-  padding: 12px 0;  
-}
-
-@media only screen and (max-width: 725px) {
-  #home-center {
-    padding-top: .8em;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
 }
 
 .home-footer-menu {
   margin-bottom: 0.5em;
 }
 
-@media only screen and (max-width: 565px) {
-  #home-title {
-    font-size: 1.1em;
-    font-size: 8vw;    
-  }
-  
-  .post-date {
-    display: none;
-  }
-
-  .posts-group .post-item a {
-    display: block;
-  } 
-
-  .posts-group .post-item .post-day {
-    display: block;    
-    margin-left: 0;
-    margin-top: .3em;    
-  }
-
-  .post-item .content {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 372px) {
-  #home-subtitle {
-    // font-size: .65em;
-    font-size: .7em;    
-  }  
-}
-
-@media only screen and (max-width: 350px) {
-  #home-subtitle {
-    // font-size: .6em;
-    font-size: .65em;    
-  }  
-}
-
-@media only screen and (max-width: 325px) {
-  #home-subtitle, #home-footer {
-    font-size: .55em;
-  }  
-}
-
-
-// it's get messy
-
-@media only screen and (min-width: 761px) { 
-  body {
-    font-size: 105%;   
-    line-height: 1.68;
-    letter-spacing: 0.063em; 
-  }
-
-  body.home{
-    font-size: 100%;   
-    line-height: 1.6;
-    letter-spacing: 0.06em; 
-  }
-
-  #home-subtitle {
-    font-size: .75em;
-    line-height: 1.775em;
-  }
-}
-
 .light {
   background-color: $light-light-grey;
-  box-shadow: inset 0 0 10em rgba(0,0,0,.025); 
-  min-height: 100vh;    
+  box-shadow: inset 0 0 10em rgba(0,0,0,.025);
+  min-height: 100vh;
 }
 
 .light button,
@@ -260,7 +187,7 @@ footer a:hover {
 
   &:hover {
     color: $midnightblue;
-    text-shadow: 0 0 1px $midnightblue;   
+    text-shadow: 0 0 1px $midnightblue;
   }
 }
 
@@ -269,7 +196,7 @@ footer a:hover {
 }
 
 .light .content a:hover {
-  box-shadow: inset 0 -1em 0 $light-theme; 
+  box-shadow: inset 0 -1em 0 $light-theme;
 }
 
 .light .content a.anchor {
@@ -284,11 +211,11 @@ footer a:hover {
   border-color: $midnightblue;
 }
 
-.light #site-header, 
+.light #site-header,
 .light #mobile-menu {
   background-color: $light-dark-grey;
   box-shadow: -1px -2px 3px rgba(0,0,0,.10);
-} 
+}
 
 .light .site-nav, .light .site-branding img {
   opacity: .9;
@@ -300,7 +227,7 @@ footer a:hover {
 
 .light .post-meta.archived .archived-label {
   background: #eea236;
-  color: #faf9f5;  
+  color: #faf9f5;
 }
 
 .light blockquote.twitter-tweet, .light blockquote.twitter-tweet a {
@@ -333,7 +260,7 @@ footer a:hover {
   margin-left: -93px;
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  transition: opacity .7s;  
+  transition: opacity .7s;
 }
 
 .tooltip .tooltiptext::after {
@@ -354,5 +281,142 @@ footer a:hover {
 
 .show {
   visibility: visible;
-  opacity: 1;  
+  opacity: 1;
+}
+
+.home-posts .post-nav {
+  margin-bottom: 0em;
+}
+
+.home-main .post-title {
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // width: 75vw;
+  // border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 725px) {
+  #home-center {
+    padding-top: .8em;
+  }
+}
+
+
+@media only screen and (max-width: 565px) {
+  #home-title {
+    font-size: 1.1em;
+    font-size: 8vw;
+  }
+
+  .post-date {
+    display: none;
+  }
+
+  .posts-group .post-item a {
+    display: block;
+  }
+
+  .posts-group .post-item .post-day {
+    display: block;
+    margin-left: 0;
+    margin-top: .3em;
+  }
+
+  // .home-dev .posts-group .post-item a {
+  //   display: flex;
+  // }
+
+  // .home-dev .posts-group .post-item .post-day {
+  //   display: flex;
+  //   margin-left: 0;
+  //   margin-top: 0;
+  // }
+
+  .post-item .content {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  #home-subtitle {
+    // font-size: .65em;
+    font-size: .7em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #home-subtitle {
+    // font-size: .6em;
+    font-size: .65em;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #home-subtitle, #home-footer {
+    font-size: .55em;
+  }
+}
+
+
+// it's get messy
+@media only screen and (min-width: 761px) {
+  body {
+    font-size: 105%;
+    line-height: 1.68;
+    letter-spacing: 0.063em;
+  }
+
+  body.home{
+    font-size: 100%;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+  }
+
+  #home-subtitle {
+    font-size: .75em;
+    line-height: 1.775em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+    margin: auto;
+    // width: 50vw;
+  }
+
+  .column {
+    // flex: 50%;
+  }
+
+  .home-main .post-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 25vw;
+  }
+
+  .home-posts .post-title {
+    width: 33vw;
+  }
+
+  .home-dev .post-title {
+    width: 17vw;
+  }
+
+  .home-posts {
+    padding-right: 1vw;
+  }
+
+  .home-dev {
+    padding-left: 1vw;
+  }
+
+  .home .date {
+    display: none;
+  }
+
 }

@@ -15,4 +15,5 @@ hiddenInXml: true
 stacks: ["PHP", "WordPress", "Bootstrap"]
 type: "Paid"
 status: "in-progress"
+home: true
 ---

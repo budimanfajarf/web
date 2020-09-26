@@ -15,4 +15,5 @@ repo: "https://github.com/budimanfajarf/covid19"
 stacks: ["VueJS", "Bootstrap"]
 hiddenInXml: true
 type: "Personal"
+home: true
 ---
