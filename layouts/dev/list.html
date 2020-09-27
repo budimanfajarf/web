@@ -71,18 +71,22 @@
 							<span class="mobile"> · </span>
 
 							<span style='
-								background-color: #7d828a;
-								color: #fff;
 								margin-right: 3px;
 								border-radius: 3px;
 								padding: 1.6px 5px 1.5px 5px;
 								font-size: 95%;
+								border-width: 1px;
+								border-style: solid;
+								border-color: #7d828a;
 								{{ if eq .Params.type "Paid" }}
-									background-color: #38a169;
+									border-color: #68d391;
+									color: #68d391;
 								{{ else if eq .Params.type "Personal" }}
-									background-color: #3182ce;
+									border-color: #63b3ed;
+									color: #63b3ed;
 								{{ else if eq .Params.type "Volunteer" }}
-									background-color: #805ad5;
+									border-color: #7f9cf5;
+									color: #7f9cf5;
 								{{ end }}
 							'
 							>{{.Params.type}}</span>
@@ -135,13 +139,13 @@
 
 						{{ if .Params.stacks }}
 							<p class="ubuntu" style="margin-bottom: 0; margin-top: 0.8em">
-								<strong>Stack: </strong>
+								<strong style="font-weight: 500;">Stack: </strong>
 
 								{{ range .Params.stacks }}
 									<!-- <span>{{ . }}, </span> -->
 									<span style='
 										background-color: #7d828a;
-										color: #fff;
+										color: #e8eef2;
 										margin-right: 3px;
 										border-radius: 3px;
 										padding: 1.5px 5px;

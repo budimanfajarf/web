@@ -91,17 +91,20 @@
 											·
 										</span>
 										<span class="type" style='
-											background-color: #7d828a;
-											color: #fff;
-											margin-right: 3px;
 											border-radius: 3px;
 											padding: 1.5px 5px;
+											border-width: 1px;
+											border-style: solid;
+											border-color: #7d828a;
 											{{ if eq .Params.type "Paid" }}
-												background-color: #38a169;
+												border-color: #68d391;
+												color: #68d391;
 											{{ else if eq .Params.type "Personal" }}
-												background-color: #3182ce;
+												border-color: #63b3ed;
+												color: #63b3ed;
 											{{ else if eq .Params.type "Volunteer" }}
-												background-color: #805ad5;
+												border-color: #7f9cf5;
+												color: #7f9cf5;
 											{{ end }}
 										'
 										>{{.Params.type}}</span>
