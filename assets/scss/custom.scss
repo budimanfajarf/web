@@ -308,6 +308,12 @@ footer a:hover {
   opacity: .6;
 }
 
+.home h3 {
+  border-top: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 @media only screen and (max-width: 725px) {
   #home-center {
     padding-top: .8em;
