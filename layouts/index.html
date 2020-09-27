@@ -41,7 +41,7 @@
 
 				<div class="home-main home-posts column">
 
-					<h3>Posts ✍️</h3>
+					<h3>Blog / Posts ✍️</h3>
 
 					<div class="posts-group">
 						<ul class="posts-list">
@@ -63,8 +63,9 @@
 					</div>
 
 					<div class="post-nav">
-						<a class="prev-post" href='{{ "posts/" | absLangURL }}' title="See all published posts">
+						<a class="prev-post tooltip" href='{{ "posts/" | absLangURL }}' title="See all published posts">
 							<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltippost">See all posts here</span>
 						</a>
 					</div>
 
@@ -120,8 +121,9 @@
 					</div>
 
 					<div class="post-nav">
-						<a class="prev-post" href='{{ "dev/" | absLangURL }}' title="See all dev/projects">
+						<a class="prev-post tooltip" href='{{ "dev/" | absLangURL }}' title="See all Dev / Projects">
 							<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See all projects here :)</span>
 						</a>
 					</div>
 
@@ -136,10 +138,11 @@
 				{{ range $i, $menu := .Site.Menus.main }}
 					{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
 					{{ if eq $menu.Name "Dev" }}
-						<a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
+						<!-- <a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
 							<span style="opacity: .6;">{{ $menu.Name }}</span>
 							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
-						</a>
+						</a> -->
+						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">{{ $menu.Name }}</a>
 					{{ else if eq $menu.Name "Pictures" }}
 						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Photos 🖼️">{{ $menu.Name }}</a>
 					{{ else }}
@@ -173,6 +176,31 @@
 		<script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 
 	<script>
+		// setTimeout(function(){
+		// 	var tooltip = document.getElementById("tooltipdev");
+		// 	tooltip.classList.remove("hide");
+		// 	tooltip.classList.add("show");
+
+		// 	setTimeout(function() {
+		// 		tooltip.classList.remove("show");
+		// 		tooltip.classList.add("hide");
+		// 	}, 10000);
+		// }, 6000);
+
+		var tooltipPostShow =  1000*14;
+		var tooltipPostDuration = 1000*4;
+
+		setTimeout(function(){
+			var tooltip = document.getElementById("tooltippost");
+			tooltip.classList.remove("hide");
+			tooltip.classList.add("show");
+
+			setTimeout(function() {
+				tooltip.classList.remove("show");
+				tooltip.classList.add("hide");
+			}, tooltipPostDuration);
+		}, tooltipPostShow);
+
 		setTimeout(function(){
 			var tooltip = document.getElementById("tooltipdev");
 			tooltip.classList.remove("hide");
@@ -181,7 +209,7 @@
 			setTimeout(function() {
 				tooltip.classList.remove("show");
 				tooltip.classList.add("hide");
-			}, 10000);
-		}, 6000);
+			}, 1000*5);
+		}, tooltipPostShow+tooltipPostDuration);
 	</script>
 {{ end }}
