@@ -125,6 +125,11 @@
 										title="{{ $title }}"
 										style="width: 100%;" />
 								{{ end }}
+						{{ else }}
+							<img src="/images/compressed/coming-soon.jpg"
+								alt="{{ .Params.title }}"
+								title="{{ .Params.title }}"
+								style="width: 100%;" />
 						{{ end }}
 
 						{{ if .Params.sub }}
@@ -180,6 +185,8 @@
 											background-color: #38b2ac;
 										{{ else if eq . "WordPress" }}
 											background-color: #20759B;
+										{{ else if eq . "Elementor" }}
+											background-color: #97266d;
 										{{ end }}
 									'>{{.}}</span>
 

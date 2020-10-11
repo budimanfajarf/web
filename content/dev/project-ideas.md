@@ -2,7 +2,7 @@
 title: "Project Ideas"
 slug: "project-ideas"
 draft: false
-date: 2020-08-21T16:58:40+07:00
+date: 2020-08-17T16:58:40+07:00
 tags: []
 images: ["/images/compressed/coming-soon.jpg"]
 featuredImg:
