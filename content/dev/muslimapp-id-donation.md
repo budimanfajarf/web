@@ -12,6 +12,6 @@ description:
 repo:
 hiddenInXml: true
 stacks: ["Laravel", "JQuery", "Bootstrap"]
-type: "Paid"
+type: "Full Time"
 status: "muslimapp.id"
 ---

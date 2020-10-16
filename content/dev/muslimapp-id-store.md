@@ -13,7 +13,7 @@ link:
 repo:
 hiddenInXml: true
 stacks: ["Laravel", "VueJS", "Bootstrap"]
-type: "Paid"
+type: "Full Time"
 status: "muslimapp.id"
 home: true
 ---

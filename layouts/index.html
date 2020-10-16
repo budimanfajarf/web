@@ -85,7 +85,7 @@
 										{{ .Title }}
 										{{ if .Params.status }}
 											<span style="font-size: 90%;">
-												({{.Params.status}})
+												({{.Params.status | safeHTML}})
 											</span>
 										{{ end }}
 										<!-- {{.Params.type }} -->
@@ -101,7 +101,7 @@
 											border-width: 1px;
 											border-style: solid;
 											border-color: #7d828a;
-											{{ if eq .Params.type "Paid" }}
+											{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") }}
 												border-color: #68d391;
 												color: #68d391;
 											{{ else if eq .Params.type "Personal" }}
@@ -110,6 +110,9 @@
 											{{ else if eq .Params.type "Volunteer" }}
 												border-color: #7f9cf5;
 												color: #7f9cf5;
+											{{ else if eq .Params.type "Career Test" }}
+												border-color: #4fd1c5;
+												color: #4fd1c5;
 											{{ end }}
 										'
 										>{{.Params.type}}</span>

@@ -15,4 +15,5 @@ hiddenInXml: true
 stacks: []
 type:
 status:
+home: true
 ---

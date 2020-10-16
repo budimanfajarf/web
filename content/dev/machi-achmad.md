@@ -13,7 +13,7 @@ link:
 repo:
 hiddenInXml: true
 stacks: ["PHP", "WordPress", "Elementor"]
-type: "Paid"
-status: "in-progress"
+type: "Freelance"
+status: "in&#8209;progress"
 home: true
 ---

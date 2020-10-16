@@ -13,6 +13,6 @@ link:
 repo:
 hiddenInXml: true
 stacks: ["CodeIgniter", "JQuery", "Bootstrap"]
-type: "Paid"
+type: "Full Time"
 status: "muslimapp.id"
 ---

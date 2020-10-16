@@ -14,5 +14,5 @@ repo: "https://github.com/budimanfajarf/project-ideas"
 hiddenInXml: true
 stacks: ["Laravel", "VueJS", "Tailwind"]
 type: "Personal"
-status: "in-progress"
+status: "in&#8209;progress"
 ---

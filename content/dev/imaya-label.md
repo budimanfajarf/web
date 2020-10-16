@@ -13,7 +13,7 @@ link: "https://imaya.budidev.com"
 repo:
 hiddenInXml: true
 stacks: ["PHP", "WordPress", "Bootstrap"]
-type: "Paid"
-status: "in-progress"
+type: "Freelance"
+status: "in&#8209;progress"
 home: true
 ---
