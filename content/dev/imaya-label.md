@@ -12,7 +12,7 @@ description:
 link: "https://imaya.budidev.com"
 repo:
 hiddenInXml: true
-stacks: ["PHP", "WordPress", "Bootstrap"]
+stacks: ["WordPress", "Bootstrap", "Pods"]
 type: "Freelance"
 status: "in&#8209;progress"
 home: true

@@ -1,5 +1,5 @@
 ---
-title: "Niaga Hoster Landing Page"
+title: "Niagahoster Landing Page"
 slug: "niagahoster-landing-page"
 draft: false
 date: 2020-10-15T20:11:13+07:00
