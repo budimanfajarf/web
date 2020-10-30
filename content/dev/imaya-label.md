@@ -4,7 +4,7 @@ slug: "imaya-label"
 draft: false
 date: 2020-09-12T14:05:35+07:00
 tags: []
-images: ["/uploads/compressed/imaya-label.png"]
+images: ["/uploads/compressed/imaya-label-2.png"]
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

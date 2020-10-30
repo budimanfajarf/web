@@ -4,12 +4,12 @@ slug: "machi-achmad-and-partners"
 draft: false
 date: 2020-10-18T09:52:55+07:00
 tags: []
-images: []
+images: ["/uploads/compressed/machi-achmad-and-partners.png"]
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link:
+link: "https://machi.budidev.com"
 repo:
 hiddenInXml: true
 stacks: ["WordPress", "Elementor", "Pods"]
