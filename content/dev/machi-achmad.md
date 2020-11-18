@@ -9,7 +9,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "https://machi.budidev.com"
+link: "https://machiandpartners.com"
 repo:
 hiddenInXml: true
 stacks: ["WordPress", "Elementor", "Pods"]
