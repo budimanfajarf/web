@@ -14,6 +14,6 @@ repo:
 hiddenInXml: true
 stacks: ["WordPress", "Elementor", "Pods"]
 type: "Freelance"
-status: "in&#8209;progress"
+status: "Monocle&nbsp;Agency"
 home: true
 ---

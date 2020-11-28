@@ -9,11 +9,11 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "https://imaya.budidev.com"
+link: "https://imayalabel.com"
 repo:
 hiddenInXml: true
 stacks: ["WordPress", "Bootstrap", "Pods"]
 type: "Freelance"
-status: "in&#8209;progress"
+status: "Monocle&nbsp;Agency"
 home: true
 ---
