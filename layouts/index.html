@@ -101,7 +101,7 @@
 											border-width: 1px;
 											border-style: solid;
 											border-color: #7d828a;
-											{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") }}
+											{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") (eq .Params.type "Full&nbsp;Time") }}
 												border-color: #68d391;
 												color: #68d391;
 											{{ else if eq .Params.type "Personal" }}
@@ -115,7 +115,7 @@
 												color: #4fd1c5;
 											{{ end }}
 										'
-										>{{.Params.type}}</span>
+										>{{.Params.type | safeHTML }}</span>
 									</span>
 								</a>
 							</li>
