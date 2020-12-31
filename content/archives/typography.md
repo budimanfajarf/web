@@ -3,7 +3,7 @@ title: "Typography"
 date: 2018-09-29T11:36:33+08:00
 draft: true
 featuredImg: ""
-tags: 
+tags:
 #  - Demo
 #  - Typography
 ---
@@ -46,8 +46,7 @@ Table:
 
 Lists:
 
-* Unordered list item 1.
-* Unordered list item 2.
+
 
 1. ordered list item 1.
 2. ordered list item 2.
