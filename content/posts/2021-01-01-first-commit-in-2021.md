@@ -1,7 +1,7 @@
 ---
 title: "First Commit in 2021"
 slug: "first-commit-in-2021"
-draft: false
+draft: true
 date: 2021-01-01T17:27:04+07:00
 tags: []
 images: [
