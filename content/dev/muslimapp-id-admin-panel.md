@@ -14,5 +14,6 @@ repo:
 hiddenInXml: true
 stacks: ["CodeIgniter", "JQuery", "Bootstrap"]
 type: "Full Time"
-status: "muslimapp.id"
+company: "muslimapp.id"
+status: "update some features"
 ---

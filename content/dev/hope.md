@@ -1,20 +1,20 @@
 ---
-title: "Floship"
-slug: "floship"
+title: "Hope"
+slug: "hope"
 draft: false
-date: 2020-11-23T00:09:10+07:00
+date: 2020-12-18T23:37:39+07:00
 tags: []
 images: []
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link:
+link: "https://hubton-hope.netlify.app/"
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Tailwind", "Bedrock+Sage", "ACF"]
+stacks: ["HTML", "Tailwind"]
 type: "Full&nbsp;Time"
 company: "Hubton&nbsp;Indonesia"
-status: "Features & Case Study"
+status: "Frontend&nbsp;UI"
 home: true
 ---

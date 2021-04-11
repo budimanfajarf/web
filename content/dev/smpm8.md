@@ -1,8 +1,8 @@
 ---
-title: "Floship"
-slug: "floship"
+title: "SMPM 8"
+slug: "smpm8"
 draft: false
-date: 2020-11-23T00:09:10+07:00
+date: 2020-12-28T23:52:14+07:00
 tags: []
 images: []
 featuredImg:
@@ -12,9 +12,9 @@ description:
 link:
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Tailwind", "Bedrock+Sage", "ACF"]
+stacks: ["WordPress", "Bootstrap", "Bedrock+Sage", "ACF"]
 type: "Full&nbsp;Time"
 company: "Hubton&nbsp;Indonesia"
-status: "Features & Case Study"
+status: "Some pages"
 home: true
 ---

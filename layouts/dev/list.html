@@ -166,7 +166,7 @@
 										margin-right: 3px;
 										border-radius: 3px;
 										padding: 1.5px 5px;
-										{{ if eq . "VueJS" }}
+										{{ if or (eq . "VueJS") (eq . "NuxtJS") }}
 											background-color: #16a085;
 										{{ else if eq . "Bootstrap" }}
 											background-color: #9b59b6;
@@ -201,10 +201,12 @@
 											background-color: #97266d;
 										{{ else if eq . "Pods" }}
 											background-color: #95b93b;
+										{{ else if or (eq . "Roots.io") (eq . "roots.io") (eq . "Bedrock") (eq . "Sage") (eq . "Bedrock+Sage") (eq . "Bedrock&nbsp;+&nbsp;Sage") }}
+											background-color: #525ddc;
 										{{ else if eq . "ACF" }}
 											background-color: #00e4bc; font-weight: 500;
 										{{ end }}
-									'>{{.}}</span>
+									'>{{ . | safeHTML}}</span>
 
 								{{ end }}
 							</p>

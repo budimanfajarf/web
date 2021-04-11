@@ -14,6 +14,6 @@ repo:
 hiddenInXml: true
 stacks: ["Laravel", "VueJS", "Bootstrap"]
 type: "Full Time"
-status: "muslimapp.id"
+company: "muslimapp.id"
 home: true
 ---

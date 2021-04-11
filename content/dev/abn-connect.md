@@ -1,20 +1,20 @@
 ---
-title: "Imaya Label"
-slug: "imaya-label"
+title: "ABN Connect"
+slug: "abn-connect"
 draft: false
-date: 2020-09-12T14:05:35+07:00
+date: 2021-04-09T23:50:47+07:00
 tags: []
-images: ["/uploads/compressed/imaya-label-2.png"]
+images:
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "https://imayalabel.com"
+link: "https://abn.budidev.com"
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Bootstrap", "Pods"]
+stacks: ["WordPress", "Elementor", "ACF"]
 type: "Freelance"
-status: ""
 company: "Monocle&nbsp;Agency"
+status: "in-progress"
 home: true
 ---

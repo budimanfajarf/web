@@ -14,6 +14,7 @@ repo:
 hiddenInXml: true
 stacks: ["PHP", "Bootstrap"]
 type: "Career Test"
+company: "Niagahoster"
 status:
 home: true
 ---

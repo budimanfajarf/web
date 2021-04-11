@@ -9,11 +9,12 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "https://mera.budidev.com"
+link: "https://merarasa.com"
 repo:
 hiddenInXml: true
 stacks: ["WordPress", "Elementor", "Pods", "ACF"]
 type: "Freelance"
-status: "in-progress"
+company: "Monocle&nbsp;Agency"
+status: ""
 home: true
 ---
