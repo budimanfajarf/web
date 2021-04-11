@@ -1,20 +1,20 @@
 ---
-title: "SMPM 8"
-slug: "smpm8"
+title: "NM World"
+slug: "nm-world"
 draft: false
-date: 2020-12-28T23:52:14+07:00
+date: 2021-02-22T00:03:49+07:00
 tags: []
 images: []
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "http://smpm8bandung.sch.id/"
+link:
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Bootstrap", "Bedrock+Sage", "ACF"]
+stacks: ["WordPress", "Bedrock+Sage", "ACF"]
 type: "Full&nbsp;Time"
 company: "Hubton&nbsp;Indonesia"
-status: "Some pages"
+status: "Backend dev"
 home: true
 ---
