@@ -1,7 +1,7 @@
 ---
 title: "First Commit in 2021"
 slug: "first-commit-in-2021"
-draft: true
+draft: false
 date: 2021-01-01T17:27:04+07:00
 tags: []
 images: [
@@ -11,7 +11,7 @@ featuredImg: "/uploads/2021-01-01-first-commit.jpg"
 toc: false
 # description: string, if empty (substring main content)
 description:
-home: false
+home: true
 ---
 
 ## Hello 2021 :)

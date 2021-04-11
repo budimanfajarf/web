@@ -68,32 +68,6 @@
 								{{ .PublishDate.Format "Jan 2" }}
 							</span>
 
-							<span class="mobile"> · </span>
-
-							<span style='
-								margin-right: 3px;
-								border-radius: 3px;
-								padding: 1.6px 5px 1.5px 5px;
-								font-size: 95%;
-								border-width: 1px;
-								border-style: solid;
-								border-color: #7d828a;
-								{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") (eq .Params.type "Full&nbsp;Time") }}
-									border-color: #68d391;
-									color: #68d391;
-								{{ else if eq .Params.type "Personal" }}
-									border-color: #63b3ed;
-									color: #63b3ed;
-								{{ else if eq .Params.type "Volunteer" }}
-									border-color: #7f9cf5;
-									color: #7f9cf5;
-								{{ else if eq .Params.type "Career Test" }}
-									border-color: #4fd1c5;
-									color: #4fd1c5;
-								{{ end }}
-							'
-							>{{.Params.type | safeHTML }}</span>
-
 							{{ if .Params.link }}
 							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
 							{{ end }}
@@ -105,7 +79,8 @@
 							{{ end }}
 							<!-- {{ if .Content }}
 								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
-							{{ end }}															 -->
+							{{ end }}
+							-->
 						</span>
 
 						<span class="post-day desktop">
@@ -126,13 +101,14 @@
 									<img src="{{ . | relURL }}"
 										alt="{{ $title }}"
 										title="{{ $title }}"
-										style="width: 100%;" />
+										style="width: 100%; margin-top: 12px;" />
 								{{ end }}
 						{{ else }}
-							<img src="/images/compressed/coming-soon.jpg"
+							<!-- <img src="/images/compressed/coming-soon.jpg"
 								alt="{{ .Params.title }}"
 								title="{{ .Params.title }}"
 								style="width: 100%;" />
+							-->
 						{{ end }}
 
 						{{ if .Params.sub }}
@@ -145,10 +121,43 @@
 							</ul>
 						{{ end }}
 
-						{{ if .Params.stacks }}
-							<p class="ubuntu" style="margin-bottom: 0; margin-top: 0.8em">
-								<strong style="font-weight: 500;">Stack: </strong>
+						{{ if .Params.type }}
+							<div style="margin-top: 12px">
+								<span style='
+									margin-right: 3px;
+									border-radius: 3px;
+									padding: 1.6px 5px 1.5px 5px;
+									font-size: 95%;
+									border-width: 1px;
+									border-style: solid;
+									border-color: #7d828a;
+									{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") (eq .Params.type "Full&nbsp;Time") }}
+										border-color: #68d391;
+										color: #68d391;
+									{{ else if eq .Params.type "Personal" }}
+										border-color: #63b3ed;
+										color: #63b3ed;
+									{{ else if eq .Params.type "Volunteer" }}
+										border-color: #7f9cf5;
+										color: #7f9cf5;
+									{{ else if eq .Params.type "Career Test" }}
+										border-color: #4fd1c5;
+										color: #4fd1c5;
+									{{ end }}
+								'
+								>{{ .Params.type | safeHTML }}</span>
+								{{ if .Params.company }}
+									<span>
+										at {{ .Params.company | safeHTML }}
+									</span>
+								{{ end }}
+							</div>
+						{{ end }}
 
+
+						{{ if .Params.stacks }}
+							<p class="ubuntu" style="margin-bottom: 0; margin-top: 12px">
+								<!-- <strong style="font-weight: 500;">Stack: </strong> -->
 								{{ range .Params.stacks }}
 									<!-- <span>{{ . }}, </span> -->
 									<span style='

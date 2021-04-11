@@ -14,6 +14,7 @@ repo:
 hiddenInXml: true
 stacks: []
 type:
+company:
 status:
 home: true
 ---
