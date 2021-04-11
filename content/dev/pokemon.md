@@ -1,7 +1,7 @@
 ---
 title: "Pokemon"
 slug: "pokemon"
-draft: false
+draft: true
 date: 2021-02-10T23:56:07+07:00
 tags: []
 images: []

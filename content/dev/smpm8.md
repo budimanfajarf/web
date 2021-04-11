@@ -1,7 +1,7 @@
 ---
 title: "SMPM 8"
 slug: "smpm8"
-draft: false
+draft: true
 date: 2020-12-28T23:52:14+07:00
 tags: []
 images: []

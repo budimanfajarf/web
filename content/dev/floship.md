@@ -1,7 +1,7 @@
 ---
 title: "Floship"
 slug: "floship"
-draft: false
+draft: true
 date: 2020-11-23T00:09:10+07:00
 tags: []
 images: []

@@ -53,18 +53,19 @@
 								font-size: 110%;
 								display: inline-block;
     							margin-bottom: 3px;
+    							margin-bottom: 2px;
 							">
 								{{.Title}}
 							</span>
 							{{ if .Params.status }}
-								<span>
+								<span style="font-size: 95%;">
 									({{.Params.status | safeHTML}})
 								</span>
 							{{ end }}
 
 							<br class="mobile" />
 
-							<span class="post-day mobile">
+							<span class="post-day mobile" style="margin-top: 0px;">
 								{{ .PublishDate.Format "Jan 2" }}
 							</span>
 
@@ -156,7 +157,7 @@
 
 
 						{{ if .Params.stacks }}
-							<p class="ubuntu" style="margin-bottom: 0; margin-top: 12px">
+							<p class="ubuntu" style="margin-bottom: 0; margin-top: 8px">
 								<!-- <strong style="font-weight: 500;">Stack: </strong> -->
 								{{ range .Params.stacks }}
 									<!-- <span>{{ . }}, </span> -->
@@ -166,6 +167,7 @@
 										margin-right: 3px;
 										border-radius: 3px;
 										padding: 1.5px 5px;
+										font-size: 95%;
 										{{ if or (eq . "VueJS") (eq . "NuxtJS") }}
 											background-color: #16a085;
 										{{ else if eq . "Bootstrap" }}

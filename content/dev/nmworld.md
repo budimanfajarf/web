@@ -1,7 +1,7 @@
 ---
 title: "NM World"
 slug: "nm-world"
-draft: false
+draft: true
 date: 2021-02-22T00:03:49+07:00
 tags: []
 images: []
