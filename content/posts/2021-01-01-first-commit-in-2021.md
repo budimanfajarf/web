@@ -11,7 +11,7 @@ featuredImg: "/uploads/2021-01-01-first-commit.jpg"
 toc: false
 # description: string, if empty (substring main content)
 description:
-home: true
+home: false
 ---
 
 ## Hello 2021 :)
