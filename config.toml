@@ -61,7 +61,7 @@ disqusShortname = "budidev"
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
   back_to_home_page = true # custom add back to homepage
-  
+
   # Add custom css
   # customCSS = ["css/custom.css"]
 
@@ -81,15 +81,15 @@ disqusShortname = "budidev"
 
   [[params.social]]
     name = "linkedin"
-    url = "https://linkedin.com/in/budimanfajarf"  
+    url = "https://linkedin.com/in/budimanfajarf"
 
   [[params.social]]
     name = "email"
-    url = "mailto:hello@budidev.com?cc=budimanfajarf@gmail.com"  
+    url = "mailto:hello@budidev.com"
 
   [[params.social]]
     name = "upwork"
-    url = "https://upwork.com/freelancers/~01b8d55d6a5a8f1077"  
+    url = "https://upwork.com/freelancers/~01b8d55d6a5a8f1077"
 
 [menu]
 
@@ -117,8 +117,8 @@ disqusShortname = "budidev"
     name = "Pictures"
     url = "pictures/"
     weight = 25
-    
-    
+
+
 [permalinks]
   archives = "/:year/:month/:slug/"
   posts = "/:year/:month/:slug/"

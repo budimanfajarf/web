@@ -34,7 +34,7 @@ It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](
 
 Feel free to contact me if you have any questions :)
 
-* Email: [hello@budidev.com](mailto:hello@budidev.com?cc=budimanfajarf@gmail.com "Email Budiman Fajar Firdaus")
+* Email: [hello@budidev.com](mailto:hello@budidev.com "Email Budiman Fajar Firdaus")
 * Telegram: [@budimanfajarf](https://t.me/budimanfajarf/ "Telegram Budiman Fajar Firdaus")
 
 If you need a web developer to build your dream web app, I would happy work with you :)&nbsp; you can invite me by contact above or through [Upwork](https://www.upwork.com/freelancers/\~01b8d55d6a5a8f1077/ "Upwork Budiman Fajar Firdaus").
