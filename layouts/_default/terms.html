@@ -9,12 +9,12 @@
 		{{- if .Content }}
       {{ .Content }}
     {{- end }}
-    </div>		
+    </div>
     <div class="content line-height-2">
       {{ range .Data.Terms.Alphabetical }}
         <a href="{{ .Page.Permalink }}">{{ .Page.Title }}<!-- <sup>({{ .Count }})</sup> --></a>&nbsp;&nbsp;
-      {{ end }}      
-    </div>    
+      {{ end }}
+    </div>
 	</main>
 {{ end }}
 

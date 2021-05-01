@@ -13,15 +13,15 @@
 		{{ else if .IsPage }}
 			{{ .Title }} - @{{ .Site.Author.username }} - BudiDev
 		{{ else }}
-			{{ .Title }} - BudiDev			
+			{{ .Title }} - BudiDev
 		{{ end }}
 	</title>
 	{{ if .IsPage }}<meta name="author" content="{{ .Site.Author.name }}">{{ end }}
 	{{ with .Description }}
-	<meta name="description" content="{{ . }}">	
+	<meta name="description" content="{{ . }}">
 	{{ else }}
 		{{ if .IsHome }}
-		<meta name="description" content="{{ .Site.Params.description }}">		
+		<meta name="description" content="{{ .Site.Params.description }}">
 		{{ else if .IsPage }}
 		<meta name="description" content="{{ .Summary }}">
 		{{ end }}
@@ -63,7 +63,7 @@
 		<script src="{{ $script.Permalink | relURL }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 	{{ end }}
 	{{ $customJs := resources.Get "js/custom.js" | minify | fingerprint -}}
-		<script src="{{ $customJs.Permalink | relURL }}" {{ printf "integrity=%q" $customJs.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>	
+		<script src="{{ $customJs.Permalink | relURL }}" {{ printf "integrity=%q" $customJs.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 
 	{{- partial "analytics.html" . }}
 	{{- if templates.Exists "partials/extra-foot.html" -}}

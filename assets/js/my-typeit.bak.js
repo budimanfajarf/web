@@ -1,7 +1,7 @@
 const myTypeit = new TypeIt(".home-subtitle-typeit", {
   speed: 125,
   waitUntilVisible: true,
-  startDelay: 1000,  
+  startDelay: 1000,
 })
 
 myTypeit.go();
@@ -20,4 +20,3 @@ myTypeit.go();
 //         .pause(300)
 //         .type(" Indonesia")
 //         .go();
-

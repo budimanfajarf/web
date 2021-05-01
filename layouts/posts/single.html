@@ -12,7 +12,7 @@
 		<article class="thin">
 			<header class="post-header">
 				<div class="post-meta">
-					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·  
+					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·
 					<span>{{ .ReadingTime }} min read</span>
 				</div>
 				<h1>{{ .Title }}</h1>
@@ -30,7 +30,7 @@
 					</span>&nbsp;
 					{{- end }}
 				</p>
-				{{- end }}					
+				{{- end }}
 			</div>
 
 			{{- if .Site.Params.relatedPosts }}
@@ -41,7 +41,7 @@
 
 			<footer class="content" style="display: flex; align-items: center;">
 				<figure>
-					<img src="/images/compressed/profile-photo-1-re-small.png" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}" style="width: 80px; max-width: 80px; margin-right: 1em; border-radius: 50%;"> 
+					<img src="/images/compressed/profile-photo-1-re-small.png" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}" style="width: 80px; max-width: 80px; margin-right: 1em; border-radius: 50%;">
 					<figcaption style="display: none;">
 						<p>{{ .Site.Author.name }}</p>
 					</figcaption>
@@ -49,19 +49,19 @@
 
 				<p>
 					<span style="font-size: 110%; letter-spacing: 0.06em; line-height: 2.4;">
-						Thanks for reading! :) 
+						Thanks for reading! :)
 					</span>
-					<br /> 
+					<br />
 					<span style="font-size: 90%; display: inline-block;">
 						Find more in <a href="/posts/" title="See all published posts">published posts</a>,
 						contact/info in <a href="/about/#contact" title="Contact / Info">about page</a>,
-						want to get interesting notif? <a href="https://subs.budidev.com/newsletter" title="Subscribe Newsletter" target="_blank" rel="noopener">subscribe here</a>	
+						want to get interesting notif? <a href="https://subs.budidev.com/newsletter" title="Subscribe Newsletter" target="_blank" rel="noopener">subscribe here</a>
 					</span>
 				</p>
 			</footer>
 
 		</article>
-		
+
 		{{- if .Params.toc }}
 		<aside id="toc">
 			<div class="toc-title">{{ i18n "tableOfContents" }}</div>
@@ -85,7 +85,7 @@
 		<div id="comments" class="thin">
 			{{ partial "comments.html" . }}
 		</div>
-		{{- end }}		
+		{{- end }}
 	</main>
 {{ end }}
 

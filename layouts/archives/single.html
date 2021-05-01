@@ -14,8 +14,8 @@
 				<div class="post-meta archived">
 					<span class="archived-label">archived</span><br />
 					<span class="archived-info">This post may no longer available in the future</span>
-					<span>{{ .Date.Format .Site.Params.dateform }}</span> · 
-					<span>{{ .ReadingTime }} min read</span> 
+					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·
+					<span>{{ .ReadingTime }} min read</span>
 				</div>
 				<h1>{{ .Title }}</h1>
 			</header>
@@ -53,7 +53,7 @@
 						<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{.}}</a></span>&nbsp;
 					{{- end }}
 				</p>
-				{{- end }}				
+				{{- end }}
 			</footer>
 			{{ end }}
 

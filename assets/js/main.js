@@ -46,8 +46,8 @@ const autoHideHeader = () => {
   // customize show when scroll at bottom of page
   if (document.documentElement.scrollHeight <= window.pageYOffset + window.innerHeight)  {
     header.classList.remove('slideOutDown');
-    header.classList.add('slideInUp'); 
-  }  
+    header.classList.add('slideInUp');
+  }
   // end customize
 }
 

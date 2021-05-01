@@ -13,9 +13,9 @@ function setLightMode(isLight) {
 
   if(isLight) {
     localStorage.setItem('preferredTheme', 'light');
-    html.classList.add('light');    
+    html.classList.add('light');
     lightBtn ? lightBtn.style.display = "none" : '';
-    darkBtn ? darkBtn.style.display = "inline-block" : '';    
+    darkBtn ? darkBtn.style.display = "inline-block" : '';
   } else {
     localStorage.removeItem('preferredTheme');
     html.classList.remove('light');
@@ -31,14 +31,14 @@ window.addEventListener('scroll', function (event) {
 
   console.log('window.pageYOffset', window.pageYOffset);
   console.log('window.innerHeight', window.innerHeight);
-  console.log('window.pageYOffset + window.innerHeight', window.pageYOffset + window.innerHeight); 
+  console.log('window.pageYOffset + window.innerHeight', window.pageYOffset + window.innerHeight);
 
   if (document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight)
     alert('in the bottom of page!');
 
   if (document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight) {
-    header.classList.toggle('slideInUp'); 
-    header.classList.toggle('slideOutDown');    
+    header.classList.toggle('slideInUp');
+    header.classList.toggle('slideOutDown');
   }
 });
 */

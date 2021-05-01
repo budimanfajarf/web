@@ -13,9 +13,9 @@ function setLightMode(isLight) {
 
   if(isLight) {
     localStorage.setItem('preferredTheme', 'light');
-    html.classList.add('light');    
+    html.classList.add('light');
     lightBtn ? lightBtn.style.display = "none" : '';
-    darkBtn ? darkBtn.style.display = "inline-block" : '';    
+    darkBtn ? darkBtn.style.display = "inline-block" : '';
   } else {
     localStorage.removeItem('preferredTheme');
     html.classList.remove('light');
