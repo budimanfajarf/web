@@ -28,9 +28,6 @@ Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Re
 
 It's created using [Hugo](https://gohugo.io "Hugo") with customized [Hermit](https://themes.gohugo.io/hermit "Hugo Hermit theme") theme, you can see the source code in [Github](https://github.com/budimanfajarf/blog "Github Blog Budiman Fajar Firdaus").
 
-Want to get interesting notif?
-[Subscribe here](https://subs.budidev.com/newsletter "Subscribe Newsletter") :)
-
 ---
 
 # Contact
