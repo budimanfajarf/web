@@ -43,7 +43,7 @@ disqusShortname = "budidev"
 
   # Metadata mostly used in document's head
   description = "Personal blog about coding and web development by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
-  images = ["images/compressed/profile-photo-3.jpg", "images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
+  images = ["images/compressed/profile-photo-3-medium.jpg", "images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
   themeColor = "#494f5c"
 
   homeSubtitle = "Hello, I'm Budi ☕ Backend Developer 💻 from Bandung, Indonesia"
