@@ -8,27 +8,63 @@
 
 {{ define "main" }}
 	<div class="bg-img"></div>
-	<main class="site-main section-inner thin animated fadeIn faster">
-
+	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
 				<div class="post-meta">
-					<span>{{ .Date.Format .Site.Params.dateform }}</span>
+					<span>{{ .Date.Format .Site.Params.dateform }}</span> ·
+					<span>{{ .ReadingTime }} min read</span>
 				</div>
 				<h1>{{ .Title }}</h1>
 			</header>
-
 			<div class="content">
-				<p>
-					{{ if .Params.link }}
-					· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" target="_blank" rel="noopener">link</a>
-					{{ end }}
-					{{ if .Params.repo }}
-					· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" target="_blank" rel="noopener">repo</a>
-					{{ end }}
-				</p>
 				{{ .Content | replaceRE "(<h[1-6] id=\"([^\"]+)\".+)(</h[1-6]+>)" `${1}<a href="#${2}" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a>${3}` | safeHTML }}
+
+				<div style="display: block; margin-bottom: 2em;"></div>
+
+				{{- with .Params.tags }}
+				<p>
+					{{- range . -}}
+					<span>
+						<a href="{{ "tags/" | absLangURL }}{{ . }}/">#{{.}}</a>
+					</span>&nbsp;
+					{{- end }}
+				</p>
+				{{- end }}
 			</div>
+
+			{{- if .Site.Params.relatedPosts }}
+			{{- partial "related-posts.html" . -}}
+			{{- end }}
+
+			<hr class="post-end" style="margin-top: 0px; margin-bottom: 0.5em;">
+
+			<footer class="content" style="display: flex; align-items: center;">
+				<figure>
+					<img src="/images/compressed/profile-photo-1-re-small.png" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}" style="width: 80px; max-width: 80px; margin-right: 1em; border-radius: 50%;">
+					<figcaption style="display: none;">
+						<p>{{ .Site.Author.name }}</p>
+					</figcaption>
+				</figure>
+
+				<p>
+					<span style="font-size: 110%; letter-spacing: 0.06em; line-height: 2.4;">
+						Thanks for reading! :)
+					</span>
+					<br />
+					<span style="font-size: 90%; display: inline-block;">
+						Find more in
+						<a href="/posts/" title="See all published posts">
+							published posts
+						</a>,
+						wanna say Hi?
+						<a href="mailto:hello@budi.day" title="Email Budiman Fajar Firdaus" rel="noreferrer" target="_blank">
+							hello@budi.day
+						</a>
+					</span>
+				</p>
+			</footer>
+
 		</article>
 
 		{{- if .Params.toc }}
@@ -38,7 +74,19 @@
 		</aside>
 		{{- end }}
 
-		{{- if .Params.comments }}
+		<div class="post-nav thin">
+			{{- with .NextInSection }}
+			<a class="next-post" href="{{ .Permalink }}">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;{{ i18n "newer" }}</span><br><span>{{ .Title }}</span>
+			</a>
+			{{- end }}
+			{{- with .PrevInSection }}
+			<a class="prev-post" href="{{ .Permalink }}">
+				<span class="post-nav-label">{{ i18n "older" }}&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>{{ .Title }}</span>
+			</a>
+			{{- end }}
+		</div>
+		{{- if .Params.comments | default true }}
 		<div id="comments" class="thin">
 			{{ partial "comments.html" . }}
 		</div>
