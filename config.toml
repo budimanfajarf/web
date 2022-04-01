@@ -1,7 +1,7 @@
-baseURL = "https://budidev.com/"
+baseURL = "https://budi.day/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "BudiDev - @budimanfajarf"
+title = "Budi @budimanfajarf"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -85,7 +85,7 @@ disqusShortname = "budidev"
 
   [[params.social]]
     name = "email"
-    url = "mailto:hello@budidev.com"
+    url = "mailto:hello@budi.day"
 
   [[params.social]]
     name = "upwork"

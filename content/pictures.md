@@ -1,7 +1,6 @@
 +++
 date = 2020-06-10T05:00:40+07:00
 title = "Pictures / Photos 🖼️"
-customTitle = "Pictures / Photos 🖼️ @budimanfajarf"
 featuredImg = "/images/compressed/profile-photo-1-re.png"
 images = [
   "/pictures/compressed/2020-06-02-budi-bw.jpg",
