@@ -9,7 +9,7 @@ Host in [![Netlify Status](https://api.netlify.com/api/v1/badges/7171b328-2836-4
 
 Feel free to contact me if you have any questions
 
-* Email : [hello@budi.day](mailto:hello@budi.day?cc=budimanfajarf@gmail.com)
+* Email : [hello@budi.day](mailto:hello@budi.day)
 * Telegram : [t.me/budimanfajarf](https://t.me/budimanfajarf)
 
 ## Releases
