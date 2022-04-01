@@ -15,3 +15,4 @@ Feel free to contact me if you have any questions
 ## Releases
 
 - v1.0.0 : Legacy of budidev.com
+- v2.0.0 : Start of budi.day
