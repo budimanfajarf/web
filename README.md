@@ -11,3 +11,6 @@ Feel free to contact me if you have any questions
 
 * Email : [hello@budidev.com](mailto:hello@budidev.com?cc=budimanfajarf@gmail.com)
 * Telegram : [t.me/budimanfajarf](https://t.me/budimanfajarf)
+
+## Releases
+- v1.0.0 : Legacy of budidev.com
