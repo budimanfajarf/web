@@ -1,6 +1,6 @@
 {
-    "name": "BudiDev",
-    "short_name": "BudiDev",
+    "name": "Budiman Fajar Firdaus",
+    "short_name": "Budi",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
     ],
     "theme_color": "#494f5c",
     "background_color": "#494f5c",
-    "start_url": "https://budidev.com/",
+    "start_url": "https://budi.day/",
     "display": "standalone"
 }

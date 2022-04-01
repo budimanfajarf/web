@@ -1,5 +1,8 @@
-# Redirect default Netlify subdomain to primary domain
-https://budi.netlify.app/* https://budidev.com/:splat 301!
+# Redirect default netlify subdomain to primary domain
+https://budi.netlify.app/* https://budi.day/:splat 301!
+
+# Redirect old domain to new domain
+https://budidev.com/* https://budi.day/:splat 301!
 
 # Redirects internal link
 /tags/apis/      /tags/api/       301
