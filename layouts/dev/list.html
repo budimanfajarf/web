@@ -1,18 +1,20 @@
 {{ define "head" }}
-	{{ partial "background-image.html" . }}
-	<style>
+{{ partial "background-image.html" . }}
+<style>
+	.mobile {
+		display: none;
+	}
+
+	@media only screen and (max-width: 565px) {
 		.mobile {
-			display: none;
+			display: inline-block !important;
 		}
-		@media only screen and (max-width: 565px) {
-			.mobile {
-				display: inline-block!important;
-			}
-			.desktop {
-				display: none!important;
-			}
+
+		.desktop {
+			display: none !important;
 		}
-	</style>
+	}
+</style>
 {{ end }}
 
 {{ define "header" }}
@@ -20,23 +22,23 @@
 {{ end }}
 
 {{ define "main" }}
-	<div class="bg-img"></div>
-	<main class="site-main section-inner thin animated fadeIn faster">
-		<h1>{{ .Title }}</h1>
-		{{- if .Content }}
-		<div class="content">
-			{{ .Content }}
-		</div>
-		{{- end }}
-		{{- range .Data.Pages.GroupByDate "2006" }}
-		<div class="posts-group">
-			<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
-			<ul class="posts-list">
-				{{- range .Pages }}
-				<li class="post-item" style="margin-bottom: 1em;">
-					<div class="content" id="{{ .Params.slug }}">
-						<span class="post-title">
-							<!-- <span style="
+<div class="bg-img"></div>
+<main class="site-main section-inner thin animated fadeIn faster">
+	<h1>{{ .Title }}</h1>
+	{{- if .Content }}
+	<div class="content">
+		{{ .Content }}
+	</div>
+	{{- end }}
+	{{- range .Data.Pages.GroupByDate "2006" }}
+	<div class="posts-group">
+		<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
+		<ul class="posts-list">
+			{{- range .Pages }}
+			<li class="post-item" style="margin-bottom: 1em;">
+				<div class="content" id="{{ .Params.slug }}">
+					<span class="post-title">
+						<!-- <span style="
 								color: #e8eef2;
 								background-color: #7d828a;
 								display: inline-block;
@@ -48,83 +50,87 @@
 							">
 								{{.Title}}
 							</span> -->
-							<span style="
+						<span style="
 								font-weight: 500;
 								font-size: 110%;
 								display: inline-block;
     							margin-bottom: 3px;
     							margin-bottom: 2px;
 							">
-								{{.Title}}
-							</span>
-							{{ if .Params.status }}
-								<span style="font-size: 95%;">
-									({{.Params.status | safeHTML}})
-								</span>
-							{{ end }}
-
-							<br class="mobile" />
-
-							<span class="post-day mobile" style="margin-top: 0px;">
-								{{ .PublishDate.Format "Jan 2" }}
-							</span>
-
-							{{ if .Params.link }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.link }}" title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
-							{{ end }}
-							{{ if .Params.repo }}
-							· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}" title="Repo {{ .Params.title }}" target="_blank" rel="noopener">Repo</a>
-							{{ end }}
-							{{ if .Content }}
-							· <a style="display: inline; padding: 0;" href="{{ .Permalink }}" title="Detail {{ .Params.title }}">See Detail</a>
-							{{ end }}
-							<!-- {{ if .Content }}
-								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
-							{{ end }}
-							-->
+							{{.Title}}
 						</span>
+						{{ if .Params.status }}
+						<span style="font-size: 95%;">
+							({{.Params.status | safeHTML}})
+						</span>
+						{{ end }}
 
-						<span class="post-day desktop">
+						<br class="mobile" />
+
+						<span class="post-day mobile" style="margin-top: 0px;">
 							{{ .PublishDate.Format "Jan 2" }}
 						</span>
 
+						{{ if .Params.link }}
+						· <a style="display: inline; padding: 0;" href="{{ .Params.link }}"
+							title="Link {{ .Params.title }}" target="_blank" rel="noopener">Link</a>
+						{{ end }}
+						{{ if .Params.repo }}
+						· <a style="display: inline; padding: 0;" href="{{ .Params.repo }}"
+							title="Repo {{ .Params.title }}" target="_blank" rel="noopener">Repo</a>
+						{{ end }}
+						{{ if .Content }}
+						· <a style="display: inline; padding: 0;" href="{{ .Permalink }}"
+							title="Detail {{ .Params.title }}">See Detail</a>
+						{{ end }}
+						<!-- {{ if .Content }}
+								<a style="display: block; padding: 0; width: 100%; text-align: right;" href="{{ .Permalink }}">See Detail</a>
+							{{ end }}
+							-->
+					</span>
+
+					<span class="post-day desktop">
+						{{ .PublishDate.Format "Jan 2" }}
+					</span>
+
+				</div>
+
+				<div class="content" style="display: block; padding-top: 0px; padding-bottom: 8px">
+					{{ if .Params.youtube }}
+					<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+						<iframe src="https://www.youtube.com/embed/{{.Params.youtube}}"
+							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+							allowfullscreen title="YouTube Video"></iframe>
 					</div>
 
-					<div class="content" style="display: block; padding-top: 0px; padding-bottom: 8px">
-						{{ if .Params.youtube }}
-							<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-								<iframe src="https://www.youtube.com/embed/{{.Params.youtube}}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-							</div>
-
-						{{ else if .Params.images }}
-								{{ $title := .Title }}
-								{{ range first 3 .Params.images }}
-									<img src="{{ . | relURL }}"
-										alt="{{ $title }}"
-										title="{{ $title }}"
-										style="width: 100%; margin-top: 12px;" />
-								{{ end }}
-						{{ else }}
-							<!-- <img src="/images/compressed/coming-soon.jpg"
+					{{ else if .Params.images }}
+					{{ $title := .Title }}
+					{{ range first 3 .Params.images }}
+					<img src="{{ . | relURL }}" alt="{{ $title }}" title="{{ $title }}"
+						style="width: 100%; margin-top: 12px;" />
+					{{ end }}
+					{{ else }}
+					<!-- <img src="/images/compressed/coming-soon.jpg"
 								alt="{{ .Params.title }}"
 								title="{{ .Params.title }}"
 								style="width: 100%;" />
 							-->
-						{{ end }}
+					{{ end }}
 
-						{{ if .Params.sub }}
-							<ul class="ubuntu" style="margin-top: 0.5em">
-								{{ range .Params.sub }}
-									{{ if .showInDev | default true }}
-										<li>{{ .title }}</li>
-									{{ end }}
-								{{ end }}
-							</ul>
+					{{ if .Params.sub }}
+					<ul class="ubuntu" style="margin-top: 0.5em">
+						{{ range .Params.sub }}
+						{{ if .showInDev | default true }}
+						<li>{{ .title }}</li>
 						{{ end }}
+						{{ end }}
+					</ul>
+					{{ end }}
 
-						{{ if .Params.type }}
-							<div style="margin-top: 12px">
-								<span style='
+					{{ if .Params.type }}
+					<div style="margin-top: 12px">
+						{{/* {{ if .Params.role }}
+						<span style="
 									margin-right: 3px;
 									border-radius: 3px;
 									padding: 1.6px 5px 1.5px 5px;
@@ -132,7 +138,19 @@
 									border-width: 1px;
 									border-style: solid;
 									border-color: #7d828a;
-									{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") (eq .Params.type "Full&nbsp;Time") }}
+						">
+							{{ .Params.role | safeHTML }}
+						</span>
+						{{ end }} */}}
+						<span style='
+									margin-right: 3px;
+									border-radius: 3px;
+									padding: 1.6px 5px 1.5px 5px;
+									font-size: 95%;
+									border-width: 1px;
+									border-style: solid;
+									border-color: #7d828a;
+									{{ if or (eq .Params.type "Paid") (eq .Params.type "Full-time") (eq .Params.type "Freelance") (eq .Params.type "Full-time") }}
 										border-color: #68d391;
 										color: #68d391;
 									{{ else if eq .Params.type "Personal" }}
@@ -145,87 +163,92 @@
 										border-color: #4fd1c5;
 										color: #4fd1c5;
 									{{ end }}
-								'
-								>{{ .Params.type | safeHTML }}</span>
-								{{ if .Params.company }}
-									<span style="font-size: 95%">
-										at {{ .Params.company | safeHTML }}
-									</span>
-								{{ end }}
-							</div>
-						{{ end }}
-
-
-						{{ if .Params.stacks }}
-							<p class="ubuntu" style="margin-bottom: 0; margin-top: 6px">
-								<!-- <strong style="font-weight: 500;">Stack: </strong> -->
-								{{ range .Params.stacks }}
-									<!-- <span>{{ . }}, </span> -->
-									<span style='
-										background-color: #7d828a;
-										color: #e8eef2;
-										margin-right: 3px;
-										border-radius: 3px;
-										padding: 1.5px 5px;
-										font-size: 95%;
-										{{ if or (eq . "VueJS") (eq . "NuxtJS") }}
-											background-color: #16a085;
-										{{ else if eq . "Bootstrap" }}
-											background-color: #9b59b6;
-										{{ else if eq . "NodeJS" }}
-											background-color: #27ae60;
-										{{ else if eq . "ExpressJS" }}
-											background-color: #16a085;
-										{{ else if eq . "ReactJS" }}
-											background-color: #3498db;
-										{{ else if eq . "Hugo" }}
-											background-color: #2c3e50;
-										{{ else if eq . "JavaScript" }}
-											background-color: #f1c40f;
-											color: #3B3E48;
-										{{ else if eq . "Laravel" }}
-											background-color: #e74c3c;
-										{{ else if eq . "HTML" }}
-											background-color: #d35400;
-										{{ else if eq . "CodeIgniter" }}
-											background-color: #d35400;
-										{{ else if eq . "CSS" }}
-											background-color: #2980b9;
-										{{ else if eq . "PHP" }}
-											background-color: #3b5999;
-										{{ else if eq . "JQuery" }}
-											background-color: #e67e22;
-										{{ else if eq . "Tailwind" }}
-											background-color: #38b2ac;
-										{{ else if eq . "WordPress" }}
-											background-color: #20759B;
-										{{ else if eq . "Elementor" }}
-											background-color: #97266d;
-										{{ else if eq . "Pods" }}
-											background-color: #95b93b;
-										{{ else if or (eq . "Roots.io") (eq . "roots.io") (eq . "Bedrock") (eq . "Sage") (eq . "Bedrock+Sage") (eq . "Bedrock&nbsp;+&nbsp;Sage") }}
-											background-color: #525ddc;
-										{{ else if eq . "ACF" }}
-											background-color: #00e4bc; font-weight: 500;
-										{{ end }}
-									'>{{ . | safeHTML}}</span>
-
-								{{ end }}
-							</p>
+								'>{{ .Params.type | safeHTML }}</span>
+						{{ if .Params.company }}
+						<span style="font-size: 95%">
+							at {{ .Params.company | safeHTML }}
+						</span>
 						{{ end }}
 					</div>
+					{{ end }}
 
-				</li>
-				{{- end }}
-			</ul>
-		</div>
-		{{- end }}
-		<div class="content" style="text-align: right;">
-			<p>
-				See all in <a href="https://github.com/budimanfajarf?tab=repositories" target="_blank" rel="noopener" title="GitHub Repositories budimanfajarf">GitHub Repositories</a> :)
-			</p>
-		</div>
-	</main>
+
+					{{ if .Params.stacks }}
+					<p class="ubuntu" style="margin-bottom: 0; margin-top: 6px">
+						<strong style="font-weight: 500; font-size: 90%">Tech Stack: </strong>
+
+						{{ $stacksLength:= len .Params.stacks }}
+						{{ $stacksLastIndex := sub $stacksLength 1 }}
+
+						{{ range $index, $element := .Params.stacks }}
+
+						<span style="font-size: 90%">{{ . | safeHTML }}{{ if lt $index $stacksLastIndex }},{{ end }}</span>
+
+						{{/* <span style='
+											background-color: #7d828a;
+											color: #e8eef2;
+											margin-right: 3px;
+											border-radius: 3px;
+											padding: 1.5px 5px;
+											font-size: 95%;
+											{{ if or (eq . "Vue.js") (eq . "NuxtJS") }}
+												background-color: #16a085;
+											{{ else if eq . "Bootstrap" }}
+												background-color: #9b59b6;
+											{{ else if eq . "NodeJS" }}
+												background-color: #27ae60;
+											{{ else if eq . "ExpressJS" }}
+												background-color: #16a085;
+											{{ else if eq . "React.js" }}
+												background-color: #3498db;
+											{{ else if eq . "Hugo" }}
+												background-color: #2c3e50;
+											{{ else if eq . "JavaScript" }}
+												background-color: #f1c40f;
+												color: #3B3E48;
+											{{ else if eq . "Laravel" }}
+												background-color: #e74c3c;
+											{{ else if eq . "HTML" }}
+												background-color: #d35400;
+											{{ else if eq . "CodeIgniter" }}
+												background-color: #d35400;
+											{{ else if eq . "CSS" }}
+												background-color: #2980b9;
+											{{ else if eq . "PHP" }}
+												background-color: #3b5999;
+											{{ else if eq . "JQuery" }}
+												background-color: #e67e22;
+											{{ else if eq . "Tailwind" }}
+												background-color: #38b2ac;
+											{{ else if eq . "WordPress" }}
+												background-color: #20759B;
+											{{ else if eq . "Elementor" }}
+												background-color: #97266d;
+											{{ else if eq . "Pods" }}
+												background-color: #95b93b;
+											{{ else if or (eq . "Roots.io") (eq . "roots.io") (eq . "Bedrock") (eq . "Sage") (eq . "Bedrock&nbsp;+&nbsp;Sage") (eq . "Bedrock&nbsp;+&nbsp;Sage") }}
+												background-color: #525ddc;
+											{{ else if eq . "ACF" }}
+												background-color: #00e4bc; font-weight: 500;
+											{{ end }}
+										'>{{ . | safeHTML}}</span> */}}
+						{{ end }}
+					</p>
+					{{ end }}
+				</div>
+
+			</li>
+			{{- end }}
+		</ul>
+	</div>
+	{{- end }}
+	<div class="content" style="text-align: right;">
+		<p>
+			See all in <a href="https://github.com/budimanfajarf?tab=repositories" target="_blank" rel="noopener"
+				title="GitHub Repositories budimanfajarf">GitHub Repositories</a> :)
+		</p>
+	</div>
+</main>
 {{ end }}
 
 {{ define "footer" }}
