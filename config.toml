@@ -24,11 +24,11 @@ disqusShortname = "budidev"
 
 # configuration above changed to below as followed: https://gohugo.io/getting-started/configuration-markup#blackfriday
 
-[markup]
-  defaultMarkdownHandler = "blackFriday"
-  [markup.blackFriday]
-    hrefTargetBlank = true
-    noreferrerLinks = true
+# [markup]
+#  defaultMarkdownHandler = "blackFriday"
+#  [markup.blackFriday]
+#    hrefTargetBlank = true
+#    noreferrerLinks = true
 
 [taxonomies]
   tag = "tags"
