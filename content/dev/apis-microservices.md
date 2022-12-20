@@ -11,7 +11,7 @@ description=""
 link=""
 repo=""
 hiddenInXml=false
-stacks= ["NodeJS", "ExpressJS"]
+stacks= ["Node.js", "Express.js"]
 type= "Personal"
 
 [[sub]]
@@ -41,7 +41,8 @@ repo = "https://github.com/budimanfajarf/file-metadata-microservice"
 link = "https://budi-file-metadata-microservice.glitch.me/"
 
 +++
-The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp") to applying skills, principles, and concepts I've learned including [NPM Packages](https://github.com/budimanfajarf/packages-npm "Repo Managing Packages with NPM"), [Node and Express](https://github.com/budimanfajarf/node-express "Repo Basic Node and Express"), [MongoDB and Mongoose](https://github.com/budimanfajarf/mongo-mongoose "Repo MongoDB and Mongoose"), etc :)
+
+The projects are from [freeCodeCamp](https://www.freecodecamp.org/ 'freeCodeCamp') to applying skills, principles, and concepts I've learned including [NPM Packages](https://github.com/budimanfajarf/packages-npm 'Repo Managing Packages with NPM'), [Node and Express](https://github.com/budimanfajarf/node-express 'Repo Basic Node and Express'), [MongoDB and Mongoose](https://github.com/budimanfajarf/mongo-mongoose 'Repo MongoDB and Mongoose'), etc :)
 
 ## List Project
 
@@ -51,5 +52,5 @@ The projects are from [freeCodeCamp](https://www.freecodecamp.org/ "freeCodeCamp
 
 ![Certificate](/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png)
 
-* Credential: https://lnkd.in/g47V3dd
-* freeCodeCamp Profile: [@budimanfajarf](https://www.freecodecamp.org/budimanfajarf)
+- Credential: https://lnkd.in/g47V3dd
+- freeCodeCamp Profile: [@budimanfajarf](https://www.freecodecamp.org/budimanfajarf)
