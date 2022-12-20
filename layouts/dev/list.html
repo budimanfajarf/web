@@ -182,7 +182,8 @@
 
 						{{ range $index, $element := .Params.stacks }}
 
-						<span style="font-size: 90%">{{ . | safeHTML }}{{ if lt $index $stacksLastIndex }},{{ end }}</span>
+						<span style="font-size: 90%">{{ . | safeHTML }}{{ if lt $index $stacksLastIndex }},{{ end
+							}}</span>
 
 						{{/* <span style='
 											background-color: #7d828a;
@@ -195,9 +196,9 @@
 												background-color: #16a085;
 											{{ else if eq . "Bootstrap" }}
 												background-color: #9b59b6;
-											{{ else if eq . "NodeJS" }}
+											{{ else if eq . "Node.js" }}
 												background-color: #27ae60;
-											{{ else if eq . "ExpressJS" }}
+											{{ else if eq . "Express.js" }}
 												background-color: #16a085;
 											{{ else if eq . "React.js" }}
 												background-color: #3498db;
