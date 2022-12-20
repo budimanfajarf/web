@@ -1,107 +1,121 @@
 {{ define "head" }}
-	{{ if .Site.Params.bgImg -}}
-	<style>.bg-img {background-image: url('{{ .Site.Params.bgImg | relURL }}');}</style>
-	{{- else if .Site.Params.images -}}
-		{{- range first 1 .Site.Params.images -}}
-		<style>.bg-img {background-image: url('{{ . | relURL }}');}</style>
-		{{- end -}}
-	{{- end -}}
+{{ if .Site.Params.bgImg -}}
+<style>
+	.bg-img {
+		background-image: url('{{ .Site.Params.bgImg | relURL }}');
+	}
+</style>
+{{- else if .Site.Params.images -}}
+{{- range first 1 .Site.Params.images -}}
+<style>
+	.bg-img {
+		background-image: url('{{ . | relURL }}');
+	}
+</style>
+{{- end -}}
+{{- end -}}
 {{ end }}
 
 {{ define "main" }}
-	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
-	<div class="bg-img"></div>
-	{{- end }}
-	<div id="spotlight" class="animated fadeIn">
-		<div id="home-center">
-			<div id="home-photo">
-				<img src="/images/profile-photo-4.jpg" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}">
-			</div>
-			<h1 id="home-title">{{ .Site.Author.name }}</h1>
-			{{- with .Site.Params.homeSubtitle }}
-				<p id="home-subtitle">
-					<!-- {{.}} -->
-					<span class="home-subtitle-typeit">
-						Hello‎,‎‎‎‎‎‎ I'm Budi ☕‎‎‎‎‎‎‎‎ &nbsp;Web Developer 💻‎‎‎‎‎‎‎‎<br />
-						‎📌‎‎‎‎‎‎‎ Bandung‎, ‎‎‎Indonesia
-					</span>
-				</p>
-			{{- end }}
-			{{- with .Site.Params.social }}
-			<div id="home-social">
-				{{ partialCached "social-icons.html" . }}
-			</div>
-			{{- end }}
+{{- if (or .Site.Params.images .Site.Params.bgImg) }}
+<div class="bg-img"></div>
+{{- end }}
+<div id="spotlight" class="animated fadeIn">
+	<div id="home-center">
+		<div id="home-photo">
+			<img src="/images/profile-photo-4.jpg" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}">
+		</div>
+		<h1 id="home-title">{{ .Site.Author.name }}</h1>
+		{{- with .Site.Params.homeSubtitle }}
+		<p id="home-subtitle">
+			<!-- {{.}} -->
+			<span class="home-subtitle-typeit">
+				Hello‎,‎‎‎‎‎‎ I'm Budi ☕‎‎‎‎‎‎‎‎ &nbsp;Web Developer 💻‎‎‎‎‎‎‎‎<br />
+				‎📌‎‎‎‎‎‎‎ Bandung‎, ‎‎‎Indonesia
+			</span>
+		</p>
+		{{- end }}
+		{{- with .Site.Params.social }}
+		<div id="home-social">
+			{{ partialCached "social-icons.html" . }}
+		</div>
+		{{- end }}
 
-			<!-- <nav id="home-nav" class="site-nav">
+		<!-- <nav id="home-nav" class="site-nav">
 				{{ partialCached "menu.html" . }}
 			</nav> -->
 
-			<div class="row">
+		<div class="row">
 
-				<div class="home-main home-posts column">
+			<div class="home-main home-posts column">
 
-					<h3>Blog / Posts ✍️</h3>
+				<h3>Blog / Posts ✍️</h3>
 
-					<div class="posts-group">
-						<ul class="posts-list">
+				<div class="posts-group">
+					<ul class="posts-list">
 						{{ range first 3 (where (where .Site.Pages "Section" "posts") ".Params.home" true ) }}
-							<li class="post-item">
-								<a href="{{ .Permalink }}">
-									<span class="post-title">{{ .Title }}</span>
-									<span class="post-day">
-										<span class="date">
-											{{ .PublishDate.Format "Jan 2, 2006" }}
-											·
-										</span>
-										{{ .ReadingTime }} min read
+						<li class="post-item">
+							<a href="{{ .Permalink }}">
+								<span class="post-title">{{ .Title }}</span>
+								<span class="post-day">
+									<span class="date">
+										{{ .PublishDate.Format "Jan 2, 2006" }}
+										·
 									</span>
-								</a>
-							</li>
+									{{ .ReadingTime }} min read
+								</span>
+							</a>
+						</li>
 						{{ end }}
-						</ul>
-					</div>
-
-					<div class="post-nav">
-						<a class="prev-post tooltip" href='{{ "posts/" | absLangURL }}' title="See all published posts">
-							<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltippost">See all posts here</span>
-						</a>
-					</div>
-
+					</ul>
 				</div>
 
-				<div class="home-main home-dev column">
+				<div class="post-nav">
+					<a class="prev-post tooltip" href='{{ "posts/" | absLangURL }}' title="See all published posts">
+						<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+							<polyline points="12 5 19 12 12 19"></polyline>
+						</svg>
+						<span style="text-shadow: none;" class="tooltiptext hide" id="tooltippost">See all posts
+							here</span>
+					</a>
+				</div>
 
-					<h3>Dev / Projects 💻</h3>
+			</div>
 
-					<div class="posts-group">
-						<ul class="posts-list">
+			<div class="home-main home-dev column">
+
+				<h3>Dev / Projects 💻</h3>
+
+				<div class="posts-group">
+					<ul class="posts-list">
 						{{ range first 3 (where (where .Site.Pages "Section" "dev") ".Params.home" true ) }}
-							<li class="post-item">
-								<!-- <a href='{{ "dev/" | absLangURL }}'> -->
-								<a href="/dev/#{{ .Params.slug }}">
-									<span class="post-title">
-										{{ .Title }}
-										{{ if .Params.status }}
-											<span style="font-size: 90%;">
-												({{.Params.status | safeHTML}})
-											</span>
-										{{ end }}
-										<!-- {{.Params.type }} -->
+						<li class="post-item">
+							<!-- <a href='{{ "dev/" | absLangURL }}'> -->
+							<a href="/dev/#{{ .Params.slug }}">
+								<span class="post-title">
+									{{ .Title }}
+									{{ if .Params.status }}
+									<span style="font-size: 90%;">
+										({{.Params.status | safeHTML}})
 									</span>
-									<span class="post-day">
-										<span class="date">
-											{{ .PublishDate.Format "Jan 2, 2006" }}
-											·
-										</span>
-										<span class="type" style='
+									{{ end }}
+									<!-- {{.Params.type }} -->
+								</span>
+								<span class="post-day">
+									<span class="date">
+										{{ .PublishDate.Format "Jan 2, 2006" }}
+										·
+									</span>
+									<span class="type" style='
 											border-radius: 3px;
 											padding: 1.5px 5px;
 											border-width: 1px;
 											border-style: solid;
 											border-color: #7d828a;
-											{{ if or (eq .Params.type "Paid") (eq .Params.type "Full Time") (eq .Params.type "Freelance") (eq .Params.type "Full&nbsp;Time") }}
+											{{ if or (eq .Params.type "Paid") (eq .Params.type "Full-time") (eq .Params.type "Freelance") (eq .Params.type "Full-time") }}
 												border-color: #68d391;
 												color: #68d391;
 											{{ else if eq .Params.type "Personal" }}
@@ -114,105 +128,150 @@
 												border-color: #4fd1c5;
 												color: #4fd1c5;
 											{{ end }}
-										'
-										>{{.Params.type | safeHTML }}</span>
-									</span>
-								</a>
-							</li>
+										'>{{.Params.type | safeHTML }}</span>
+								</span>
+							</a>
+						</li>
 						{{ end }}
-						</ul>
-					</div>
+					</ul>
+				</div>
 
-					<div class="post-nav">
-						<a class="prev-post tooltip" href='{{ "dev/" | absLangURL }}' title="See all Dev / Projects">
-							<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See all projects here :)</span>
-						</a>
-					</div>
-
+				<div class="post-nav">
+					<a class="prev-post tooltip" href='{{ "dev/" | absLangURL }}' title="See all Dev / Projects">
+						<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+							<polyline points="12 5 19 12 12 19"></polyline>
+						</svg>
+						<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See all projects here
+							:)</span>
+					</a>
 				</div>
 
 			</div>
 
 		</div>
 
-		<footer id="home-footer" style="opacity: 1">
-			<nav class="home-footer-menu">
-				{{ range $i, $menu := .Site.Menus.main }}
-					{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
-					{{ if eq $menu.Name "Dev" }}
-						<!-- <a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
+	</div>
+
+	<footer id="home-footer" style="opacity: 1">
+		<nav class="home-footer-menu">
+			{{ range $i, $menu := .Site.Menus.main }}
+			{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
+			{{ if eq $menu.Name "Dev" }}
+			<!-- <a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
 							<span style="opacity: .6;">{{ $menu.Name }}</span>
 							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
 						</a> -->
-						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">{{ $menu.Name }}</a>
-					{{ else if eq $menu.Name "Pictures" }}
-						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Photos 🖼️">{{ $menu.Name }}</a>
-					{{ else }}
-						<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">{{ $menu.Name }}</a>
-					{{ end }}
-				{{ end }}
-			</nav>
-			<p style="opacity: .6;">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
-				</svg>&nbsp;<span>{{ now.Format "2006" }}</span>
-				<a href="{{ .Site.BaseURL }}" title="budi.day">
-					budi.day
-				</a>
-				{{ .Site.Params.footerCopyright | safeHTML }}
-				{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} &#183; <a href="{{ "posts/index.xml" | absLangURL }}" target="_blank" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>{{ end }}&nbsp;&#183;
-				<a href="https://subs.budidev.com/newsletter" title="Newsletter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></a>&nbsp;&#183;
-				<a title="Switch to Light Theme" id="light-btn" onclick="setLightMode(true)" style="display: none;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-				</a>
-				<a title="Switch to Default Theme" id="dark-btn" onclick="setLightMode(false)" style="display: none;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-				</a>
-			</p>
-		</footer>
+			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">{{
+				$menu.Name }}</a>
+			{{ else if eq $menu.Name "Pictures" }}
+			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Photos 🖼️">{{
+				$menu.Name }}</a>
+			{{ else }}
+			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }}">{{ $menu.Name }}</a>
+			{{ end }}
+			{{ end }}
+		</nav>
+		<p style="opacity: .6;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+				class="feather feather-coffee">
+				<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+				<path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+				<line x1="6" y1="1" x2="6" y2="4"></line>
+				<line x1="10" y1="1" x2="10" y2="4"></line>
+				<line x1="14" y1="1" x2="14" y2="4"></line>
+			</svg>&nbsp;<span>{{ now.Format "2006" }}</span>
+			<a href="{{ .Site.BaseURL }}" title="budi.day">
+				budi.day
+			</a>
+			{{ .Site.Params.footerCopyright | safeHTML }}
+			{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} &#183; <a href="{{ " posts/index.xml" |
+				absLangURL }}" target="_blank" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+					height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+					stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss">
+					<path d="M4 11a9 9 0 0 1 9 9"></path>
+					<path d="M4 4a16 16 0 0 1 16 16"></path>
+					<circle cx="5" cy="19" r="1"></circle>
+				</svg></a>{{ end }}&nbsp;&#183;
+			<a href="https://subs.budidev.com/newsletter" title="Newsletter" target="_blank" rel="noopener"><svg
+					xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="feather feather-bell">
+					<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+					<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+				</svg></a>&nbsp;&#183;
+			<a title="Switch to Light Theme" id="light-btn" onclick="setLightMode(true)" style="display: none;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="feather feather-sun">
+					<circle cx="12" cy="12" r="5"></circle>
+					<line x1="12" y1="1" x2="12" y2="3"></line>
+					<line x1="12" y1="21" x2="12" y2="23"></line>
+					<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+					<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+					<line x1="1" y1="12" x2="3" y2="12"></line>
+					<line x1="21" y1="12" x2="23" y2="12"></line>
+					<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+					<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+				</svg>
+			</a>
+			<a title="Switch to Default Theme" id="dark-btn" onclick="setLightMode(false)" style="display: none;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="feather feather-moon">
+					<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+				</svg>
+			</a>
+		</p>
+	</footer>
 
-	</div>
+</div>
 
-	{{ $typeit := resources.Get "js/typeit.js" | minify | fingerprint -}}
-		<script src="{{ $typeit.Permalink | relURL }}" {{ printf "integrity=%q" $typeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
-	{{ $myTypeit := resources.Get "js/my-typeit.js" | minify | fingerprint -}}
-		<script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
+{{ $typeit := resources.Get "js/typeit.js" | minify | fingerprint -}}
+<script src="{{ $typeit.Permalink | relURL }}" {{ printf "integrity=%q" $typeit.Data.Integrity | safeHTMLAttr }}
+	crossorigin="anonymous"></script>
+{{ $myTypeit := resources.Get "js/my-typeit.js" | minify | fingerprint -}}
+<script src="{{ $myTypeit.Permalink | relURL }}" {{ printf "integrity=%q" $myTypeit.Data.Integrity | safeHTMLAttr }}
+	crossorigin="anonymous"></script>
 
-	<script>
-		// setTimeout(function(){
-		// 	var tooltip = document.getElementById("tooltipdev");
-		// 	tooltip.classList.remove("hide");
-		// 	tooltip.classList.add("show");
+<script>
+	// setTimeout(function(){
+	// 	var tooltip = document.getElementById("tooltipdev");
+	// 	tooltip.classList.remove("hide");
+	// 	tooltip.classList.add("show");
 
-		// 	setTimeout(function() {
-		// 		tooltip.classList.remove("show");
-		// 		tooltip.classList.add("hide");
-		// 	}, 10000);
-		// }, 6000);
+	// 	setTimeout(function() {
+	// 		tooltip.classList.remove("show");
+	// 		tooltip.classList.add("hide");
+	// 	}, 10000);
+	// }, 6000);
 
-		var tooltipPostShow =  1000*14;
-		var tooltipPostDuration = 1000*4;
+	var tooltipPostShow = 1000 * 14;
+	var tooltipPostDuration = 1000 * 4;
 
-		setTimeout(function(){
-			var tooltip = document.getElementById("tooltippost");
-			tooltip.classList.remove("hide");
-			tooltip.classList.add("show");
+	setTimeout(function () {
+		var tooltip = document.getElementById("tooltippost");
+		tooltip.classList.remove("hide");
+		tooltip.classList.add("show");
 
-			setTimeout(function() {
-				tooltip.classList.remove("show");
-				tooltip.classList.add("hide");
-			}, tooltipPostDuration);
-		}, tooltipPostShow);
+		setTimeout(function () {
+			tooltip.classList.remove("show");
+			tooltip.classList.add("hide");
+		}, tooltipPostDuration);
+	}, tooltipPostShow);
 
-		setTimeout(function(){
-			var tooltip = document.getElementById("tooltipdev");
-			tooltip.classList.remove("hide");
-			tooltip.classList.add("show");
+	setTimeout(function () {
+		var tooltip = document.getElementById("tooltipdev");
+		tooltip.classList.remove("hide");
+		tooltip.classList.add("show");
 
-			setTimeout(function() {
-				tooltip.classList.remove("show");
-				tooltip.classList.add("hide");
-			}, 1000*5);
-		}, tooltipPostShow+tooltipPostDuration);
-	</script>
+		setTimeout(function () {
+			tooltip.classList.remove("show");
+			tooltip.classList.add("hide");
+		}, 1000 * 5);
+	}, tooltipPostShow + tooltipPostDuration);
+</script>
 {{ end }}

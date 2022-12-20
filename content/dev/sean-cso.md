@@ -1,6 +1,6 @@
 ---
-title: "Sean CSO"
-slug: "sean-cso"
+title: 'Sean CSO'
+slug: 'sean-cso'
 draft: true
 date: 2021-03-17T00:10:33+07:00
 tags: []
@@ -12,9 +12,9 @@ description:
 link:
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Bedrock+Sage", "ACF"]
-type: "Full&nbsp;Time"
-company: "Hubton&nbsp;Indonesia"
-status: "Backend dev"
+stacks: ['WordPress', 'Bedrock&nbsp;+&nbsp;Sage', 'ACF']
+type: 'Full-time'
+company: 'Hubton&nbsp;Indonesia'
+status: 'Backend dev'
 home: true
 ---

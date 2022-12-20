@@ -88,11 +88,11 @@ compressed = "/pictures/compressed/2019-09-09-git-force.jpg"
 title = "Git Force"
 date = "2018-08-06T00:00:00+07:00"
 
-[[pictures]]
-link = "/pictures/2019-08-21-budi.jpg"
-compressed = "/pictures/compressed/2019-08-21-budi.jpg"
-title = "Budi"
-date = "2020-04-27T00:00:00+07:00"
+# [[pictures]]
+# link = "/pictures/2019-08-21-budi.jpg"
+# compressed = "/pictures/compressed/2019-08-21-budi.jpg"
+# title = "Budi"
+# date = "2020-04-27T00:00:00+07:00"
 # class = "circle"
 
 [[pictures]]
@@ -101,17 +101,17 @@ compressed = "/pictures/compressed/2020-05-31-budi-rizka.jpg"
 title = "Budi & Rizka"
 date = "2020-06-02T00:00:00+07:00"
 
-[[pictures]]
-link = "/pictures/2020-06-02-budi-bw.jpg"
-compressed = "/pictures/compressed/2020-06-02-budi-bw.jpg"
-title = "Budi - B&W"
-date = "2020-06-02T00:00:00+07:00"
+# [[pictures]]
+# link = "/pictures/2020-06-02-budi-bw.jpg"
+# compressed = "/pictures/compressed/2020-06-02-budi-bw.jpg"
+# title = "Budi - B&W"
+# date = "2020-06-02T00:00:00+07:00"
 
-[[pictures]]
-link = "/pictures/2020-05-23-budi.jpg"
-compressed = "/pictures/compressed/2020-05-23-budi.jpg"
-title = "Budi"
-date = "2020-05-23T00:00:00+07:00"
+# [[pictures]]
+# link = "/pictures/2020-05-23-budi.jpg"
+# compressed = "/pictures/compressed/2020-05-23-budi.jpg"
+# title = "Budi"
+# date = "2020-05-23T00:00:00+07:00"
 
 [[pictures]]
 link = "/pictures/2019-02-28-budi-bw.jpg"
@@ -226,17 +226,17 @@ compressed = "/pictures/compressed/2019-06-12-keyboard-pen.jpg"
 title = "Yellow Keyboard with Pen"
 date = "2019-06-12T00:00:00+07:00"
 
-[[pictures]]
-link = "/pictures/2020-06-18-budi-hat.jpg"
-compressed = "/pictures/compressed/2020-06-18-budi-hat.jpg"
-title = "Budi with Hat"
-date = "2020-06-18T00:00:00+07:00"
+# [[pictures]]
+# link = "/pictures/2020-06-18-budi-hat.jpg"
+# compressed = "/pictures/compressed/2020-06-18-budi-hat.jpg"
+# title = "Budi with Hat"
+# date = "2020-06-18T00:00:00+07:00"
 
-[[pictures]]
-link = "/pictures/2020-06-26-budidev-com.jpg"
-compressed = "/pictures/compressed/2020-06-26-budidev-com.jpg"
-title = "budidev.com clipart"
-date = "2020-06-26T00:00:00+07:00"
+# [[pictures]]
+# link = "/pictures/2020-06-26-budidev-com.jpg"
+# compressed = "/pictures/compressed/2020-06-26-budidev-com.jpg"
+# title = "budidev.com clipart"
+# date = "2020-06-26T00:00:00+07:00"
 
 # [[pictures]]
 # link = "/pictures/2020-07-05-budi-bw.jpg"
@@ -257,6 +257,7 @@ title = "Budi's Long Hair"
 date = "2020-07-20T00:00:00+07:00"
 
 +++
+
 Sometimes I love editing photos/pictures and create some stuff using apps like Photoshop, VSCO, Lightroom, etc. The app is using for basic editing, mixing filters, effects, etc.
 
 I'm doing this as a hobby, here's my collections :)

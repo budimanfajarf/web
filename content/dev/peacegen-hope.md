@@ -1,20 +1,20 @@
 ---
-title: "Peacegen - HOPE"
-slug: "peacegen-hope"
-draft: true
+title: 'Peacegen - HOPE'
+slug: 'peacegen-hope'
+draft: false
 date: 2020-12-18T00:09:10+07:00
 tags: []
-images: []
+images: ['/uploads/peacegen-hope.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: "https://hubton-hope.netlify.app/"
+link: 'https://hubton-hope.netlify.app/'
 repo:
 hiddenInXml: true
-stacks: ["HTML", "Tailwind", "JavaScript"]
-type: "Full&nbsp;Time"
-company: "Hubton&nbsp;Indonesia"
-status: "Frontend&nbsp;UI"
+stacks: ['HTML', 'Tailwind', 'JavaScript']
+type: 'Full-time'
+company: 'Hubton&nbsp;Indonesia'
+status: 'Frontend&nbsp;UI'
 home: true
 ---

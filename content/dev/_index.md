@@ -1,17 +1,19 @@
 ---
-title: "Dev / Projects 💻"
-featuredImg: "/images/compressed/profile-photo-1-re.png"
-images: [
-  "/pictures/compressed/2018-11-05-octocat.jpg",
-  "/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png",
-  "/uploads/compressed/budidev-com.png",
-  "/uploads/compressed/muslimapp-id-donasi.png",
-  "/uploads/compressed/AIS-UNJANI-IQF.png",
-  "/uploads/compressed/counseling-teacher-web-app.png",
-]
-description: "List all Dev / Projects / Work in Web Development, include Backend and Frontend by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia"
+title: 'Dev / Projects 💻'
+featuredImg: '/images/compressed/profile-photo-1-re.png'
+images:
+  [
+    '/pictures/compressed/2018-11-05-octocat.jpg',
+    '/uploads/compressed/freecodecamp-org-certification-budimanfajarf-apis-and-microservices-2020-05-29.png',
+    '/uploads/compressed/budidev-com.png',
+    '/uploads/compressed/muslimapp-id-donasi.png',
+    '/uploads/compressed/AIS-UNJANI-IQF.png',
+    '/uploads/compressed/counseling-teacher-web-app.png',
+  ]
+description: 'List all Dev / Projects / Work in Web Development, include Backend and Frontend by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia'
 ---
-This is combination of ☕ + ❤️
+
+Combination of ☕ + ❤️
 
 <!-- * Personal Blog (this web): [link](/), [repo](https://github.com/budimanfajarf/blog)
 * React Tic-Tac-Toe: [link](https://bff-tictactoe.herokuapp.com/), [repo](https://github.com/budimanfajarf/react-tictactoe)

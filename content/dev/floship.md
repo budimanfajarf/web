@@ -1,6 +1,6 @@
 ---
-title: "Floship"
-slug: "floship"
+title: 'Floship'
+slug: 'floship'
 draft: true
 date: 2020-11-23T00:09:10+07:00
 tags: []
@@ -9,12 +9,12 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link:
+link: 'https://floship.com'
 repo:
 hiddenInXml: true
-stacks: ["WordPress", "Tailwind", "Bedrock+Sage", "ACF"]
-type: "Full&nbsp;Time"
-company: "Hubton&nbsp;Indonesia"
-status: "Features & Case Study"
+stacks: ['WordPress', 'Tailwind', 'Bedrock&nbsp;+&nbsp;Sage', 'ACF']
+type: 'Full-time'
+company: 'Hubton&nbsp;Indonesia'
+status: 'Backend Features & Case Study'
 home: true
 ---
