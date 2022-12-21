@@ -12,7 +12,7 @@ description:
 link: 'https://floship.com'
 repo:
 hiddenInXml: true
-stacks: ['WordPress', 'Tailwind', 'Bedrock&nbsp;+&nbsp;Sage', 'ACF']
+stacks: ['WordPress', 'Tailwind&nbsp;CSS', 'Bedrock&nbsp;+&nbsp;Sage', 'ACF']
 type: 'Full-time'
 company: 'Hubton&nbsp;Indonesia'
 status: 'Backend Features & Case Study'
