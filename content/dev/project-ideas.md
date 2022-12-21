@@ -12,7 +12,7 @@ description:
 link:
 repo: 'https://github.com/budimanfajarf/project-ideas'
 hiddenInXml: true
-stacks: ['Laravel', 'Vue.js', 'Tailwind']
+stacks: ['Laravel', 'Vue.js', 'Tailwind&nbsp;CSS']
 type: 'Personal'
 status: 'in&#8209;progress'
 ---
