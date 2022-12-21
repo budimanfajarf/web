@@ -61,7 +61,7 @@
 						</span>
 						{{ if .Params.status }}
 						<span style="font-size: 95%;">
-							({{.Params.status | safeHTML}})
+							[{{.Params.status | safeHTML}}]
 						</span>
 						{{ end }}
 
@@ -219,7 +219,7 @@
 												background-color: #3b5999;
 											{{ else if eq . "JQuery" }}
 												background-color: #e67e22;
-											{{ else if eq . "Tailwind" }}
+											{{ else if eq . "Tailwind&nbsp;CSS" }}
 												background-color: #38b2ac;
 											{{ else if eq . "WordPress" }}
 												background-color: #20759B;
@@ -245,8 +245,8 @@
 	{{- end }}
 	<div class="content" style="text-align: right;">
 		<p>
-			See all in <a href="https://github.com/budimanfajarf?tab=repositories" target="_blank" rel="noopener"
-				title="GitHub Repositories budimanfajarf">GitHub Repositories</a> :)
+			Public projects available in <a href="https://github.com/budimanfajarf?tab=repositories" target="_blank"
+				rel="noopener" title="GitHub Repositories budimanfajarf">GitHub Repositories</a> :)
 		</p>
 	</div>
 </main>

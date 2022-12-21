@@ -12,7 +12,7 @@ description:
 link: 'https://hubton-hope.netlify.app/'
 repo:
 hiddenInXml: true
-stacks: ['HTML', 'Tailwind', 'JavaScript']
+stacks: ['HTML', 'Tailwind&nbsp;CSS', 'JavaScript']
 type: 'Full-time'
 company: 'Hubton&nbsp;Indonesia'
 status: 'Frontend&nbsp;UI'
