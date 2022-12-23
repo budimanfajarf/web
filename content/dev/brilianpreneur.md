@@ -2,7 +2,7 @@
 title: 'BrilianPreneur (2021 & 2022)'
 slug: 'brilianprenuer-2021-2022'
 draft: false
-date: 2022-10-06
+date: 2022-04-06
 tags: []
 images: ['/uploads/brilianpreneur.png']
 featuredImg:
