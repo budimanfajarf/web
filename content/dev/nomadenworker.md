@@ -2,7 +2,7 @@
 title: 'Nomaden Worker'
 slug: 'nomadenworker'
 draft: false
-date: 2022-10-27
+date: 2022-08-27
 tags: []
 images: ['/uploads/nomadenworker.png']
 featuredImg:
