@@ -4,7 +4,7 @@ slug: 'dvl-abm'
 draft: false
 date: 2022-01-22
 tags: []
-images: ['/uploads/Home-PreABM.jpeg']
+images: ['/uploads/compressed/Home-PreABM.jpeg']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

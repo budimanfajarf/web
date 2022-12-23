@@ -4,7 +4,7 @@ slug: 'brilianprenuer-2021-2022'
 draft: false
 date: 2022-04-06
 tags: []
-images: ['/uploads/brilianpreneur.png']
+images: ['/uploads/compressed/brilianpreneur.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

@@ -4,7 +4,7 @@ slug: 'nomadenworker'
 draft: false
 date: 2022-08-27
 tags: []
-images: ['/uploads/nomadenworker.png']
+images: ['/uploads/compressed/nomadenworker.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

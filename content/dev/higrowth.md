@@ -4,7 +4,7 @@ slug: 'higrowth'
 draft: false
 date: 2022-05-06
 tags: []
-images: ['/uploads/higrowth.png']
+images: ['/uploads/compressed/higrowth.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

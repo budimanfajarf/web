@@ -4,7 +4,7 @@ slug: 'invigital'
 draft: false
 date: 2022-02-04
 tags: []
-images: ['/uploads/invigital.png']
+images: ['/uploads/compressed/invigital.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

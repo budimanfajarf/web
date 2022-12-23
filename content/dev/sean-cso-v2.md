@@ -4,7 +4,7 @@ slug: 'sean-cso-v2'
 draft: false
 date: 2022-09-16
 tags: []
-images: ['/uploads/sean-cso.png']
+images: ['/uploads/compressed/sean-cso.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

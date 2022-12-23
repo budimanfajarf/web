@@ -4,7 +4,7 @@ slug: 'aialasvegas'
 draft: false
 date: 2022-06-17
 tags: []
-images: ['/uploads/aialasvegas.png']
+images: ['/uploads/compressed/aialasvegas.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
