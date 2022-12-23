@@ -4,7 +4,7 @@ slug: 'trinvi-by-transvision'
 draft: false
 date: 2022-10-18
 tags: []
-images: ['/uploads/trinvi.png']
+images: ['/uploads/compressed/trinvi.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

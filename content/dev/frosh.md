@@ -4,7 +4,7 @@ slug: 'frosh'
 draft: false
 date: 2021-12-22
 tags: []
-images: ['/uploads/frosh.png']
+images: ['/uploads/compressed/frosh.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

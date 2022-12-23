@@ -4,7 +4,7 @@ slug: 'sembilan-matahari-nm-world'
 draft: false
 date: 2021-02-22T00:03:49+07:00
 tags: []
-images: ['/uploads/sembilan-matahari-nm-world.png']
+images: ['/uploads/compressed/sembilan-matahari-nm-world.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

@@ -4,7 +4,7 @@ slug: 'umrohpass'
 draft: false
 date: 2022-03-28
 tags: []
-images: ['/uploads/umrohpass.png']
+images: ['/uploads/compressed/umrohpass.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

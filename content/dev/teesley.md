@@ -4,7 +4,7 @@ slug: 'teesley'
 draft: false
 date: 2021-11-13
 tags: []
-images: ['/uploads/teesley.png']
+images: ['/uploads/compressed/teesley.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
