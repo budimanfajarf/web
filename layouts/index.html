@@ -96,7 +96,11 @@
 							<!-- <a href='{{ "dev/" | absLangURL }}'> -->
 							<a href="/dev/#{{ .Params.slug }}">
 								<span class="post-title">
+									{{ if .Params.homeTitle }}
+									{{ .Params.homeTitle }}
+									{{ else }}
 									{{ .Title }}
+									{{ end }}
 									{{ if .Params.status }}
 									<span style="font-size: 90%;">
 										[{{.Params.status | safeHTML}}]

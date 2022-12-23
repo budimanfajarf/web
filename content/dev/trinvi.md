@@ -1,6 +1,6 @@
 ---
-title: 'Trinvi'
-slug: 'trinvi'
+title: 'Trinvi by Transvision'
+slug: 'trinvi-by-transvision'
 draft: false
 date: 2022-10-18
 tags: []
@@ -12,11 +12,12 @@ description:
 link: 'https://www.trinvi.com/'
 repo:
 hiddenInXml: true
-stacks: ['Vue.js', 'Nuxt.js', 'Tailwind&nbsp;CSS']
+stacks: ['Vue.js', 'Nuxt.js', 'TypeScript', 'WEB3', 'Tailwind&nbsp;CSS']
 type: 'Freelance'
-company: 'Transvision'
+company: 'Monocle&nbsp;Agency'
 status: 'Frontend'
 home: true
+homeTitle: 'Trinvi'
 ---
 
 TRINVI by Transvision is a blockchain-powered initiative for the broadcasting industry and beyond.

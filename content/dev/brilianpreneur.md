@@ -12,7 +12,7 @@ description:
 link: 'https://brilianpreneur.com/'
 repo:
 hiddenInXml: true
-stacks: ['Laravel', 'Jetstream', 'Inertia.js', 'Vue.js', 'React.js', 'Next.js']
+stacks: ['Laravel', 'Jetstream', 'Inertia.js', 'Vue.js', 'React.js', 'Next.js', 'TypeScript']
 type: 'Full-time'
 company: 'Hubton&nbsp;Indonesia'
 status: 'Fullstack'
