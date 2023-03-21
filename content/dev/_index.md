@@ -1,5 +1,5 @@
 ---
-title: 'Dev / Projects 💻'
+title: 'Work / Projects 💻'
 # featuredImg: '/images/compressed/profile-photo-1-re.png'
 images:
   [
@@ -13,7 +13,7 @@ images:
 description: 'List all Dev / Projects / Work in Web Development, include Backend and Frontend by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia'
 ---
 
-Combination of ☕ + ❤️
+<!-- Combination of ☕ + ❤️ -->
 
 <!-- * Personal Blog (this web): [link](/), [repo](https://github.com/budimanfajarf/blog)
 * React Tic-Tac-Toe: [link](https://bff-tictactoe.herokuapp.com/), [repo](https://github.com/budimanfajarf/react-tictactoe)

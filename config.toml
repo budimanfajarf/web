@@ -99,7 +99,7 @@ disqusShortname = "budidev"
     weight = 10
 
   [[menu.main]]
-    name = "Dev"
+    name = "Work"
     url = "dev/"
     weight = 20
 
