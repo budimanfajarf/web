@@ -1,8 +1,9 @@
-@import "predefined.scss";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import 'predefined.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-#home-photo  {
+#home-photo {
   text-align: center;
 }
 
@@ -28,8 +29,8 @@
 
 #home-nav a {
   display: inline-block;
-  margin: 0 .2em;
-  margin-top: .5em;
+  margin: 0 0.2em;
+  margin-top: 0.5em;
 
   /* box-shadow: inset 0 -.2em 0 #018574;
   line-height: 1.15;   */
@@ -39,27 +40,28 @@
   box-shadow: inset 0 -1em 0 #018574;
 } */
 
-body {
-  font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
+// body {
+//   font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+// }
 
-.content p, .content ul, .content ol, .content table, .tags {
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-  letter-spacing: .04em;
-  line-height: 1.8;
-}
+// .content p, .content ul, .content ol, .content table, .tags {
+//   font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+//   letter-spacing: .04em;
+//   line-height: 1.8;
+// }
 
-.content .ubuntu {
-  font-family: "Ubuntu", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  line-height: 1.6;
-  letter-spacing: .06em;
-}
+// .content .ubuntu {
+//   font-family: 'Ubuntu', 'Trebuchet MS', Verdana, 'Verdana Ref', 'Segoe UI', Candara,
+//     'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+//   line-height: 1.6;
+//   letter-spacing: 0.06em;
+// }
 
 .site-branding img {
   height: 34px;
   border-radius: 35%;
   margin-bottom: -9px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .site-branding a:hover img {
@@ -71,8 +73,8 @@ body {
 }
 
 .home-main {
-  font-size: .7em;
-  margin-top: .55em;
+  font-size: 0.7em;
+  margin-top: 0.55em;
 }
 
 .home-main .posts-group {
@@ -80,7 +82,9 @@ body {
 }
 
 .home-main .post-nav {
-  font-size: .9em; margin-top: .8em; margin-bottom: 2em;
+  font-size: 0.9em;
+  margin-top: 0.8em;
+  margin-bottom: 2em;
 }
 
 .posts-group .post-day {
@@ -101,11 +105,11 @@ body {
 }
 
 .post-meta.archived {
-  opacity: 1
+  opacity: 1;
 }
 
 .post-meta.archived span {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .post-meta.archived .archived-label {
@@ -121,22 +125,23 @@ body {
 }
 
 .post-meta.archived .archived-info {
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: block;
   margin-bottom: 2.5em;
 }
 
-blockquote.twitter-tweet, blockquote.twitter-tweet a {
+blockquote.twitter-tweet,
+blockquote.twitter-tweet a {
   color: #e8eef2;
 }
 
 blockquote.twitter-tweet a {
-  box-shadow: inset 0 -4px 0 #2b7bb9!important;
+  box-shadow: inset 0 -4px 0 #2b7bb9 !important;
 }
 
 blockquote.twitter-tweet a:hover {
   text-decoration: none;
-  box-shadow: inset 0 -1em 0 #2b7bb9!important;
+  box-shadow: inset 0 -1em 0 #2b7bb9 !important;
 }
 footer a:hover {
   cursor: pointer;
@@ -146,7 +151,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-.related-posts{
+.related-posts {
   // margin-top: 3em;
   margin-bottom: 2em;
 }
@@ -166,7 +171,7 @@ footer a:hover {
 
 .light {
   background-color: $light-light-grey;
-  box-shadow: inset 0 0 10em rgba(0,0,0,.025);
+  box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.025);
   min-height: 100vh;
 }
 
@@ -174,8 +179,7 @@ footer a:hover {
 .light input,
 .light select,
 .light textarea,
-.light body
-{
+.light body {
   color: $light-text;
 }
 
@@ -215,15 +219,18 @@ footer a:hover {
 .light #site-header,
 .light #mobile-menu {
   background-color: $light-dark-grey;
-  box-shadow: -1px -2px 3px rgba(0,0,0,.10);
+  box-shadow: -1px -2px 3px rgba(0, 0, 0, 0.1);
 }
 
-.light .site-nav, .light .site-branding img {
-  opacity: .9;
+.light .site-nav,
+.light .site-branding img {
+  opacity: 0.9;
 }
 
-.light #home-footer, .light .posts-group .post-day, .light .posts-group .post-year {
-  opacity: .8;
+.light #home-footer,
+.light .posts-group .post-day,
+.light .posts-group .post-year {
+  opacity: 0.8;
 }
 
 .light .post-meta.archived .archived-label {
@@ -231,12 +238,13 @@ footer a:hover {
   color: #faf9f5;
 }
 
-.light blockquote.twitter-tweet, .light blockquote.twitter-tweet a {
+.light blockquote.twitter-tweet,
+.light blockquote.twitter-tweet a {
   color: $light-text;
 }
 
 .light .related-posts {
-  border: 3px dashed rgba(000,000,000,.2);
+  border: 3px dashed rgba(000, 000, 000, 0.2);
 }
 
 .post-nav {
@@ -261,7 +269,7 @@ footer a:hover {
   // margin-left: -93px;
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  transition: opacity .7s;
+  transition: opacity 0.7s;
 
   // Update
   padding: 6px 12px;
@@ -270,7 +278,7 @@ footer a:hover {
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   // left: 50%;
@@ -303,16 +311,16 @@ footer a:hover {
   // border: 1px solid #000000;
 }
 
-.home-dev .post-day  {
+.home-dev .post-day {
   opacity: 1;
 }
 
 .home-dev .post-day .type {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .home-dev .post-day .date {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .home h3 {
@@ -323,10 +331,9 @@ footer a:hover {
 
 @media only screen and (max-width: 725px) {
   #home-center {
-    padding-top: .8em;
+    padding-top: 0.8em;
   }
 }
-
 
 @media only screen and (max-width: 565px) {
   #home-title {
@@ -345,7 +352,7 @@ footer a:hover {
   .posts-group .post-item .post-day {
     display: block;
     margin-left: 0;
-    margin-top: .3em;
+    margin-top: 0.3em;
   }
 
   // .home-dev .posts-group .post-item a {
@@ -366,23 +373,23 @@ footer a:hover {
 @media only screen and (max-width: 372px) {
   #home-subtitle {
     // font-size: .65em;
-    font-size: .7em;
+    font-size: 0.7em;
   }
 }
 
 @media only screen and (max-width: 350px) {
   #home-subtitle {
     // font-size: .6em;
-    font-size: .65em;
+    font-size: 0.65em;
   }
 }
 
 @media only screen and (max-width: 325px) {
-  #home-subtitle, #home-footer {
-    font-size: .55em;
+  #home-subtitle,
+  #home-footer {
+    font-size: 0.55em;
   }
 }
-
 
 // it's get messy
 @media only screen and (min-width: 761px) {
@@ -392,14 +399,14 @@ footer a:hover {
     letter-spacing: 0.063em;
   }
 
-  body.home{
+  body.home {
     font-size: 100%;
     line-height: 1.6;
     letter-spacing: 0.06em;
   }
 
   #home-subtitle {
-    font-size: .75em;
+    font-size: 0.75em;
     line-height: 1.775em;
   }
 
@@ -443,5 +450,4 @@ footer a:hover {
   .home .date {
     display: none;
   }
-
 }
