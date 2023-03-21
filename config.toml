@@ -43,12 +43,12 @@ disqusShortname = "budidev"
 
   # Metadata mostly used in document's head
   description = "Personal blog about coding and web development by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
-  images = ["images/compressed/profile-photo-3-medium.jpg", "images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
+  # images = ["images/compressed/profile-photo-3-medium.jpg", "images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
   themeColor = "#494f5c"
 
   homeSubtitle = "Hello, I'm Budi ☕ Backend Developer 💻 from Bandung, Indonesia"
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  bgImg = "images/compressed/profile-photo-1-re.png"  # Homepage background-image URL
+  # bgImg = "images/compressed/profile-photo-1-re.png"  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   gitUrl = "https://github.com/budimanfajarf/blog/commit/"
@@ -113,10 +113,10 @@ disqusShortname = "budidev"
     url = "about/"
     weight = 35
 
-  [[menu.main]]
-    name = "Pictures"
-    url = "pictures/"
-    weight = 25
+  # [[menu.main]]
+  #   name = "Pictures"
+  #   url = "pictures/"
+  #   weight = 25
 
 
 [permalinks]

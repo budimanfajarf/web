@@ -1,6 +1,6 @@
 ---
 title: 'Dev / Projects 💻'
-featuredImg: '/images/compressed/profile-photo-1-re.png'
+# featuredImg: '/images/compressed/profile-photo-1-re.png'
 images:
   [
     '/pictures/compressed/2018-11-05-octocat.jpg',
