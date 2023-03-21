@@ -87,7 +87,7 @@
 
 			<div class="home-main home-dev column">
 
-				<h3>Dev / Projects 💻</h3>
+				<h3>Work / Projects 💻</h3>
 
 				<div class="posts-group">
 					<ul class="posts-list">
@@ -141,7 +141,7 @@
 				</div>
 
 				<div class="post-nav">
-					<a class="prev-post tooltip" href='{{ "dev/" | absLangURL }}' title="See all Dev / Projects">
+					<a class="prev-post tooltip" href='{{ "dev/" | absLangURL }}' title="See all Work / Projects">
 						<span>See All</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 							stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
@@ -168,8 +168,8 @@
 							<span style="opacity: .6;">{{ $menu.Name }}</span>
 							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
 						</a> -->
-			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">{{
-				$menu.Name }}</a>
+			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">
+				{{ $menu.Name }}</a>
 			{{ else if eq $menu.Name "Pictures" }}
 			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Photos 🖼️">{{
 				$menu.Name }}</a>
@@ -192,21 +192,28 @@
 				budi.day
 			</a>
 			{{ .Site.Params.footerCopyright | safeHTML }}
-			{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} &#183; <a href="{{ " posts/index.xml" |
-				absLangURL }}" target="_blank" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-					height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-					stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss">
+			{{/* {{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }}
+			&#183;
+			<a href="{{ " posts/index.xml" | absLangURL }}" target="_blank" title="RSS">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="feather feather-rss">
 					<path d="M4 11a9 9 0 0 1 9 9"></path>
 					<path d="M4 4a16 16 0 0 1 16 16"></path>
 					<circle cx="5" cy="19" r="1"></circle>
-				</svg></a>{{ end }}&nbsp;&#183;
-			<a href="https://subs.budidev.com/newsletter" title="Newsletter" target="_blank" rel="noopener"><svg
-					xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				</svg>
+			</a>
+			{{ end }} */}}
+			{{/* &nbsp;&#183;
+			<a href="https://subs.budidev.com/newsletter" title="Newsletter" target="_blank" rel="noopener">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 					class="feather feather-bell">
 					<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
 					<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-				</svg></a>&nbsp;&#183;
+				</svg>
+			</a> */}}
+			{{/* &nbsp;&#183;
 			<a title="Switch to Light Theme" id="light-btn" onclick="setLightMode(true)" style="display: none;">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -228,7 +235,7 @@
 					class="feather feather-moon">
 					<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 				</svg>
-			</a>
+			</a> */}}
 		</p>
 	</footer>
 

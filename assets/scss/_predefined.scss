@@ -1,9 +1,9 @@
 // Colors
 //
 $theme: #018574;
-$text: #e8eef2;
-$light-grey: #494f5c;
-$dark-grey: #3B3E48;
+$text: #cdd9e5;
+$light-grey: #2d333b;
+$dark-grey: #22272d;
 $highlight-grey: #7d828a;
 $midnightblue: #2c3e50;
 
@@ -14,13 +14,17 @@ $light-dark-grey: #fff;
 
 // Fonts
 //
-$fonts: "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-$code-fonts: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, "YaHei Consolas Hybrid", monospace, "Segoe UI Emoji", "PingFang SC", "Microsoft YaHei";
+$fonts: 'Trebuchet MS', Verdana, 'Verdana Ref', 'Segoe UI', Candara, 'Lucida Grande',
+  'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+$code-fonts: Consolas, 'Andale Mono WT', 'Andale Mono', Menlo, Monaco, 'Lucida Console',
+  'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+  'Nimbus Mono L', 'Courier New', Courier, 'YaHei Consolas Hybrid', monospace, 'Segoe UI Emoji',
+  'PingFang SC', 'Microsoft YaHei';
 
 // Mixins
 //
 @mixin dimmed {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @mixin aTag {
@@ -29,7 +33,7 @@ $code-fonts: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida C
     border: none;
     box-shadow: inset 0 -4px 0 $theme;
     transition-property: box-shadow;
-    transition-duration: .1s;
+    transition-duration: 0.1s;
 
     &:hover {
       box-shadow: inset 0 -1em 0 $theme;
