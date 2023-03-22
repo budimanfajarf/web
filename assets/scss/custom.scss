@@ -96,9 +96,13 @@ html {
   font-size: 75%;
 }
 
-.posts-group .post-title {
-  line-height: 1.2em;
+.posts-group {
+  line-height: 1.5;
 }
+
+// .posts-group .post-title {
+//   line-height: 1.2em;
+// }
 
 #home-center {
   padding-top: 1.5em;
@@ -400,19 +404,20 @@ footer a:hover {
 @media only screen and (min-width: 761px) {
   body {
     font-size: 105%;
-    line-height: 1.68;
-    letter-spacing: 0.063em;
+    // line-height: 1.68;
+    // letter-spacing: 0.063em;
+    // letter-spacing: 0.03em;
   }
 
   body.home {
     font-size: 100%;
-    line-height: 1.6;
-    letter-spacing: 0.06em;
+    // line-height: 1.6;
+    // letter-spacing: 0.06em;
   }
 
   #home-subtitle {
     font-size: 0.75em;
-    line-height: 1.775em;
+    // line-height: 1.775em;
   }
 
   * {
