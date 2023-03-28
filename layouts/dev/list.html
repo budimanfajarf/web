@@ -166,7 +166,12 @@
 								'>{{ .Params.type | safeHTML }}</span>
 						{{ if .Params.company }}
 						<span style="font-size: 95%">
-							at {{ .Params.company | safeHTML }}
+							{{ if .Params.platform }}
+							via
+							{{ else }}
+							at
+							{{ end }}
+							{{ .Params.company | safeHTML }}
 						</span>
 						{{ end }}
 					</div>
