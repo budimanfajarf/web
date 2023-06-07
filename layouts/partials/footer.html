@@ -1,7 +1,13 @@
 	<footer style="margin-top: 0;" id="site-footer" class="section-inner thin animated fadeIn faster">
 		<div style="font-size: 1.2em" class="post-nav thin">
-			<a class="next-post" href="{{ .Site.BaseURL }}" title="Home">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg><span>&nbsp;Back to Home Page</span>
+			<a class="next-post" onclick="back()" title="Back">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+					<line x1="19" y1="12" x2="5" y2="12"></line>
+					<polyline points="12 19 5 12 12 5"></polyline>
+				</svg>
+				<span>
+					Back
+				</span>
 			</a>
 		</div>
 		<p style="display: none;">&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}</p>
@@ -10,3 +16,15 @@
 			{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} &#183; <a href="{{ "posts/index.xml" | absLangURL }}" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>{{ end }}
 		</p style="display: none;">
 	</footer>
+
+
+	<script>
+		function back() {
+			// If history not from this site, go to home page
+			if (document.referrer.indexOf(window.location.hostname) === -1) {
+				return window.location.href = "{{ .Site.BaseURL }}";
+			}
+
+			window.history.back();
+		}
+	</script>
