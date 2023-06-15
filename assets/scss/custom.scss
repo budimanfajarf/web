@@ -461,3 +461,27 @@ footer a:hover {
     display: none;
   }
 }
+
+// .poem {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.poem__blockquote {
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+}
+
+@media (min-width: 480px) {
+  .poem__blockquote {
+    margin-right: 1em;
+    margin-left: 1em;
+
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
