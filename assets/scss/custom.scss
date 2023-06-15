@@ -462,26 +462,33 @@ footer a:hover {
   }
 }
 
-// .poem {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.poem {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+// .poem__blockquote {
+//   margin-right: 0.25em;
+//   margin-left: 0.25em;
+
+//   padding-right: 0.75em;
+//   padding-left: 0.75em;
 // }
 
-.poem__blockquote {
-  margin-right: 0.25em;
-  margin-left: 0.25em;
-
-  padding-right: 0.75em;
-  padding-left: 0.75em;
+.poem__by {
+  font-weight: 600;
 }
 
 @media (min-width: 480px) {
-  .poem__blockquote {
-    margin-right: 1em;
-    margin-left: 1em;
+  // .poem__blockquote {
+  //   margin-right: 1em;
+  //   margin-left: 1em;
 
-    padding-right: 1em;
-    padding-left: 1em;
-  }
+  //   padding-right: 1em;
+  //   padding-left: 1em;
+  // }
 }

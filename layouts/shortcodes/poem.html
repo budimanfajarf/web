@@ -1,3 +1,24 @@
-<div class="poem">
-  <blockquote class="poem__blockquote">{{ replace .Inner "\n" "<br />" | safeHTML }}</blockquote>
-</div>
+{{ if .IsNamedParams }}
+  <div class="poem">
+    {{ if .Get "imageSrc" }}
+      <img
+        class="poem__image"
+        src='{{ .Get "imageSrc" }}'
+        {{ if .Get "title" }} alt='{{ .Get "title" }}' {{ end }}
+        {{ if .Get "imageMaxWidth" }} style='max-width: {{ .Get "imageMaxWidth" }}' {{ end }}
+      />
+    {{ end }}
+
+    <div class="poem__content">
+      {{ if .Get "title" }}
+        <h1 class="poem__title">{{ .Get "title" }}</h1>
+      {{ end }}
+
+      {{ replace .Inner "\n" "<br />" | safeHTML }}
+
+      {{ if .Get "by" }}
+        <p class="poem__by">{{ .Get "by" }}</p>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

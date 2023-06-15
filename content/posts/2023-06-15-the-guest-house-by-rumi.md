@@ -4,7 +4,7 @@ slug: 'the-guest-house-by-rumi'
 draft: false
 date: 2023-06-15T09:27:10+07:00
 tags: []
-images: []
+images: ['/uploads/watercolor-halo-safflower tree_6243735.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
@@ -14,7 +14,7 @@ home: true
 
 Poem by Jalaluddin Rumi
 
-{{< poem >}}This being human is a guest house.
+{{< poem imageSrc="/uploads/watercolor-halo-safflower tree_6243735.png" title="The Guest House" by="~ RUMI ~" imageMaxWidth="320px" >}}This being human is a guest house.
 Every morning a new arrival.
 
 A joy, a depression, a meanness,
@@ -37,8 +37,5 @@ Be grateful for whoever comes,
 because each has been sent
 as a guide from beyond.{{< / poem >}}
 
----
-
-### by Jalaluddin Rumi
-
-_Translated by Coleman Barks_. _Source: [scottishpoetrylibrary](https://www.scottishpoetrylibrary.org.uk/poem/guest-house/)_
+- _source [scottishpoetrylibrary.org.uk](https://www.scottishpoetrylibrary.org.uk/)_
+- _image source [pngtree.com](https://pngtree.com/so/Watercolor')_
