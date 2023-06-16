@@ -26,4 +26,4 @@ Lalu, Abu Hanifah berkata, _"Aku tahu setan takkan membiarkanmu khusyuk. Maka, s
 
 Cerita ini _plot twist_ banget ga sih 😆
 
-Tapi ada pelajaran yang bisa diambil dari cerita ini, bisa dibaca di buku nya Habib Jafar yang judulnya _"Seni Merayu Tuhan"_, cerita ini pun diambil dari buku tersebut.
+Tapi ada pelajaran yang bisa diambil dari cerita ini, bisa dibaca di bukunya Habib Jafar yang judulnya _"Seni Merayu Tuhan"_, cerita ini pun diambil dari buku tersebut.
