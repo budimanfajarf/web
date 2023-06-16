@@ -14,7 +14,7 @@ home: true
 
 {{< figure src="/uploads/masjid-maba-QhzQfD0ihnI-unsplash.jpeg" caption="Source photo: unsplash" class="normal" >}}
 
-Dengan bahasa apa kita berdoa? Jawaban utamanya adalah dengan bahasa hati. Karena apa yang keluar dari hati, pasti indah dan Tuhan menyukai keindahan. Sedangkan mengenai bahasa hati itu akan diterjemahkan dalam bentuk bahasa Arab, Indonesia, atau lainnya, ya, bebas.
+Dengan bahasa apa kita berdoa? Jawaban utamanya adalah dengan bahasa hati. Karena apa yang keluar dari hati, pasti indah dan Tuhan menyukai keindahan. Sedangkan mengenai bahasa hati itu akan diterjemahkan dalam bentuk bahasa Arab, Indonesia, atau lainnya, bebas.
 
 Kita bisa belajar dari Abu Nawas dalam berdoa, yang begitu romantis.
 
