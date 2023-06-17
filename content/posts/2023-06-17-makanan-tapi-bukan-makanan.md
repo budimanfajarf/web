@@ -4,7 +4,7 @@ slug: 'makanan-tapi-bukan-makanan'
 draft: false
 date: 2023-06-17T20:03:00+07:00
 tags: []
-images: []
+images: ['/uploads/DALL·E 2023-06-17 21.36.33 - social media food.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
