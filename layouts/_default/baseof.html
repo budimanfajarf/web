@@ -7,9 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>
 		{{ if .IsHome }}
-			Budi @{{ .Site.Author.username }}
+			{{ .Site.Author.nickname }} {{ .Site.Author.username }}
 		{{ else }}
-			{{ .Title }} @{{ .Site.Author.username }}
+			{{ .Title }} {{ .Site.Author.username }}
 		{{ end }}
 	</title>
 	{{ if .IsPage }}<meta name="author" content="{{ .Site.Author.name }}">{{ end }}

@@ -41,9 +41,9 @@
 		</div>
 		{{- end }}
 
-		<!-- <nav id="home-nav" class="site-nav">
-				{{ partialCached "menu.html" . }}
-			</nav> -->
+		{{/*  <nav id="home-nav" class="site-nav">
+			{{ partialCached "menu.html" . }}
+		</nav>  */}}
 
 		<div class="row">
 
@@ -93,7 +93,7 @@
 					<ul class="posts-list">
 						{{ range first 3 (where (where .Site.Pages "Section" "dev") ".Params.home" true ) }}
 						<li class="post-item">
-							<!-- <a href='{{ "dev/" | absLangURL }}'> -->
+							{{/*  <a href='{{ "dev/" | absLangURL }}'>  */}}
 							<a href="/dev/#{{ .Params.slug }}">
 								<span class="post-title">
 									{{ if .Params.homeTitle }}
@@ -106,7 +106,7 @@
 										[{{.Params.status | safeHTML}}]
 									</span>
 									{{ end }}
-									<!-- {{.Params.type }} -->
+									{{/*  {{.Params.type }}  */}}
 								</span>
 								<span class="post-day">
 									<span class="date">
@@ -164,10 +164,10 @@
 			{{ range $i, $menu := .Site.Menus.main }}
 			{{ if $i }} <span style="opacity: .6;">&#183;</span> {{ end }}
 			{{ if eq $menu.Name "Dev" }}
-			<!-- <a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
-							<span style="opacity: .6;">{{ $menu.Name }}</span>
-							<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
-						</a> -->
+			{{/*  <a class="tooltip" href="{{ $menu.URL | absLangURL }}" title="Dev / Project 💻">
+				<span style="opacity: .6;">{{ $menu.Name }}</span>
+				<span style="text-shadow: none;" class="tooltiptext hide" id="tooltipdev">See my project here :)</span>
+			</a>  */}}
 			<a style="opacity: .6;" href="{{ $menu.URL | absLangURL }}" title="{{ $menu.Name }} / Projects 💻">
 				{{ $menu.Name }}</a>
 			{{ else if eq $menu.Name "Pictures" }}

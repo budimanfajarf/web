@@ -16,13 +16,13 @@ toc = true
 
 ## 👨‍💻 Me
 
-Hi! My name is Budiman Fajar Firdaus, I'm a web developer from Bandung, Indonesia :)
+Hi! My name is Budiman Fajar Firdaus, Software Engineer from Bandung, Indonesia :)
 
 I've been 5 years in IT stuff and have been focused on web development for the last 3 years. I love to code, both on the Frontend and Backend, and more than happy when my work solved my client problems :)
 
-Here my experience in some languages and frameworks, both on the backend and frontend: [Laravel](https://laravel.com/ 'Laravel'), [PHP](https://www.php.net/ 'PHP'), [Node.js](https://nodejs.org/ 'Node.js'), [Express.js](http://expressjs.com/ 'Express.js'), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript 'JavaScript'), [Vue.js](https://vuejs.org/ 'Vue.js'), [CodeIgniter](https://codeigniter.com/ 'CodeIgniter'), [Hugo](https://gohugo.io 'Hugo'), [WordPress](https://wordpress.org 'WordPress').
+Here my experience in some languages and frameworks, both on the backend and frontend: [Laravel](https://laravel.com/ 'Laravel'), [PHP](https://www.php.net/ 'PHP'), [Node.js](https://nodejs.org/ 'Node.js'), [Express.js](http://expressjs.com/ 'Express.js'), [Nest.js](https://nestjs.com/) [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript 'JavaScript'), [Vue.js](https://vuejs.org/ 'Vue.js'), [React.js](https://react.dev/), [Hugo](https://gohugo.io 'Hugo'), [WordPress](https://wordpress.org 'WordPress').
 
-Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Resume](https://drive.google.com/file/d/1WRaVoQDYyalb_EQYg--ddVMND3uhL3M8/view?usp=sharing "Budiman's Resume") :)
+Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Resume](https://drive.google.com/file/d/1ziV2Jtr7vW_sagyIoq1hag5prQD-hRel/view?usp=sharing "Budiman's Resume") :)
 
 ## ✍️ Blog
 
