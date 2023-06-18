@@ -1,7 +1,7 @@
 baseURL = "https://budi.day/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Budi @budimanfajarf"
+title = "Budi ☕ @budimanfajarf"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
