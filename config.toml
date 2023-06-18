@@ -1,7 +1,7 @@
 baseURL = "https://budi.day/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Budi @budimanfajarf"
+title = "Budi ☕ @budimanfajarf"
 theme = "hermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -15,7 +15,8 @@ disqusShortname = "budidev"
 
 [author]
   name = "Budiman Fajar Firdaus"
-  username = "budimanfajarf"
+  username = "@budimanfajarf"
+  nickname = "Budi ☕"
 
 # [blackfriday]
 #   hrefTargetBlank = true
@@ -42,7 +43,8 @@ disqusShortname = "budidev"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Personal blog about coding and web development by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
+  # description = "Personal blog about coding and web development by Budiman Fajar Firdaus @budimanfajarf, a web developer from Bandung, Indonesia. This blog created using Hugo with customized Hermit theme"
+  description = "Hello, I'm Budi ☕ (@budimanfajarf), Software Engineer 💻, from Bandung, Indonesia. This site contains things I want to share, in English or Bahasa"
   # images = ["images/compressed/profile-photo-3-medium.jpg", "images/compressed/profile-photo-2-re-medium.png", "images/compressed/profile-photo-1-re-medium.png"]
   themeColor = "#494f5c"
 
