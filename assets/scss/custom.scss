@@ -492,3 +492,13 @@ footer a:hover {
   //   padding-left: 1em;
   // }
 }
+
+.emoji-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background: $light-text;
+  border-radius: 35%;
+}
