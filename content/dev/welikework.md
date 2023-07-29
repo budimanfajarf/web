@@ -16,7 +16,7 @@ stacks: ['Laravel', 'JQuery', 'Bootstrap', 'Docker']
 type: 'Freelance'
 company: 'Upwork'
 status: 'Fullstack'
-home: true
+home: false
 # homeTitle: 'We Like Work'
 platform: true
 ---

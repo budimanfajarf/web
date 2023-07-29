@@ -17,5 +17,5 @@ stacks: ['Node.js', 'Nest.js', 'TypeScript', 'MySQL']
 type: 'Full-time'
 company: 'PrimaKu'
 status: 'API Service'
-home: true
+home: false
 ---
