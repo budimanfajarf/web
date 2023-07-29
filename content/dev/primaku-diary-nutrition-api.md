@@ -9,7 +9,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 'https://api-diary-nutrition.primaku.com/api'
+link: 'https://api-diary-nutrition.primaku.com'
 repo:
 hiddenInXml: true
 stacks: ['Node.js', 'Nest.js', 'TypeScript', 'MySQL']

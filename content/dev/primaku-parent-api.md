@@ -9,7 +9,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 'https://api-parenthood.primaku.com/api'
+link: 'https://api-parenthood.primaku.com'
 repo:
 hiddenInXml: true
 stacks: ['Node.js', 'Nest.js', 'TypeScript', 'MySQL', 'MongoDB', 'Redis']

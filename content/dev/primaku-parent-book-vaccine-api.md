@@ -9,7 +9,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 'https://api-app-parent-book-vaccine.primaku.com/api'
+link: 'https://api-app-parent-book-vaccine.primaku.com'
 repo:
 hiddenInXml: true
 stacks: ['Node.js', 'Nest.js', 'TypeScript', 'MySQL']
