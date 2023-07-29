@@ -2,7 +2,8 @@
 title: 'PrimaKu Parent Article'
 slug: 'primaku-parent-article-api'
 draft: false
-date: 2023-05-08T23:37:10+07:00
+# date: 2023-05-08T23:37:10+07:00
+date: 2023-04-08T23:37:10+07:00
 tags: []
 images: ['/uploads/primaku-parent-article-api.png']
 featuredImg:

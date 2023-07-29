@@ -1,15 +1,15 @@
 ---
-title: 'PrimaKu Parenthood'
-slug: 'primaku-parenthood-api'
+title: 'PrimaKu Diary Nutrition'
+slug: 'primaku-diary-nutrition-api'
 draft: false
-date: 2022-11-09T23:37:10+07:00
+date: 2023-05-22T23:37:10+07:00
 tags: []
-images: ['/uploads/primaku-parenthood-api.png']
+images: ['/uploads/primaku-diary-nutrition-api.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description:
-link: 'https://api-parenthood.primaku.com/api'
+link: 'https://api-diary-nutrition.primaku.com/api'
 repo:
 hiddenInXml: true
 stacks: ['Node.js', 'Nest.js', 'TypeScript', 'MySQL']
