@@ -5,7 +5,7 @@ draft: false
 # date: 2023-02-14T23:37:10+07:00
 date: 2023-01-14T23:37:10+07:00
 tags: []
-images: ['/uploads/primaku-book-vaccine-api.png']
+images: ['/uploads/compressed/primaku-book-vaccine-api.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

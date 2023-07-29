@@ -4,7 +4,7 @@ slug: 'primaku-payment-api'
 draft: false
 date: 2023-02-16T23:37:10+07:00
 tags: []
-images: ['/uploads/primaku-payment-api.png']
+images: ['/uploads/compressed/primaku-payment-api.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

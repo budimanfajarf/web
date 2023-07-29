@@ -1,10 +1,10 @@
 ---
 title: 'Pokemon'
 slug: 'pokemon'
-draft: true
+draft: false
 date: 2021-02-10T23:56:07+07:00
 tags: []
-images: []
+images: ['/uploads/compressed/learn-nuxt-pokemon.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)

@@ -4,7 +4,7 @@ slug: 'primaku-parenthood-api'
 draft: false
 date: 2022-11-09T23:37:10+07:00
 tags: []
-images: ['/uploads/primaku-parenthood-api.png']
+images: ['/uploads/compressed/primaku-parenthood-api.png']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
