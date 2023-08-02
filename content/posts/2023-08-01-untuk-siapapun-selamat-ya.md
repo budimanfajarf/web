@@ -16,6 +16,6 @@ home: true
 
 Untuk siapapun,
 
-Kalau pencapaian besarmu terwujud, selamat ya! Kalau belum terwujud, selamat atas pencapaian-pencapaian kecilmu.
+Selamat atas pencapaian besarmu! Kalau belum terwujud, selamat atas pencapaian-pencapaian kecilmu.
 
-Pencapaian kecil yang sering tidak diperhatikan, padahal cukup patut dirayakan, dirayakan dengan segelas kopi, makanan favorit, atau setidaknya kepuasan batin dan rasa syukur :)
+Pencapaian kecil yang sering tidak diperhatikan, padahal cukup patut dirayakan, dirayakan dengan segelas kopi, makanan favorit, atau setidaknya mendapatkan kepuasan batin dan rasa syukur :)
