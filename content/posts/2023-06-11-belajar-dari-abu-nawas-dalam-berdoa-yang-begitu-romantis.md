@@ -12,7 +12,7 @@ description:
 home: true
 ---
 
-{{< figure src="/uploads/masjid-maba-QhzQfD0ihnI-unsplash.jpeg" caption="Source photo: unsplash" class="normal" >}}
+{{< figure src="/uploads/masjid-maba-QhzQfD0ihnI-unsplash.jpeg" caption="Photo source: [unsplash](https://unsplash.com/photos/QhzQfD0ihnI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)" class="normal" >}}
 
 Dengan bahasa apa kita berdoa? Jawaban utamanya adalah dengan bahasa hati. Karena apa yang keluar dari hati, pasti indah dan Tuhan menyukai keindahan. Sedangkan mengenai bahasa hati itu akan diterjemahkan dalam bentuk bahasa Arab, Indonesia, atau lainnya, bebas.
 
