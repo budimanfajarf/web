@@ -1,5 +1,5 @@
 ---
-title: 'Primaku Parent'
+title: 'PrimaKu Parent'
 slug: 'primaku-parent-api'
 draft: false
 date: 2022-12-15T00:21:13+07:00
