@@ -4,7 +4,7 @@ slug: 'untuk-siapapun-selamat-ya'
 draft: false
 date: 2023-08-01T06:12:03+07:00
 tags: []
-images: ['/uploads/compressed/DALL·E 2023-08-02 06.23.12 - for anyone congratulations.png']
+images: ['/uploads/compressed/wil-stewart-UErWoQEoMrc-unsplash.jpeg']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
@@ -12,7 +12,7 @@ description:
 home: true
 ---
 
-{{< figure src="/uploads/compressed/DALL·E 2023-08-02 06.23.12 - for anyone congratulations.png" caption="DALL·E generated image" class="left" >}}
+{{< figure src="/uploads/compressed/wil-stewart-UErWoQEoMrc-unsplash.jpeg" caption="Photo source: [unsplash](https://unsplash.com/photos/UErWoQEoMrc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" class="left" >}}
 
 Untuk siapapun,
 
