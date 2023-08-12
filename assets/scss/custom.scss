@@ -26,6 +26,8 @@ html {
   font-style: normal;
   line-height: 1.75em;
   margin-bottom: 1.2em;
+  font-size: 0.75em;
+  min-height: 63px;
 }
 
 #home-nav {
@@ -345,10 +347,15 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 550px) {
   #home-title {
     font-size: 1.1em;
     font-size: 8vw;
+  }
+
+  #home-subtitle {
+    font-size: 0.7em;
+    min-height: 58.8px;
   }
 
   .post-date {
@@ -402,25 +409,7 @@ footer a:hover {
 }
 
 // it's get messy
-@media only screen and (min-width: 761px) {
-  body {
-    font-size: 105%;
-    // line-height: 1.68;
-    // letter-spacing: 0.063em;
-    // letter-spacing: 0.03em;
-  }
-
-  body.home {
-    font-size: 100%;
-    // line-height: 1.6;
-    // letter-spacing: 0.06em;
-  }
-
-  #home-subtitle {
-    font-size: 0.75em;
-    // line-height: 1.775em;
-  }
-
+@media only screen and (min-width: 1024px) {
   * {
     box-sizing: border-box;
   }
@@ -443,11 +432,11 @@ footer a:hover {
   }
 
   .home-posts .post-title {
-    width: 33vw;
+    width: 30vw;
   }
 
   .home-dev .post-title {
-    width: 17vw;
+    width: 20vw;
   }
 
   .home-posts {
@@ -460,6 +449,21 @@ footer a:hover {
 
   .home .date {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 105%;
+    // line-height: 1.68;
+    // letter-spacing: 0.063em;
+    // letter-spacing: 0.03em;
+  }
+
+  body.home {
+    font-size: 100%;
+    // line-height: 1.6;
+    // letter-spacing: 0.06em;
   }
 }
 
