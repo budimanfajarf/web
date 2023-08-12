@@ -4,7 +4,7 @@ slug: 'malas-olahraga'
 draft: false
 date: 2023-08-12T10:57:21+07:00
 tags: []
-images: []
+images: ['/uploads/lazy-cropped.jpeg']
 featuredImg:
 toc: false
 # description: string, if empty (substring main content)
