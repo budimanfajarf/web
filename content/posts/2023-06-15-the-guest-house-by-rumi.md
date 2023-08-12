@@ -37,5 +37,5 @@ Be grateful for whoever comes,
 because each has been sent
 as a guide from beyond.{{< / poem >}}
 
-- _source [scottishpoetrylibrary.org.uk](https://www.scottishpoetrylibrary.org.uk/)_
-- _image source [pngtree.com](https://pngtree.com/so/Watercolor')_
+- <small>_Source: [scottishpoetrylibrary.org.uk](https://www.scottishpoetrylibrary.org.uk/)_</small>
+- <small>_Image source: [pngtree.com](https://pngtree.com/so/Watercolor')_</small>

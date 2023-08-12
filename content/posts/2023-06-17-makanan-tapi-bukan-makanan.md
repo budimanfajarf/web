@@ -53,4 +53,4 @@ Kita tidak pasif, kita aktif dalam mengkonsumsi hal-hal tersebut, kita tidak "ha
 
 Karena mata adalah jendela hati, kita tidak bisa melihat sesuatu tanpa mempengaruhi hati kita.
 
-_sumber: [instagram.com/elitereminders](https://www.instagram.com/reel/CsWVGbvtgKM/?igshid=MTBlZjE4YzMxOA==)_
+<small>_Sumber: [instagram.com/elitereminders](https://www.instagram.com/reel/CsWVGbvtgKM/?igshid=MTBlZjE4YzMxOA==)_</small>
