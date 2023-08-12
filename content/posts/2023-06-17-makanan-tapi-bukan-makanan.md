@@ -44,7 +44,7 @@ That's the way Allah designed it
 You can't look at something without it affecting your heart
 -->
 
-{{< figure src="/uploads/DALL·E 2023-06-17 21.36.33 - social media food.png" caption="DALL·E generated image" class="left" >}}
+{{< figure src="/uploads/DALL·E 2023-06-17 21.36.33 - social media food.png" caption="[DALL·E](https://openai.com/dall-e-2) generated image" class="left" >}}
 
 Ketika membuka _feed_ sosial media, entah itu _facebook_, _instagram_, _tiktok_, dll.
 Bayangkan kalo itu seperti kita membuka kulkas, itulah hal-hal yang akan kita "makan" hari itu, itulah yang akan kita konsumsi, dan itu akan mempengaruhi kita.
