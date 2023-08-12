@@ -18,4 +18,4 @@ Kamu mungkin bukan malas olahraga, tapi kamu mungkin tidak punya teman olahraga,
 
 Kamu mungkin bukan malas olahraga, tapi kamu mungkin tidak suka keramaian, coba olahraga di tempat atau di waktu yang tidak terlalu ramai.
 
-Kamu mungkin bukan malas olahraga, tapi kamu mungkin ..._(silahkan isi sendiri)_
+Kamu mungkin bukan malas olahraga, tapi kamu mungkin _...<small>silahkan diisi_</small>
