@@ -42,4 +42,4 @@ Kita bisa belajar dari Abu Nawas dalam berdoa, yang begitu romantis.
 
 ---
 
-_Sumber: Buku "Seni Merayu Tuhan", Husein Ja'far Al-Hadar_
+<small>_Sumber: Buku "Seni Merayu Tuhan", Husein Ja'far Al-Hadar_</small>
