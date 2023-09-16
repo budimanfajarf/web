@@ -2,7 +2,7 @@
 title: 'ChatApp Backend Service'
 slug: 'chatapp-backend'
 draft: false
-date: 2023-09-17T00:27:56+07:00
+date: 2023-09-11T20:23:00+07:00
 tags: []
 images: ['/uploads/compressed/chatapp-backend.png']
 featuredImg:
@@ -23,4 +23,4 @@ This backend assignment test experience with NestJS, MongoDB, and Socket.io. Bui
 
 The application enable users to participate in a chat room using their names, exchange messages, access all previous messages, and view a list of current room users.
 
-In order to support this project, need also to develop a simple and minimal frontend.
+In order to support this project, need also to develop a simple and minimal frontend, see [ChatApp Frontend](/dev/#chatapp-frontend).
