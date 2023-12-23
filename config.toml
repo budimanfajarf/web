@@ -108,10 +108,10 @@ disqusShortname = "budidev"
     url = "dev/"
     weight = 20
 
-  [[menu.main]]
-    name = "Tags"
-    url = "tags/"
-    weight = 30
+  # [[menu.main]]
+  #   name = "Tags"
+  #   url = "tags/"
+  #   weight = 30
 
   [[menu.main]]
     name = "About"
