@@ -28,7 +28,7 @@
 				<div style="display: block; margin-bottom: 2em;"></div>
 
 				{{- with .Params.tags }}
-				<p>
+				<p style="display: none;">
 					{{- range . -}}
 					<span>
 						<a href="{{ " tags/" | absLangURL }}{{ . }}/">#{{.}}</a>
