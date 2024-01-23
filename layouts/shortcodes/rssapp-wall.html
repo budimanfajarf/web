@@ -1,0 +1,7 @@
+{{ if .IsNamedParams }}
+{{ if .Get "id" }}
+<rssapp-wall id='{{ .Get "id" }}'></rssapp-wall>
+
+<script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+{{ end }}
+{{ end }}
