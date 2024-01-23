@@ -1,3 +1,4 @@
 ---
 title: 'etc.'
+hiddenInXml: true
 ---
