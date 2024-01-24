@@ -1,5 +1,5 @@
 ---
-title: 'Free Palestine (free-palestine.carrd.co)'
+title: 'Palestine (free-palestine.carrd.co)'
 slug: 'free-palestine'
 draft: false
 date: 2023-11-05T19:30:34+07:00
