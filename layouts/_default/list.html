@@ -19,7 +19,13 @@
 					<a href="{{.Permalink}}">
 						<span class="post-title">{{.Title}}</span>
 						<span class="post-day">
-							{{ .PublishDate.Format "Jan 2" }}	· {{ .ReadingTime }} min read
+							{{ .PublishDate.Format "Jan 2" }}
+							·
+							{{ if .Params.isIframe }}
+								iframe
+							{{ else }}
+								{{ .ReadingTime }} min read
+							{{ end }}
 						</span>
 					</a>
 				</li>

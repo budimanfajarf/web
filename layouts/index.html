@@ -62,7 +62,11 @@
 										{{ .PublishDate.Format "Jan 2, 2006" }}
 										·
 									</span>
-									{{ .ReadingTime }} min read
+									{{ if .Params.isIframe }}
+										iframe
+									{{ else }}
+										{{ .ReadingTime }} min read
+									{{ end }}
 								</span>
 							</a>
 						</li>
