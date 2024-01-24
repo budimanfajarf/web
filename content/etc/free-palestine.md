@@ -1,8 +1,8 @@
 ---
 title: 'Free Palestine'
 slug: 'free-palestine'
-draft: fakse
-date: 2024-01-24T18:39:31+07:00
+draft: false
+date: 2023-11-05T18:39:31+07:00
 hiddenInXml: true
 ---
 
