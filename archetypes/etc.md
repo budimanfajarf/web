@@ -4,4 +4,5 @@ slug: "{{ .Name }}"
 draft: true
 date: {{ .Date }}
 hiddenInXml: true
+isIframe: false
 ---
