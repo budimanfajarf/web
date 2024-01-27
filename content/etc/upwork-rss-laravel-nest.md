@@ -6,4 +6,4 @@ date: 2024-01-23T15:25:03+07:00
 hiddenInXml: true
 ---
 
-{{<rssapp-wall id="bsrBstATA8b4XKuW">}}
+{{<rssapp-wall id="tGbIdn9g2vZm6Wt1">}}
