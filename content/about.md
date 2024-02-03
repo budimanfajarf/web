@@ -22,7 +22,7 @@ I've been 5 years in IT stuff and have been focused on web development for the l
 
 Here my experience in some languages and frameworks, both on the backend and frontend: [Laravel](https://laravel.com/ 'Laravel'), [PHP](https://www.php.net/ 'PHP'), [Node.js](https://nodejs.org/ 'Node.js'), [Express.js](http://expressjs.com/ 'Express.js'), [Nest.js](https://nestjs.com/) [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript 'JavaScript'), [Vue.js](https://vuejs.org/ 'Vue.js'), [React.js](https://react.dev/), [Hugo](https://gohugo.io 'Hugo'), [WordPress](https://wordpress.org 'WordPress').
 
-Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Resume](https://drive.google.com/file/d/1sjdVr2WGnl-VUeGdWnyEMRk03_UeMazi/view?usp=sharing "Budiman's Resume") :)
+Take a look of my [💻Portfolio](/dev/ "Budiman's Portfolio") and my [🗒️Resume](/etc/cv-resume-budiman-fajar-firdaus "Budiman's Resume") :)
 
 ## ✍️ Blog
 
