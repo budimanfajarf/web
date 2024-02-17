@@ -1,7 +1,7 @@
 ---
 title: 'PrimaKu'
 slug: 'primaku'
-draft: false
+draft: true
 date: 2024-02-13T08:47:49+07:00
 hiddenInXml: false
 isIframe: false
