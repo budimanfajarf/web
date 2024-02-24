@@ -30,8 +30,13 @@ This project was the Agency’s project where i work fulltime in Hubton Indonesi
 
 1. Create Migrator for migrate data from WordPress to Laravel
 
-   To migrate the data from WordPress to Laravel, the first thing we do is exposing the data from WordPress by creating a few APIs. After that we creating a few laravel artisan commands to import the data from the APIs to the new database in Laravel.
+   To migrate the data from WordPress to Laravel, the first thing we do is exposing the data from WordPress by creating a few APIs. After that we creating a few [laravel artisan commands](https://laravel.com/docs/10.x/artisan#writing-commands) to import the data from the APIs to the new database in Laravel.
 
 1. Build the new Content Management System (CMS)
+
+   {{< figure src="/uploads/compressed/nomadenworker-cms.png" caption="CMS of Nomaden Worker" class="normal" >}}
+
+   For building the new CMS we decided to use [Filament Admin](https://filamentphp.com/), it contains a collection of beautiful full-stack components, it's a good choice for building a CMS. We make sure the it can be easy to use. For the content itself we can divide it into a few parts, Directory Management, Post Management, Page Management, User Management, and Settings.
+
 1. Build the RESTful API
 1. Build the Frontend web and intergrate the RESTful API
