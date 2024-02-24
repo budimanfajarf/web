@@ -36,7 +36,12 @@ This project was the Agency’s project where i work fulltime in Hubton Indonesi
 
    {{< figure src="/uploads/compressed/nomadenworker-cms.png" caption="CMS of Nomaden Worker" class="normal" >}}
 
-   For building the new CMS we decided to use [Filament Admin](https://filamentphp.com/), it contains a collection of beautiful full-stack components, it's a good choice for building a CMS. We make sure the it can be easy to use. For the content itself we can divide it into a few parts, Directory Management, Post Management, Page Management, User Management, and Settings.
+   For building the new CMS we decided to use [Filament Admin](https://filamentphp.com/), it contains a collection of beautiful full-stack components, it's a good choice for building a CMS. We make sure the it can be easy to use. For the content itself it can grouped into a few parts, Directory Management, Post Management, Page Management, User Management, and Settings.
 
 1. Build the RESTful API
+
+   {{< figure src="/uploads/compressed/nomadenworker-postman.png" caption="RESTful API of Nomaden Worker" class="normal" >}}
+
+   There are lot of API endpoints we build to support the new website, it can be grouped into a few parts, Authentication API, Profile API, Directory API, Post API and Page API. The interesting one is we provide login method using Google Account.
+
 1. Build the Frontend web and intergrate the RESTful API
