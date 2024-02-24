@@ -29,6 +29,9 @@ This project was the Agency’s project where i work fulltime in Hubton Indonesi
    The reason why we create a database design is to make sure the old data can be migrated to the new database, but also capable to handle new requirements. I'm responsible for the database design, I create it using [dbdiagram.io](https://dbdiagram.io/), designing all tables and columns we need, including the relationships between them.
 
 1. Create Migrator for migrate data from WordPress to Laravel
+
+   To migrate the data from WordPress to Laravel, the first thing we do is exposing the data from WordPress by creating a few APIs. After that we creating a few laravel artisan commands to import the data from the APIs to the new database in Laravel.
+
 1. Build the new Content Management System (CMS)
 1. Build the RESTful API
 1. Build the Frontend web and intergrate the RESTful API
