@@ -44,4 +44,14 @@ This project was the Agency’s project where i work fulltime in Hubton Indonesi
 
    There are lot of API endpoints we build to support the new website, it can be grouped into a few parts, Authentication API, Profile API, Directory API, Post API and Page API. The interesting one is we provide login method using Google Account.
 
-1. Build the Frontend web and intergrate the RESTful API
+1. Build the Frontend web and integrate the RESTful API
+
+   {{< figure src="/uploads/compressed/nomadenworker-web.png" caption="nomadenworker.com" class="normal" >}}
+
+   As mentioned, my role in this project is a Backend Developer, so I'm not working on the frontend side. My responsibility in this process is make sure the Frontend team can integrate the RESTful API.
+
+## The Result
+
+After completing the development and testing process, we successfully rebuild Nomaden Worker website, and successfully migrate the old data from WordPress to Laravel, and the website is live now.
+
+Visit the live site [nomadenworker.com](https://nomadenworker.com).
