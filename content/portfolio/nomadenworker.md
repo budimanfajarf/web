@@ -10,48 +10,48 @@ toc: false
 
 ## About The Project
 
-Nomaden Worker is a website that helps you find your perfect workspace. It is a curated list of public spaces suitable for working, such as cafes, libraries, co-working spaces, and more. You can select your needs and preferences, such as seating type, facilities, ambience, and payment options, and the website will show you where you can find them. You can also see the latest updates, ratings, and reviews of each place. Nomaden Worker is a useful resource for remote workers, freelancers, students, and anyone who needs a change of scenery.
+Nomaden Worker is a website that helps you find your perfect workspace. It is a curated list of public spaces suitable for working, such as cafes, libraries, co-working spaces, and more. You can select your needs and preferences, such as seating type, facilities, ambiance, and payment options, and the website will show you where you can find them. You can also see each place's latest updates, ratings, and reviews. Nomaden Worker is a useful resource for remote workers, freelancers, students, and anyone who needs a change of scenery.
 
 ## The Problem
 
-The old website was built with WordPress, the system is not flexible and it's hard to maintain. We want to upgrade the technology stacks for better performance, and want to rebuild the UI/UX as well for better user experience. As result we decide to rebuild it with Laravel as CMS & RESTful API, and Next.js as Frontend.
+The old website was built with WordPress, the system is not flexible and hard to maintain. We want to upgrade the technology stacks for better performance and rebuild the UI/UX as well for a better user experience. As a result, we decide to rebuild it with Laravel as CMS & RESTful API, and Next.js as the Frontend.
 
 As we decided to rebuild the website, we still want to use the data from the old website, so we need to find some way to migrate the old data to the new one.
 
 ## My Role & Responsibility
 
-This project was the Agency’s project where i work fulltime in Hubton Indonesia. My role here is a Backend Developer.
+This project was the Agency’s project where I work fulltime in Hubton Indonesia. My role here is a Backend Developer.
 
 ## The Process
 
 1. Create Database Design
 
-   The reason why we create a database design is to make sure the old data can be migrated to the new database, but also capable to handle new requirements. I'm responsible for the database design, I create it using [dbdiagram.io](https://dbdiagram.io/), designing all tables and columns we need, including the relationships between them.
+   The reason why we created a database design is to make sure the old data can be migrated to the new database but is also capable of handling new requirements. I'm responsible for the database design, I create it using [dbdiagram.io](https://dbdiagram.io/), designing all tables and columns we need, including the relationships between them.
 
-1. Create Migrator for migrate data from WordPress to Laravel
+1. Create a Migrator to migrate data from WordPress to Laravel
 
-   To migrate the data from WordPress to Laravel, the first thing we do is exposing the data from WordPress by creating a few APIs. After that we creating a few [laravel artisan commands](https://laravel.com/docs/10.x/artisan#writing-commands) to import the data from the APIs to the new database in Laravel.
+   To migrate the data from WordPress to Laravel, the first thing we do is expose the data from WordPress by creating a few APIs. After that, we created a few [laravel artisan commands](https://laravel.com/docs/10.x/artisan#writing-commands) to import the data from the APIs to the new database in Laravel.
 
 1. Build the new Content Management System (CMS)
 
    {{< figure src="/uploads/compressed/nomadenworker-cms.png" caption="CMS of Nomaden Worker" class="normal" >}}
 
-   For building the new CMS we decided to use [Filament Admin](https://filamentphp.com/), it contains a collection of beautiful full-stack components, it's a good choice for building a CMS. We make sure the it can be easy to use. For the content itself it can grouped into a few parts, Directory Management, Post Management, Page Management, User Management, and Settings.
+   For building the new CMS we decided to use [Filament Admin](https://filamentphp.com/), it contains a collection of beautiful full-stack components, and it's a good choice for building a CMS. We make sure that it can be easy to use. The content itself can grouped into a few parts, Directory Management, Post Management, Page Management, User Management, and Settings.
 
 1. Build the RESTful API
 
    {{< figure src="/uploads/compressed/nomadenworker-postman.png" caption="RESTful API of Nomaden Worker" class="normal" >}}
 
-   There are lot of API endpoints we build to support the new website, it can be grouped into a few parts, Authentication API, Profile API, Directory API, Post API and Page API. The interesting one is we provide login method using Google Account.
+   There are a lot of API endpoints we build to support the new website, it can be grouped into a few parts, Authentication API, Profile API, Directory API, Post API, and Page API. The interesting one is we provide a login method using a Google Account.
 
 1. Build the Frontend web and integrate the RESTful API
 
    {{< figure src="/uploads/compressed/nomadenworker-web.png" caption="nomadenworker.com" class="normal" >}}
 
-   As mentioned, my role in this project is a Backend Developer, so I'm not working on the frontend side. My responsibility in this process is make sure the Frontend team can integrate the RESTful API.
+   As mentioned, my role in this project is a Backend Developer, so I'm not working on the frontend side. My responsibility in this process is to make sure the Frontend team can integrate the RESTful API.
 
 ## The Result
 
-After completing the development and testing process, we successfully rebuild Nomaden Worker website, and successfully migrate the old data from WordPress to Laravel, and the website is live now.
+After completing the development and testing process, we successfully rebuilt the website and successfully migrated the old data from WordPress to Laravel, and the website is live now.
 
-Visit the live site [nomadenworker.com](https://nomadenworker.com).
+Visit the live site here [nomadenworker.com](https://nomadenworker.com).
