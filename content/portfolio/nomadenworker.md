@@ -20,11 +20,14 @@ As we decided to rebuild the website, we still want to use the data from the old
 
 ## My Role & Responsibility
 
-This project was the Agency’s project where i work fulltime in Hubton. My role here is a Backend Developer.
+This project was the Agency’s project where i work fulltime in Hubton Indonesia. My role here is a Backend Developer.
 
 ## The Process
 
 1. Create Database Design
+
+   The reason why we create a database design is to make sure the old data can be migrated to the new database, but also capable to handle new requirements. I'm responsible for the database design, I create it using [dbdiagram.io](https://dbdiagram.io/), designing all tables and columns we need, including the relationships between them.
+
 1. Create Migrator for migrate data from WordPress to Laravel
 1. Build the new Content Management System (CMS)
 1. Build the RESTful API
