@@ -18,8 +18,26 @@ I work as a full-time Software Engineer (Backend) at PrimaKu. I have built some 
 
 Below are some backend services I have contributed to while I’m working at PrimaKu:
 
-### Core Application Service
+### Core Service
 
 Primary backend service for PrimaKu's application. There are various features I have work on in this service, the interesting one is for authentication. One day we decide to change 3rd party service for handle WhatsApp OTP to reduce our monthly costs, I entrusted to working on it.
 
 The first thing I do is research and testing the 3rd party service APIs, to make sure this service is capable for our needs. In the development & integration process, I intensively communicate with the Customer Support (CS) when facing an issue. After completed the development & integration process, and then tested by our Quality Assurance (QA) team, we successfully migrate the WhatsApp OTP to the new 3rd party service and reduce our monthly costs.
+
+### Payment Service
+
+There are a lot of payment methods we used in our application, such as Bank Transfer, Credit Card, E-Wallet, and BNPL (Buy Now, Pay Later). In the Payment Gateway itself we use two different payment gateways to accomodate our needs. One of payment method I have work on is BNPL.
+
+The chalenges part when integrate BNPL payment method is it has complex step rather than the other payment methods. Payment method normally just have 2 step, create the payment and then waiting the callback, that's it.
+
+BNPL in other hand have at least 4 step, create customer account, create paylater plans, create the payment, and then waiting the callback. To improving the user experience and simplify the process, we reduce it into 2 or 3 step.
+
+The first step is checking if our user has completed their profile to fullfill required data for creating customer account, if it's completed the user continue to the next step, otherwise they need to complete it first. For the second and third step we merged it into one step (create paylater plans + create the payment). The last step is waiting the callback.
+
+### Automation Service
+
+Immunization reminder
+
+### Parent Service
+
+Growth Graph
