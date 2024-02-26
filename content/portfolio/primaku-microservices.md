@@ -46,4 +46,16 @@ The cron-job itself will running every day at midnight to gathering data, and th
 
 ### Parent Service
 
-Growth Graph
+Backend service focusing on users with a Parent role. There are various features I have work on in this service, the chalenges one is when I work on Growth Graph feature for childs. We have to **collaborate with professional Doctor** to implement correct formulas, below are formulas we have to turn into codes:
+
+1. Weight Calculation
+
+   - Weight for Age
+   - Weight for Height
+   - Body Mass Index (BMI) for Age
+
+1. Height Calculation (Height for Age)
+
+1. Head Circumference Calculation (Head Circumference for Age)
+
+In top of that we have to use different references when the child is under 5 years old or over 5 years old. For the child under 5 years old, we use the reference of WHO. For the child over 5 years old, we use the reference of CDC.
