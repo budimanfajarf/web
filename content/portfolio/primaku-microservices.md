@@ -36,7 +36,13 @@ The first step is checking if our user has completed their profile to fullfill r
 
 ### Automation Service
 
-Immunization reminder
+I'm working on automation service from scratch, currently we have cron-job in this service to send reminder notifications to users about immunizations:
+
+1. Reminder 14 days before the immunization day
+1. Reminder 4 days before the immunization day
+1. Reminder on the immunization day
+
+The cron-job itself will running every day at midnight to gathering data, and then schedule the notifacations to be send at 07:00 AM.
 
 ### Parent Service
 
