@@ -1,5 +1,5 @@
 ---
-title: 'Brilian Preneur (2021 & 2022)'
+title: 'BRILIANPRENEUR (2021 & 2022)'
 slug: 'brilianpreneur'
 draft: true
 date: 2024-02-17T20:57:13+07:00
@@ -12,30 +12,61 @@ toc: true
 
 Brilianpreneur is an initiative organized by Bank Rakyat Indonesia (BRI), the largest bank in Indonesia. This annual event aims to empower and support Micro, Small, and Medium Enterprises (MSMEs) in the country. BRI is committed to encouraging MSMEs to expand their presence on an international stage. In an era of globalization, it’s essential for MSMEs to keep up with evolving trends and establish connections with the global community.
 
-## My Role & Responsibility
-
-This project was the Agency’s project where I work fulltime in Hubton Indonesia. My role here is a Backend Developer.
-
 ## Main Features
 
 1. MSMEs (Participants)
 
-   About 500 MSMEs participated in this event. The MSMEs are categorized into 4 categories: Home Décor & Craft, Food & Beverages, Accessories & Beauty, Fashion & Wastra, and Healthcare/Wellness.
+   MSME Showcase was held as the main program of UMKM EXPO(RT) BRILIANPRENEUR 2022. It presented products from over 500 selected MSMEs, as well as several art installations. The showcased products were rich in terms of variety, and were showcased under several zones according to their categories: Home Décor & Craft, Food & Beverage, Accessories & Beauty, Fashion & Wastra, Healthcare/Wellness, and Digital Technology (Startup).
 
 1. Business Matching
 
    Business Matching is an activity where MSME entrepreneurs have the opportunity to meet potential partners or customers, in hope for deals. UMKM EXPO(RT) BRILIANPRENEUR 2022 Business Matching attracted 43 buyers from 20 countries, with potential business deals amounting estimatedly USD 76 million.
 
 1. Product Auctions
-1. Small Game
 
-## The Process
+   The auction of the collaboration of designers and MSMEs was one of the UMKM EXPO(RT) BRILIANPRENEUR 2021 programs. The works of this collaborative were auctioned on brilianpreneur.com for 7 days. These 10 artworks were launched with an open bid price starting from Rp 1.000.000,- which then successfully obtained Rp 100.000.000,-. It was donated to the foundation whose mission is to nurture MSMEs, Sahabat UMKM.
 
-1. Build the Content Management System (CMS)
+1. Virtual Exhibition
 
-1. Build the RESTful API
+   The display of MSME products can also be enjoyed online through the Virtual Exhibition, which can be accessed by the public from anywhere through the official website of BRILIANPRENEUR's UMKM EXPO(RT), brilianpreneur.com. The feature has attracted more than 180,000 online visitors.
 
-1. Build the Frontend web and integrate the RESTful API
+## My Role & Contributions
+
+This project was the Agency’s project where I work full-time in Hubton Indonesia. My role here is a Backend Developer.
+
+1. Build Content Management System (CMS)
+
+   For building the CMS we use Laravel Jetstream, it's a great starter kit for Laravel and flexible to customized for our needs. In the CMS I contributed to the following features:
+
+   - CRUD of Product Category, Schedules, Live Stream, News, and Collaborator
+   - Import Users from CSV
+   - Import MSMEs from CSV
+   - Export Business Matching to CSV
+
+1. Build RESTful API
+
+   In the RESTful API I contributed to the following features:
+
+   - Auth API, Register API, and Login with Google Account API
+   - Profile API
+   - Product Category API
+   - Schedules API
+   - Game Score API
+   - Live Stream API
+   - News API
+   - MSMEs API
+   - Business Matching API
+   - Product Auctions API
+   - Collaborator API
+   - Country API
+
+1. Build Frontend web and integrate the RESTful API
+
+   Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I entrusted to also contributed in the frontend side for small portions to the following features:
+
+   - Register Page
+   - MSMEs Page
+   - Game Page
 
 ## The Result
 
