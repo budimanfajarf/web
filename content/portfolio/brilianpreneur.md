@@ -47,25 +47,19 @@ This project was the Agency’s project where I work full-time in Hubton Indones
 
    In the RESTful API I contributed to the following features:
 
-   - Auth API, Register API, and Login with Google Account API
-   - Profile API
-   - Product Category API
-   - Schedules API
-   - Game Score API
-   - Live Stream API
-   - News API
-   - MSMEs API
+   - API of Authentication, Register, Login with Google, and Manage Profile
+   - API of Product Category, Schedules, News, and Collaborator
+   - API of Live Stream & Score Game
+   - MSMEs (Participants) API
    - Business Matching API
    - Product Auctions API
-   - Collaborator API
-   - Country API
 
 1. Build Frontend web and integrate the RESTful API
 
-   Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I entrusted to also contributed in the frontend side for small portions to the following features:
+   Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I entrusted to also contributed in the frontend side to the following features:
 
    - Register Page
-   - MSMEs Page
+   - MSMEs (Participants) Page
    - Game Page
 
 ## The Result
