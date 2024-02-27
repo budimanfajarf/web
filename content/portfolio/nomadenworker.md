@@ -40,7 +40,7 @@ This project was the Agency’s project where I work fulltime in Hubton Indonesi
 
 1. Build the RESTful API
 
-   {{< figure src="/uploads/compressed/nomadenworker-postman.png" caption="RESTful API of Nomaden Worker" class="normal" >}}
+   {{< figure src="/uploads/compressed/nomadenworker-postman.png" caption="API Docs of Nomaden Worker" class="normal" >}}
 
    There are a lot of API endpoints we build to support the new website, it can be grouped into a few parts, Authentication API, Profile API, Directory API, Post API, and Page API. The interesting one is we provide a login method using a Google Account.
 
