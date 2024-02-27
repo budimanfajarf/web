@@ -20,7 +20,7 @@ Brilianpreneur is an initiative organized by Bank Rakyat Indonesia (BRI), the la
 
 1. Business Matching
 
-   Business Matching is an activity where MSME entrepreneurs have the opportunity to meet potential partners or customers, in hope for deals. UMKM EXPO(RT) BRILIANPRENEUR 2022 Business Matching attracted 43 buyers from 20 countries, with potential business deals amounting estimatedly USD 76 million.
+   Business Matching is an activity where MSME entrepreneurs have the opportunity to meet potential partners or customers, in the hope of deals. UMKM EXPO(RT) BRILIANPRENEUR 2022 Business Matching attracted 43 buyers from 20 countries, with potential business deals amounting estimated USD 76 million.
 
 1. Product Auctions
 
@@ -36,7 +36,7 @@ This project was the Agency’s project where I work full-time in Hubton Indones
 
 1. Build Content Management System (CMS)
 
-   For building the CMS we use Laravel Jetstream, it's a great starter kit for Laravel and flexible to customized for our needs. In the CMS I contributed to the following features:
+   For building the CMS we use Laravel Jetstream, it's a great starter kit for Laravel and flexible to customize for our needs. In the CMS I contributed to the following features:
 
    - CRUD of Product Category, Schedules, Live Stream, News, and Collaborator
    - Import Users from CSV
@@ -45,7 +45,7 @@ This project was the Agency’s project where I work full-time in Hubton Indones
 
 1. Build RESTful API
 
-   In the RESTful API I contributed to the following features:
+   In the RESTful API, I contributed to the following features:
 
    - API of Authentication, Register, Login with Google, and Manage Profile
    - API of Product Category, Schedules, News, and Collaborator
@@ -56,7 +56,7 @@ This project was the Agency’s project where I work full-time in Hubton Indones
 
 1. Build Frontend web and integrate the RESTful API
 
-   Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I entrusted to also contributed in the frontend side to the following features:
+   Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I was entrusted to also contribute in the frontend side to the following features:
 
    - Register Page
    - MSMEs (Participants) Page
