@@ -36,6 +36,8 @@ This project was the Agency’s project where I work full-time in Hubton Indones
 
 1. Build Content Management System (CMS)
 
+   {{< figure src="/uploads/compressed/brilianpreneur-cms.png" caption="CMS of Brilianpreneur" class="normal" >}}
+
    For building the CMS we use Laravel Jetstream, it's a great starter kit for Laravel and flexible to customize for our needs. In the CMS I contributed to the following features:
 
    - CRUD of Product Category, Schedules, Live Stream, News, and Collaborator
@@ -44,6 +46,8 @@ This project was the Agency’s project where I work full-time in Hubton Indones
    - Export Business Matching to CSV
 
 1. Build RESTful API
+
+   {{< figure src="/uploads/compressed/brilianpreneur-postman.png" caption="API Docs of Brilianpreneur" class="normal" >}}
 
    In the RESTful API, I contributed to the following features:
 
@@ -55,6 +59,8 @@ This project was the Agency’s project where I work full-time in Hubton Indones
    - Product Auctions API
 
 1. Build Frontend web and integrate the RESTful API
+
+   {{< figure src="/uploads/compressed/brilianpreneur.png" caption="Brilianpreneur 2022" class="normal" >}}
 
    Even though my role is Backend Developer for this project, in Brilianpreneur 2022 I was entrusted to also contribute in the frontend side to the following features:
 
