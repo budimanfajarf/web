@@ -16,10 +16,18 @@ Brilianpreneur is an initiative organized by Bank Rakyat Indonesia (BRI), the la
 
 This project was the Agency’s project where I work fulltime in Hubton Indonesia. My role here is a Backend Developer.
 
-## Features
+## Main Features
+
+1. MSMEs (Participants)
+
+   About 500 MSMEs participated in this event. The MSMEs are categorized into 4 categories: Home Décor & Craft, Food & Beverages, Accessories & Beauty, Fashion & Wastra, and Healthcare/Wellness.
 
 1. Business Matching
-1. Auctions
+
+   Business Matching is an activity where MSME entrepreneurs have the opportunity to meet potential partners or customers, in hope for deals. UMKM EXPO(RT) BRILIANPRENEUR 2022 Business Matching attracted 43 buyers from 20 countries, with potential business deals amounting estimatedly USD 76 million.
+
+1. Product Auctions
+1. Small Game
 
 ## The Process
 
