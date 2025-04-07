@@ -9,7 +9,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description: "learn about what's happening in palestine, and how to help"
-home: true
+home: false
 isIframe: true
 ---
 
