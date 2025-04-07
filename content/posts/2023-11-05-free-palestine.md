@@ -1,8 +1,8 @@
 ---
 title: 'Palestine (free-palestine.carrd.co)'
 slug: 'free-palestine'
-draft: false
-date: 2023-11-05T19:30:34+07:00
+draft: true
+date: 2022-11-05T19:30:34+07:00
 tags: []
 images: ['https://free-palestine.carrd.co/assets/images/gallery01/96c1520d.jpg?v=cd257226']
 featuredImg:

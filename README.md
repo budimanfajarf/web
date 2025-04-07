@@ -16,4 +16,4 @@ Feel free to contact me if you have any questions
 - v1.0.0 : Legacy of budidev.com
 - v2.0.0 : Start of budi.day
 
-## v2.8.15
+## v2.8.16
