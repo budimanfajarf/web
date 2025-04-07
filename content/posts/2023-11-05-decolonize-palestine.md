@@ -10,7 +10,7 @@ featuredImg:
 toc: false
 # description: string, if empty (substring main content)
 description: 'Welcome to Decolonize Palestine, a collection of resources for organizers and anyone who wants to learn more about Palestine.'
-home: true
+home: false
 isIframe: true
 ---
 
