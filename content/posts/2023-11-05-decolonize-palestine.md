@@ -2,7 +2,7 @@
 title: 'Decolonize Palestine (decolonizepalestine.com)'
 slug: 'decolonize-palestine'
 draft: false
-date: 2023-11-05T19:30:26+07:00
+date: 2022-11-05T19:30:26+07:00
 tags: []
 images:
   ['https://decolonizepalestine.com/wp-content/uploads/2021/04/Hero-Page_Mobile-scaled.jpg.webp']
